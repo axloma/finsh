@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class=" home product_view">
+
+<div class="card ">
+    <div class="card_cont  ">    
+        <img src={{product.image.url}} alt="" >
+        <h2  class="c_h">${{product.price}}EGB</h3>
+        <p   class="c_d">{{product.description}}</p>
+    </div>
+</div>
+
+
+<div class=" descreption ">
+    <p class="c_d">
+product:id:{{product.id}}<br/>
+product:name:{{product.name}}<br/>
+product.description:{{product.description}} <br/>
+product:price:{{product.price}}
+{% comment %} product:{{available color}} {% endcomment %}
+    </p>
+    <div class="btn-box">
+        <button type="button" value="{{product.id}}"  id="add-cart"  class="btn btn-1 btn-2 rotation"> add to cart </button>
+        <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active">view</a>
+    </div>
+</div>
+
+
+</section>
+<script>
+    //check if button pressed
+   // $(document).on('click','#add-cart',function(e){
+     let link = document.getElementById('add-cart');
+     let i = false;
+
+     link.addEventListener('click', (e)=>{
+        e.preventDefault();
+
+     if(i == false){
+        link.classList.toggle("rotation");
+        link.textContent = " in cart ";
+        $('#cart_n_a').addClass("active");
+        i = true;
+        }else if(i == true){
+            link.classList.toggle("rotation");
+            link.textContent = " add to cart ";
+            $('#cart_n_a').addClass("active");
+            i = false;
+        }
+    
+    // $('#cart_n_a').addClass('active')
+     $.ajax({
+        type:'POST',
+        url:'{% url 'cart_add' %}',
+        data:{
+            product_id:$('#add-cart').val(),
+            csrfmiddlewaretoken: '{{ csrf_token }}',
+            action: 'post'
+        },
+    
+        success:function(json){
+            console.log(json)
+        },
+        error: function(xhr,errmsg,err){
+        }
+     });
+    });
+    
+    </script>
+
+{% endblock %}

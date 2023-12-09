@@ -1,0 +1,154 @@
+ {% extends "base.html" %}  
+
+ {%block content %}      
+ <section class="home">
+
+ {% comment %} {% for is in i  %}
+ {{is}}
+ 
+ {% endfor %} {% endcomment %}
+
+{% for product in products %}
+    <div class="card">
+        <div class="car_cont">    
+        <img src="{{product.image.url}}" alt="">
+        <h2 class="c_h">${{product.price}}EG</h3>
+        <p class="c_d">{{product.description}}</p>
+        <div class="btn-box">
+            <button type="button" value="{{product.id}}"  id="add-cart"  class="btn btn-1 btn-2 rotation"> add to cart </button>
+            {% comment %} <button  value="{{product.id}}"  id="add-cart"  class="btn btn-1 btn-2 rotation"> add to cart </button> {% endcomment %}
+
+        <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active">view</a>
+        </div>
+    </div>
+    </div>
+{% endfor %}
+
+    </section>
+    <script>
+        const d = document.querySelectorAll(".rotation");
+       let cart = document.getElementById('cart_n');
+       let in_cart_a = {{ i | safe }};
+       //const in_cart_obj = JSON.stringify({{ i_dict | safe }});
+       const in_cart_obj = {{ i_dict | safe }};
+       
+        console.log(Object.values(in_cart_obj));
+        console.log(in_cart_obj);
+        console.log(in_cart_a.length + "length");
+        console.log(JSON.stringify(in_cart_a));
+       //let item = json.cart_item;     
+        window.addEventListener("load", (event) => {
+            if( in_cart_a.length > 0){
+                console.log("item  in card");
+                $('#cart_n_a').addClass("btn btn-1 active");
+                console.log(in_cart_a.length + "l");
+               
+            } 
+            //event.preventDefault();
+               // console.log({{ix}});
+        d.forEach(link => {
+           // console.log(in_cart_a);
+           //with djinja loop and get
+          // {% comment %} {% for ix  in i %} ; {% endcomment %}
+            //with js loop and get 
+                for(i=0 ; i < in_cart_a.length ; i++){
+                    //djinja chek for element 
+                   if ( link.value == in_cart_a[i] ){
+                        console.log(i,in_cart_a[i]);
+                    //in_cart_a.push({{ix}});
+                    //console.log(in_cart_a);
+                  //  e.preventDefault();
+                   //console.log("true");
+                   link.classList.remove("rotation");
+                   link.textContent = " remove from cart  ";
+                  // in_cart_a = true;
+                 // link.value="";    
+                   }
+                }
+           // {% comment %} {% endfor %}; {% endcomment %}
+                 //  console.log(in_cart_a);
+                  
+                    link.addEventListener("click", (e)=>{
+                        e.preventDefault();
+
+                        {% comment %} {% if link.value not in i %} {% endcomment %}
+                        if(in_cart_a.includes(link.value) == false){
+                        console.log("fund");
+                            $.ajax({
+                                type:'POST',
+                                url:'{% url 'cart_add' %}',
+                                data:{
+                                    product_id: link.value,
+                                    csrfmiddlewaretoken: '{{ csrf_token }}',
+                                    action: 'post'
+                                },                         
+                                success:function(json){                                                      
+                                    //console.log(json)
+                                    console.log(json.qty);
+                                    console.log(json.cart_item+"jsoooon");
+                                    //$('#cart_n').text(json.qty)
+                                    // $('#cart_n').attr('data-content',json.qty)
+                                    //i = json.cart_item;
+                                    //console.log(i);
+                                    cart.setAttribute('data-content', json.qty); 
+                                    in_cart_a.push(link.value);
+                                    //i = cart_delete;                                                              
+                                },
+                                error: function(xhr,errmsg,err){
+                                    console.log("error adding");
+                                }
+                                });
+                                
+                        link.classList.toggle("rotation");
+                        link.textContent = " in cart ";
+                        $('#cart_n_a').addClass("active");
+                        {% comment %} {% endif %} {% endcomment %}
+                            }else if ( in_cart_a.includes(link.value) == true){
+
+                        //in_cart = true;
+                        //in_cart_a = false;                                              
+                        {% comment %} {%    if linke.value in i  %}  {% endcomment %}
+                        console.log("if work probably");
+                        $.ajax({
+                            url: '{% url 'cart_delete'   %}',
+                            type:'POST',
+                            data:{
+                                product_id: link.value,
+                                csrfmiddlewaretoken: '{{ csrf_token }}',
+                                action: 'post'
+                            },       
+                            //success: function(response) {alert(response);},
+                            //error: function() {alert("Couldn't remove item");}  
+                             success:function(json){                                                      
+                                    //console.log(json)
+                                    console.log("deleted")
+                                    //$('#cart_n').text(json.qty)
+                                    // $('#cart_n').attr('data-content',json.qty)
+                                    cart.setAttribute('data-content', json.qty); 
+                                    console.log("indexofdeleteed"+in_cart_a.indexOf(link.value))
+                                    in_cart_a.splice(in_cart_a.indexOf(link.value),1);  
+
+                                    console.log("new" + in_cart_a);                                                      
+                                },
+                                error: function(xhr,errmsg,err){
+                                    console.log(" error deleteing");
+                                }
+                        });
+                        
+
+                            link.classList.toggle("rotation");
+                            link.textContent = "  to cart ";
+                            $('#cart_n_a').addClass("active");         
+                    }                                 
+                            {% comment %} {% endif %} {% endcomment %}
+
+                            });
+
+            });
+    });       
+    console.log("page is fully loaded");
+    </script>
+
+{%endblock%}
+
+

@@ -1,0 +1,66 @@
+
+
+
+<nav>
+    <div class="nav-i">
+        <div class="cart_n btn btn-2  " id="cart_n" data-content="q"><a  href="{% url "cart_summary" %}" class="btn btn-1 "  id="cart_n_a">cart {{ cart | length}} </a></div>
+
+    <div class="nav-el">
+
+        {% if user.is_authenticated  %}
+        <ul class="reg">
+            <li class="btn btn-1 active"><a href="{% url 'login_U' %}" class="btn btn-1 active" >about_me</a></li>
+            <li class="btn btn-1 active"><a href="{% url 'logout_U' %}" class="btn btn-1 " >logout</a></li>
+            
+        </ul>
+        {% else %}
+        <ul class="reg">
+            <li class="btn btn-1 active"><a href="{% url 'login_U' %}" class="btn btn-1 active" >login</a></li>
+            <li class="btn btn-1 active"><a href="{% url 'register' %}" class="btn btn-1 " >register</a></li>
+            
+        </ul>
+        {% endif %}
+      
+    <ul class="nav-item btn  btn-1">
+        <li><a href="vape" class="btn btn-1 ">vape</a></li>
+        <li><a href="liquid" class="btn btn-1 ">liquid</a></li>
+        <li><a href="smoke" class="btn btn-1 ">cigar</a></li>
+        <li><a href="disposable" class="btn btn-1 ">pod</a></li>
+        <li><a href="/" class="btn btn-1  active">smoke</a></li>
+    </ul>
+
+    </div>
+
+    </div>
+
+    <div class="search">
+        <form action="" class="search-form" mrthod='GET'>
+            <input type="submit" name="s_search" id="s_search" value="search" class="btn btn-2 active">
+            <input type="search" name="search" id="search" class="btn btn-2 active">
+          
+            <select name="category" id="category" class="btn btn-1 active">
+                <option value="" ></option>
+
+                {% for category in  categorys %}
+                    
+
+                {% comment %} <option value={{category.name}} ><li><a href={% url 'category' category.name %} > {{category.name}} </a> </li></option> {% endcomment %}
+                {% endfor %}
+                <option value={{categoryx.name}} selected><a href=""> {{categoryx.name}} </a> </option>
+
+             </select>
+            {%for msg in messages %}
+                     <h2 class="btn btn-2">{{msg}}</h2>
+            {%endfor%}
+            <div class="category btn btn-1">menue
+            <ul class="c_ul btn btn-2">
+                <li  > <a  href="{% url 'home' %}" class="btn btn-1 active" > all </a>  </li>
+                {% for category in  categorys %}
+    
+                <li><a href={% url 'category' category.name %}  class="btn btn-1"> {{category.name}} </a> </li>
+                {% endfor %}                
+            </ul>
+        </div>
+        </form>
+    </div>
+</nav>

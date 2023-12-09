@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+
+{% block content  %}
+
+
+<section class="register yasser_login" >
+
+    <fieldset class="register">
+<form action="{% url 'register'  %}" method="POST" >
+    {% csrf_token %}
+    {%for msg in messages %}
+        <h2>{{msg}}</h2>
+    {%endfor%}
+    <legend>register </legend>
+    {{form.as_p}}
+    {% comment %} <p>
+        <label for="username" >username</label>
+        <input type="text" name="username" id="username" placeholder="username" autofocus>
+    </p> 
+    <p>
+        <label for="email" >email</label>
+        <input type="text" name="email" id="username" placeholder="username" autofocus>
+    </p>
+    <p>
+    <label for="phone" >phone</label>
+    <input type="text" name="phone" id="phone" placeholder="username" autofocus>
+    </p>
+    <p>
+    <label for="pass" >password</label>
+    <button id="view" onclick="changattr()" class= "btn btn-1 "> view password </button>
+    <input type="password" name="pass1" id="pass1" placeholder="password">
+    </p>
+    <p>
+        <label for="pass" >repeat password</label>
+        <input type="password" name="pass" id="pass" placeholder="password">
+        </p> {% endcomment %}
+    <input type="submit" name="login" value="submit"  class="btn btn-1">
+    </form>
+    
+    </fieldset>
+</section>
+
+{% endblock  %}

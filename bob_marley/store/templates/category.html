@@ -1,0 +1,27 @@
+{% extends "base.html" %}  
+
+{%block content %}      
+<section class="home">
+
+
+
+{% for product in products %}
+   {% comment %} {{category.name}} {% endcomment %}
+   <div class="card">
+       <div class="car_cont">    
+       <img src="{{product.image.url}}" alt="">
+       <h2 class="c_h">${{product.price}}EGB</h3>
+       <p class="c_d">{{product.description}}</p>
+       <div class="btn-box">
+       <a href="" class="btn btn-1 btn-2 rotation"> add to cart </a>
+       <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active">view</a>
+       </div>
+   </div>
+   </div>
+{% endfor %}
+
+   </section>
+
+{%endblock%}
+
+

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+<h1> cart summary now </h1>
+{% for product in cart_products  %}
+
+{{product}}
+
+{% endfor %}
+</section>
+{% endblock  %}

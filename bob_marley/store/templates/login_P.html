@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+
+{% block content  %}
+
+
+<section class="login" >
+
+    <fieldset class="yasser_login">
+<form action="{% url 'login_U'  %}" method="POST" >
+    {% csrf_token %}
+    {%for msg in messages %}
+        <h2>{{msg}}</h2>
+    {%endfor%}
+    <legend>login </legend>
+    <p>
+    <label for="username" >username</label>
+    <input type="text" name="username" id="username" placeholder="username" autofocus>
+    </p>
+    <p>
+    <label for="pass" >password</label>
+    <button id="view" onclick="changattr()" class= "btn btn-1 "> view password </button>
+    <input type="password" name="pass" id="pass" placeholder="password">
+    </p>
+    <input type="submit" name="login" value="login"  class="btn btn-1">
+    </form>
+    
+    </fieldset>
+</section>
+
+{% endblock  %}
