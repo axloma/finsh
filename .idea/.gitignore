@@ -1,5 +1,6 @@
 # Default ignored files
-/shelf/
-/workspace.xml
+.gitignore
+# /shelf/
+# /workspace.xml
 
 virt_bob/
