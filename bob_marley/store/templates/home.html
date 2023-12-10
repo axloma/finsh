@@ -25,15 +25,20 @@
 {% endfor %}
 
     </section>
+
     <script>
         const d = document.querySelectorAll(".rotation");
        let cart = document.getElementById('cart_n');
        let in_cart_a = {{ i | safe }};
        //const in_cart_obj = JSON.stringify({{ i_dict | safe }});
-       const in_cart_obj = {{ i_dict | safe }};
+       {% comment %} const in_cart_obj = list({{ i_dict | safe  }}); {% endcomment %}
+
+  {% comment %} //    var usersDict = JSON.parse(({{ list( i | safe )}})); {% endcomment %}
+    //   var result = {{ i_dict }};
+   //    console.log(result);
        
-        console.log(Object.values(in_cart_obj));
-        console.log(in_cart_obj);
+     //   console.log(Object.values(in_cart_obj));
+     //   console.log(in_cart_obj);
         console.log(in_cart_a.length + "length");
         console.log(JSON.stringify(in_cart_a));
        //let item = json.cart_item;     
@@ -44,9 +49,10 @@
                 console.log(in_cart_a.length + "l");
                
             } 
-            //event.preventDefault();
                // console.log({{ix}});
         d.forEach(link => {
+            event.preventDefault();
+
            // console.log(in_cart_a);
            //with djinja loop and get
           // {% comment %} {% for ix  in i %} ; {% endcomment %}

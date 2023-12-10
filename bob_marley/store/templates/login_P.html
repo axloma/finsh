@@ -19,13 +19,34 @@
     </p>
     <p>
     <label for="pass" >password</label>
-    <button id="view" onclick="changattr()" class= "btn btn-1 "> view password </button>
+    <button  id="view"  class= "btn btn-1 " > </button>
     <input type="password" name="pass" id="pass" placeholder="password">
     </p>
-    <input type="submit" name="login" value="login"  class="btn btn-1">
+    <button type="submit" name="login" value="login"  class="btn btn-1">login</button>
     </form>
     
     </fieldset>
 </section>
 
+<script>
+    let view = false;
+   const chang = $("#view") 
+    chang.click( (e)=> {
+        console.log("clic")
+    e.preventDefault();
+    let x = $("#pass");
+    if (view === false){
+    x.attr("type","text");
+    view = true;
+    }
+    else if (view === true)
+    {
+    x.attr("type","password");
+    view = false;
+    
+    
+    }
+});
+    //
+</script>
 {% endblock  %}

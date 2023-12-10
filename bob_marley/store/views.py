@@ -34,7 +34,7 @@ def home(request):
     categorys = Category.objects.all()
     ids = Cart(request)
     i = list(ids.get_prods2())
-    i_dict = ids.get_prods()
+    i_dict =  ids.get_prods()
     i.sort()
     return render(request, 'home.html',{'products':products,'categorys':categorys,'i':i ,'i_dict':i_dict})
 

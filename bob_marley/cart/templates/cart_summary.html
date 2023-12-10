@@ -1,11 +1,220 @@
-{% extends "base.html" %}
-{% block content %}
-<section>
-<h1> cart summary now </h1>
-{% for product in cart_products  %}
+{% extends "base.html" %}  
 
-{{product}}
+{%block content %}      
+<section class="home product_view ">
+
+{% comment %} {% for is in i  %}
+{{is}}
+
+{% endfor %} {% endcomment %}
+
+{% for product in cart_products %}
+
+   <div class="card card_rotation " id="card_rotation">
+       <div class="car_cont "> 
+        {% if product.image2.url  != "" %}   
+       <img src="{{product.image.url}}" alt="" id="img_src" value="{{product.image2.url}}">
+       {% else %}
+       <img src="{{product.image.url}}" alt="" id="img_src">
+       {% endif %}
+       <h2 class="c_h">${{product.price}}EG</h3>
+       <p class="c_d">{{product.description}}</p>
+        <button class="right" id="right"></button>
+        <button class="left" id="left"></button>
+       
+       
+       </div>
+   </div>
+
+   
+<div class=" descreption ">
+    <p class="c_d">
+product:id:{{product.id}}<br/>
+product:name:{{product.name}}<br/>
+product.description:{{product.description}} <br/>
+product:price:{{product.price}}
+{% comment %} product:{{available color}} {% endcomment %}
+    </p>
+    <div class="btn-box">
+        <button type="button" value="{{product.id}}"  id="add-cart"  class="btn btn-1 btn-2 rotation"> add to cart </button>
+        <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active">view</a>
+    </div>
+</div>
+
 
 {% endfor %}
-</section>
+
+   </section>
+   
+   <script>
+    const card_rotation = $("#card_rotation");
+    const right = $("#right");
+    const left = $("#left");
+    let xtime;
+    var img_src = $("#img_src");
+    var img_src_src = img_src.attr('src');
+    var img_src_value = img_src.attr('value');
+    
+    console.log(img_src_src + "source");
+    {% comment %} $('img').on({
+        'click': function() {
+            
+    }); {% endcomment %}
+    right.click( ()=> {    
+        console.log("right clicked");
+        card_rotation.toggleClass("active");
+        setTimeout(alerttime,500);  
+        //     
+    });
+    left.click( () => {       
+        //clearTimeout(xtime);//will clear the timer 
+        setTimeout(alerttime,700);
+        console.log('left clicked');
+        card_rotation.toggleClass("active");
+    });
+    function alerttime(){
+        var src = (img_src.attr('src') === img_src_src)
+        ? img_src_value
+        : img_src_src ;
+     $("#img_src").attr('src', src);
+
+     {% comment %} var img = $("#img_src").attr();
+     console.log(img);
+     img_src.attr('src', img);
+     console.log("card_rotate"); {% endcomment %}
+
+
+
+}
+        
+                       
+
+    const d = document.querySelectorAll(".rotation");
+   let cart = document.getElementById('cart_n');
+   let in_cart_a = {{ i | safe }};
+   //const in_cart_obj = JSON.stringify({{ i_dict | safe }});
+   {% comment %} const in_cart_obj = list({{ i_dict | safe  }}); {% endcomment %}
+
+{% comment %} //    var usersDict = JSON.parse(({{ list( i | safe )}})); {% endcomment %}
+//   var result = {{ i_dict }};
+//    console.log(result);
+   
+ //   console.log(Object.values(in_cart_obj));
+ //   console.log(in_cart_obj);
+    console.log(in_cart_a.length + "length");
+    console.log(JSON.stringify(in_cart_a));
+   //let item = json.cart_item;     
+    window.addEventListener("load", (event) => {
+        if( in_cart_a.length > 0){
+            console.log("item  in card");
+            $('#cart_n_a').addClass("btn btn-1 active");
+            console.log(in_cart_a.length + "l");
+           
+        } 
+           // console.log({{ix}});
+    d.forEach(link => {
+        event.preventDefault();
+
+       // console.log(in_cart_a);
+       //with djinja loop and get
+      // {% comment %} {% for ix  in i %} ; {% endcomment %}
+        //with js loop and get 
+            for(i=0 ; i < in_cart_a.length ; i++){
+                //djinja chek for element 
+               if ( link.value == in_cart_a[i] ){
+                    console.log(i,in_cart_a[i]);
+                //in_cart_a.push({{ix}});
+                //console.log(in_cart_a);
+              //  e.preventDefault();
+               //console.log("true");
+               link.classList.remove("rotation");
+               link.textContent = " remove from cart  ";
+              // in_cart_a = true;
+             // link.value="";    
+               }
+            }
+       // {% comment %} {% endfor %}; {% endcomment %}
+             //  console.log(in_cart_a);
+              
+                link.addEventListener("click", (e)=>{
+                    e.preventDefault();
+
+                    {% comment %} {% if link.value not in i %} {% endcomment %}
+                    if(in_cart_a.includes(link.value) == false){
+                    console.log("fund");
+                        $.ajax({
+                            type:'POST',
+                            url:'{% url 'cart_add' %}',
+                            data:{
+                                product_id: link.value,
+                                csrfmiddlewaretoken: '{{ csrf_token }}',
+                                action: 'post'
+                            },                         
+                            success:function(json){                                                      
+                                //console.log(json)
+                                console.log(json.qty);
+                                console.log(json.cart_item+"jsoooon");
+                                //$('#cart_n').text(json.qty)
+                                // $('#cart_n').attr('data-content',json.qty)
+                                //i = json.cart_item;
+                                //console.log(i);
+                                cart.setAttribute('data-content', json.qty); 
+                                in_cart_a.push(link.value);
+                                //i = cart_delete;                                                              
+                            },
+                            error: function(xhr,errmsg,err){
+                                console.log("error adding");
+                            }
+                            });
+                            
+                    link.classList.toggle("rotation");
+                    link.textContent = " in cart ";
+                    $('#cart_n_a').addClass("active");
+                    {% comment %} {% endif %} {% endcomment %}
+                        }else if ( in_cart_a.includes(link.value) == true){
+
+                    //in_cart = true;
+                    //in_cart_a = false;                                              
+                    {% comment %} {%    if linke.value in i  %}  {% endcomment %}
+                    console.log("if work probably");
+                    $.ajax({
+                        url: '{% url 'cart_delete'   %}',
+                        type:'POST',
+                        data:{
+                            product_id: link.value,
+                            csrfmiddlewaretoken: '{{ csrf_token }}',
+                            action: 'post'
+                        },       
+                        //success: function(response) {alert(response);},
+                        //error: function() {alert("Couldn't remove item");}  
+                         success:function(json){                                                      
+                                //console.log(json)
+                                console.log("deleted")
+                                //$('#cart_n').text(json.qty)
+                                // $('#cart_n').attr('data-content',json.qty)
+                                cart.setAttribute('data-content', json.qty); 
+                                console.log("indexofdeleteed"+in_cart_a.indexOf(link.value))
+                                in_cart_a.splice(in_cart_a.indexOf(link.value),1);  
+
+                                console.log("new" + in_cart_a);                                                      
+                            },
+                            error: function(xhr,errmsg,err){
+                                console.log(" error deleteing");
+                            }
+                    });
+                    
+
+                        link.classList.toggle("rotation");
+                        link.textContent = "  to cart ";
+                        $('#cart_n_a').addClass("active");         
+                }                                 
+                        {% comment %} {% endif %} {% endcomment %}
+
+                        });
+
+        });
+});       
+console.log("page is fully loaded");
+</script>
+
 {% endblock  %}
