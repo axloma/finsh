@@ -64,3 +64,80 @@
         </form>
     </div>
 </nav>
+<div class='home' id='try'>hide me</div>
+
+<script>
+    var search = $("#search");
+
+    search.keyup(function(){
+        searchval = search.val().trim();
+        console.log(search.val());
+        if (searchval != "" ){
+    $.ajax({
+        type:'POST',
+        url:'{% url 'home' %}',
+        data:{
+            search: String(searchval),
+            csrfmiddlewaretoken: '{{ csrf_token }}',
+            action: 'post'
+        },                         
+        success:function(json){                                                      
+            //console.log(json)
+           // console.log(json.qty);
+          //  console.log(json.cart_item+"jsoooon"); 
+            console.log(json.products_l) ;
+            console.log((json.product_s)) ;
+
+            var htmlx = "";
+
+            $.each(json.product_s, function(key, value) {
+                
+                {% comment %} html += `${value.id }'<br/>' ${value.name}` {% endcomment %}
+                    console.log(value.image)
+                console.log(htmlx);
+                {% comment %} value.id = 1 ; {% endcomment %}
+                htmlx += `<div class="card" id="card" value={{product_s}}>
+                    <div class="car_cont" id="card_cont">    
+                    <img src='/media/${value.image}' alt="" id="img_src">
+                    <h2 class="c_h" id="c_h">${value.price}EG</h3>
+                    <p class="c_d" >${value.description}</p>
+                    <div class="btn-box">
+                        <button type="button" value="${value.id}"  id="add-cart"  class="btn btn-1 btn-2 rotation"> add to cart </button>
+                        
+                        <a href='{% url "product" 1   %}' class="btn btn-2 btn-1 active">view</a>
+                    </div>
+                </div>
+                </div>`
+                console.log("And");
+               
+                
+            } );
+            if(htmlx != ""){
+            console.log("empty");
+            $('#try').html(htmlx);
+            }
+            if(htmlx == ""){
+                console.log("e");
+            $('#try').html("<h1 class='btn btn-1'>hi</h1>");
+            }
+            {% comment %} console.log(html); {% endcomment %}
+             {% comment %} json.products_l; {% endcomment %}
+             {% comment %} json.product_s; {% endcomment %}
+
+
+           
+            {% comment %} {{ product }} = {{ product_s }} {% endcomment %}
+            {% comment %} console.log(json.product)      ; {% endcomment %}
+
+           // console.log(json.p_d )      ;
+
+            {% comment %} cart.setAttribute('data-content', json.qty);  {% endcomment %}
+            {% comment %} in_cart_a.push(link.value); {% endcomment %}
+        },
+        error: function(xhr,errmsg,err){
+            console.log("error adding");
+        }
+        });
+    }
+    });
+</script>

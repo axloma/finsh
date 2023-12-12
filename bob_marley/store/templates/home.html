@@ -8,7 +8,7 @@
  
  {% endfor %} {% endcomment %}
 
-{% for product in products %}
+{% for product in products  %}
     <div class="card">
         <div class="car_cont">    
         <img src="{{product.image.url}}" alt="">
@@ -30,11 +30,11 @@
         const d = document.querySelectorAll(".rotation");
        let cart = document.getElementById('cart_n');
        let in_cart_a = {{ i | safe }};
-       //const in_cart_obj = JSON.stringify({{ i_dict | safe }});
+       {% comment %} //const in_cart_obj = JSON.stringify({{ i_dict | safe }}); {% endcomment %}
        {% comment %} const in_cart_obj = list({{ i_dict | safe  }}); {% endcomment %}
 
   {% comment %} //    var usersDict = JSON.parse(({{ list( i | safe )}})); {% endcomment %}
-    //   var result = {{ i_dict }};
+    {% comment %} //   var result = {{ i_dict }}; {% endcomment %}
    //    console.log(result);
        
      //   console.log(Object.values(in_cart_obj));
@@ -153,6 +153,11 @@
             });
     });       
     console.log("page is fully loaded");
+    {% for product in products_s %}
+        console.log({{product}})
+
+
+    {%endfor %}
     </script>
 
 {%endblock%}

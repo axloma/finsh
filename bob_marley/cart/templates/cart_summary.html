@@ -7,7 +7,7 @@
 {{is}}
 
 {% endfor %} {% endcomment %}
-
+{%if cart_products %}
 {% for product in cart_products %}
 
    <div class="card card_rotation " id="card_rotation">
@@ -43,7 +43,11 @@ product:price:{{product.price}}
 
 
 {% endfor %}
-
+{%else%}
+<div><h1 class="btn btn-1    ">bod marley</h1></div>
+<h2 class="btn btn-1  btn-2  "> sorry your cart is empty u probably should add to it :( <h2>
+    <div  class="btn btn-1">job marley</div>
+{%endif%}
    </section>
    
    <script>
