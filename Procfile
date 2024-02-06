@@ -1,1 +1,1 @@
-web: gunicorn bod_marley.wsgi --log-file -
+web: gunicorn bod_marley/bod_marley.wsgi --log-file -
