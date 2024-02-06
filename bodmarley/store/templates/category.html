@@ -1,0 +1,54 @@
+{% extends "base.html" %}  
+{% load static %}
+
+{%block content %}      
+<section class="home">
+  
+{% for product in products %}
+<div class="card">
+  <div class="car_cont">    
+    <img src="{{product.imageURL}}" alt="">
+    <h2 class="c_h">${{product.price}}EG</h3>
+    <p class="c_d">{{product.description}}</p>
+     
+    <div class="btn-box">
+    <select class="btn select" id="select{{product.id}}" >
+          {% for key,value in quantities.items %}
+          {% if key == product.id|slugify %}
+              <option selected >{{value}}</option>
+          {% endif %}{% endfor %}
+            <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          
+          </select>
+      <button type="button" value="{{product.id}}"  id="add-cart"  class="btn btn-1 btn-2 rotation update-cart" data-action='add' data-product={{product.id}}>add to cart </button>  
+      <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active">view</a>
+    </div>
+  </div>
+</div>
+{% endfor %}
+  
+</section>
+<script >
+///////////////////////////////////////////////////////////////
+
+    const d = document.querySelectorAll(".rotation");
+    let carts = document.getElementById('cart_n');
+    let in_cart_a = {{ i|safe }};
+    //var cart = JSON.parse(getCookie('cart'))
+    console.log(in_cart_a.length,"inL")
+    var urlx = "{% url 'cart_add' %}"
+    var urld = "{% url 'cart_delete' %}"
+
+    console.log(urlx)
+    var page = "{{page}}";
+</script>
+<script  type="text/javascript" src="{% static 'js/process.js' %}" ></script>
+<script type="text/javascript" src="{% static 'js/nav.js' %}" ></script>
+
+
+{%endblock%}
+

@@ -1,0 +1,88 @@
+{% load static %}
+ <!DOCTYPE html>
+<!-- saved from url=(0037)http://localhost/learn/index.html.php -->
+<html lang="en">
+
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    {% comment %} <meta charset="UTF-8">   {% endcomment %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} <meta http-equiv="content-type" content="text/html; charset=utf-8" /> {% endcomment %}
+    <title>  home  </title>
+    <link href="{% static 'css/style.css'  %}" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
+</head>
+<body>
+   {% include 'nav-bar.html' %}
+<script >
+var user = '{{request.user}}';
+var quntityof = 1;
+//create csrf_token function 
+  function getToken(name){
+    var cookieValue = null;
+      if(document.cookie && document.cookie !== ''){
+        var cookies = document.cookie.split(';');
+       for(var i = 0 ; i < cookies.length;i++){
+       var cookie = cookies[i].trim();
+      //does this cookie string begin with the name we want 
+          if(cookie.substring(0,name.length + 1)===( name + '=')){
+            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+      break;
+    }} }
+    return cookieValue;
+    }
+var csrftoken = getToken('csrftoken');
+///////////////////////////////////////////////////////////////
+//create cookie function to get cookie or create one
+function getCookie(name){
+var cookieArr = document.cookie.split(";");
+//loop through the array elements 
+for(var i = 0 ; i < cookieArr.length; i++){
+    var cookiePair = cookieArr[i].split("=");
+    //removing white space at the beginning of the cookie name
+    //and compare it with given string 
+    if(name == cookiePair[0].trim()){
+        //Decode the cookie value and return
+        return decodeURIComponent(cookiePair[1]);
+
+    }
+}
+//return null if not found
+return null;
+}
+var cart = JSON.parse(getCookie('cart'))
+console.log('cart',cart)
+if(cart == undefined){
+cart = {}
+console.log("cart was created")
+//set cookie if there is no 
+//document.cookie = 'cart='+ JSON.stringify(cart) + ";domain=;path=/"
+document.cookie = 'cart='+JSON.stringify(cart)+"; path=/";
+
+}
+console.log("Cart",cart)
+
+</script>
+   {% block content %}
+   {% endblock  %}
+  
+  <footer>
+   <div class="footer">
+    <ul>
+        <li class="btn btn-2 btn-1  active"> <a href="{% url 'about' %}" class="btn btn-2 btn-1 ">about us</a> </li>
+        <li class="btn btn-2 btn-1 "><a href="" class="btn btn-2 btn-1 "> LOCATION </a> </li>
+        <li class="btn btn-2 btn-1 "><a href="" class="btn btn-2 btn-1 "> HISTORY </a> </li>
+        <li class="btn btn-2 btn-1 active " ><a href="" class="btn btn-2 btn-1 "> CONTACT US </a> </li>
+
+    </ul>
+   </div>
+
+  </footer>
+ 
+  {% comment %} <script src="{% static 'js/nav.js' %}"></script> {% endcomment %}
+  <script type="text/javascript" src="{% static 'js/mainjs.js' %}"></script>
+  {% comment %} <script  src="{% static 'js/mainjs.js' %}"></script> {% endcomment %}
+ 
+</body>
+</html>

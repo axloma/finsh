@@ -1,0 +1,208 @@
+{%load static%}
+<nav>
+  <div class="menue" id="menue" >
+    <div  class="menueicon " href="" class=""  id="menuicon"> </div>
+    <ul class="menulist btn " id='menulist'>
+      <li class=" "><a href="{% url 'home' %}" class="btn btn-1 " >home</a></li>
+      <li class=" "><a href="{% url "checkout" %}" class="btn btn-1  " >checkout</a></li>
+      <li class=""><a href="{% url 'cart_summary' %}" class="btn btn-1 " >cart</a></li>
+    </ul>
+  </div>
+    <div class="nav-i">
+        <div class="cart_n btn btn-2  " id="cart_n" data-content=""><a  href="{% url "cart_summary" %}" class="btn btn-1 "  id="cart_n_a">MY CART     {{ cart | length}} </a></div>
+        
+        <div class="nav-el">
+        {% if user.is_authenticated  %}
+        <ul class="reg">
+            <li class="btn btn-1 active"><a href="{% url 'login_U' %}" class="btn btn-1 active" >about_me</a></li>
+            <li class="btn btn-1 active"><a href="{% url 'logout_U' %}" class="btn btn-1 " >logout</a></li>          
+        </ul>
+        {% else %}
+        <ul class="reg">
+            <li class="btn btn-1 active"><a href="{% url 'login_U' %}" class="btn btn-1 active" >login</a></li>
+            <li class="btn btn-1 active"><a href="{% url 'register' %}" class="btn btn-1 " >register</a></li>           
+        </ul>
+        {% endif %}  
+        <div class='movie '>
+            <div class="card">
+                <div class="car_cont">    
+                  <img src="" alt="" id="img_mv">
+                  <h2 class="c_h" id="c_h">EG</h2>
+                  <p class="c_d" id="c_d">p</p>     
+                </div>
+            </div>
+        </div>
+    <ul class="nav-item btn  btn-1">
+        <li><a href={% url 'category' "VAPE" %} class="btn btn-1 ">vape</a></li>
+        <li><a href={% url 'category' "liquid" %} class="btn btn-1 ">liquid</a></li>
+        <li><a href={% url 'category' 'VAPE' %} class="btn btn-1 ">cigar</a></li>
+        <li><a href={% url 'category' "VAPE" %} class="btn btn-1 ">pod</a></li>
+        <li><a href="/" class="btn btn-1  active">smoke</a></li>
+    </ul>
+    </div>
+    </div>
+
+    <div class="search" id="hs" >
+        <form action="" class="search-form" mrthod='GET'>
+            <input type="submit" name="s_search" id="s_search" value="search" class="btn btn-2 ">
+            <input type="search" name="search" id="search" class="btn btn-2 ">     
+            {%for msg in messages %}
+                     <h2 class="btn btn-2">{{msg}}</h2>
+            {%endfor%}
+            <div class="category btn btn-1" id="mnlist">menue
+            <ul class="c_ul btn btn-2" id="c_ul">
+                <li  > <a  href="{% url 'home' %}" class="btn btn-1 active" id="all" > all </a>  </li>
+                {% for category in  categorys %}  
+                <li class="LTEST btn btn-1 active" ><a href={% url 'category' category.name %}  class=" btn btn-1 " id="mnlist_I"> {{category.name}} </a> </li>
+                {% endfor %}                
+            </ul>
+        </div>
+        </form>
+    </div>
+</nav>
+
+<script>
+    $("#menuicon").click(()=> {
+    $("#menuicon").toggleClass("open");
+    $("#menulist").toggleClass("openmenue");
+  });
+   $("#mnlist").click(()=> {
+    $("#c_ul").toggleClass("open");
+ 
+  });
+
+     {% comment %} $("#mnlist_I").click(()=> {
+    $("#all").removeClass("active");
+    $("#mnlist_I").addClass("active");
+  }); {% endcomment %}
+
+  var m = document.querySelectorAll(".LTEST");
+  m.forEach( item => {
+      item.addEventListener("click", (e)=>{
+          //e.preventDefault()
+          console.log(item)
+          console.log("item CLi")
+         // $("#mnlist_I").addClass("active");
+         // item.classList.remove("active");
+          const xna = item.firstElementChild;
+          xna.classList.add("active");
+      });
+  });
+  try{
+      var page = "{{page}}";
+      console.log("CURENTPAGE",page)
+    //for product movie 
+    if(page != "LOGIN" || "CHECKOUT"){
+        console.log("PAGE IS NOT LOGIN HI")
+        //if(page == "LOGIN"){}
+    let product_list = {{ mx|safe }};
+    function switche(product_list,switchTo,c_d,c_h,id){
+      $('#'+c_d).text(product_list[switchTo].fields.name);
+      $('#'+c_h).text(product_list[switchTo].fields.price);
+      $('#'+id).attr('src','/media/'+product_list[switchTo].fields.image)
+      let xtime = setTimeout(switche, 5000, product_list, switchTo + 1,c_d,c_h,id);
+     
+      if (switchTo >= product_list.length - 1 ){
+        clearTimeout(xtime);
+        return false;
+        }    
+      
+    }
+    if(product_list.length > 0 ){
+    switche(product_list,0, 'c_d','c_h','img_mv');
+    }
+    }
+  }catch(err){
+      console.log(err)
+  }
+  
+</script>
+
+<script>
+   
+window.addEventListener("load", (event) => {
+    if( in_cart_a.length > 0){    
+        $('#cart_n_a').addClass("active");
+    } else if (in_cart_a.length <= 0 ){
+        $("#cart_n").hide();
+    }
+
+}); 
+var search = $("#search");
+var htmlx = "";
+var content = $("#try").html();
+var searchval = search.val().trim();
+
+$(document).ready(function(){
+if(htmlx == ""){
+    content = $("#try").html();
+}
+});
+search.keyup(function(){   
+  searchval = search.val().trim();
+  if(searchval == ""){
+            htmlx = "";
+            location.reload();
+                             }
+  if (searchval != "" ){
+    htmlx = "";
+    $.ajax({
+      type:'POST',
+      url:'{% url 'home' %}',
+      data:{
+      search: String(searchval),
+      csrfmiddlewaretoken: '{{ csrf_token }}',
+      action: 'post'
+    },                         
+    success:function(json){                                                      
+    try{
+      $.each(json.product_s, function(key, value) {         
+      var valid = 1 ;
+      htmlx +=`<div class="card" id="card" value={{product_s}}>
+              <div class="car_cont">    
+                <img src='/media/${value.image}' alt="">
+                <h2 class="c_h">$${value.price}EG</h3>
+                <p class="c_d">${value.description}</p>
+                <div class="btn-box">
+                <select class="btn select" id="select ${value.id}" >
+                </select>
+                <button type="button" value="${value.id}"  id="add-cart"  class="btn btn-1 btn-2 rotation update-cart" data-action='add' data-product=${value.id}> add to cart </button>
+                <a href='/product/${value.id}' class="btn btn-2 btn-1 active">view</a>
+              </div>
+          </div>
+        </div>`                   
+          });
+           }catch(err){console.log("err.errmsg")}
+              if(htmlx != ""){
+                 $('#try').html(htmlx);
+                            }
+        
+       },error: function(xhr,errmsg,err){
+        console.log("error adding");
+                               }
+    });                    
+      }
+  });
+//let cart = document.getElementById('cart_n');
+
+ 
+    
+    {% comment %} var d = document.querySelectorAll(".rotation");
+
+    let carts = document.getElementById('cart_n');
+    let in_cart_a = {{ i|safe }};
+    //var cart = JSON.parse(getCookie('cart'))
+    console.log(in_cart_a.length,"inLNAV")
+    var urlx = "{% url 'cart_add' %}"
+    var urld = "{% url 'cart_delete' %}"
+    console.log(urlx) {% endcomment %}
+    var page = "SEARCH";
+   
+
+  </script>
+
+
+ 
+ <script  type="text/javascript" src="{% static 'js/process.js' %}" ></script>
+<script type='text/javvascript' src="{% static 'js/nav.js' %}"></script>
+

@@ -1,0 +1,60 @@
+{% extends "base.html" %}  
+{%load static%}
+{%block content %}      
+<section class=" home product_view " id="cart_sec">
+  <div class="register checkout-s_s  ">
+    <h3 class='btn btn-1 active'  >TOTAL PRICE:${{totals}}<h3>
+    <fieldset  class="checkout ">
+      <form id='user-info'    >
+        {% comment %} {% csrf_token %} {% endcomment %}
+        <h1 class="btn btn-1 active" id="msgx">CHECKOUT</h1>
+        {%if messages %}
+        <h2 class="btn btn-2">ERORORORORORO</h2>
+        {%for msg in messages %}
+            <h2 class="btn btn-1 active">{{msg}}</h2>
+        {%endfor%}
+
+        {%endif%}
+        <input required type='text' name='name' placeholder='Name...'class="btn ">
+        <input required type='email' name='email' placeholder='Emai...' id="EMAIL" class="btn ">
+        <input required type='text' name='address' placeholder='Address...'class="btn ">
+        <input required type='text' name='city' placeholder='City...'class="btn ">
+        <input required type='text' name='state' placeholder='State...'class="btn ">
+        <input required type='text' name='phone' placeholder='Phone...'class="btn ">
+        <input required type='text' name='zipcode' placeholder='ZipCode...'class="btn ">
+        <button type="submit" name="login" id='form' value='Continue' class="btn btn-1">submit</button>
+      </form>
+    </fieldset>
+  </div>
+</section>
+<script>
+  $("#hs").html("") ;
+  $("#cart_n").hide();
+  var page ="{{page}}";
+  var total = '{{totals}}';
+  var inp = document.getElementsByTagName("input");
+  var form = document.getElementById('user-info');  
+  var home = "{% url 'home' %}" 
+  var process = "{% url 'process_order' %}"
+  var urlx = "{% url 'cart_add' %}"
+  var urld = "{% url 'cart_delete' %}"
+  var urlu = "{% url 'cart_update' %}"
+  var page = "cart_summary";         
+  const d = document.querySelectorAll(".rotation");
+  let carts = document.getElementById('cart_n');
+  let in_cart_a = {{ i|safe }}; 
+  {%if request.user.is_authenticated%}
+    console.log("USER IS AUTH")
+    form.name.value = "{{request.user.username}}"
+    form.email.value= "{{request.user.email}}"
+    form.phone.value= "{{request.user.customer.phone}}"
+  {%endif%}
+
+ //var cart = JSON.parse(getCookie('cart'))    
+</script>
+<script  type="text/javascript" src="{% static 'js/orderdone.js' %}" ></script>
+<script  type="text/javascript" src="{% static 'js/process.js' %}" ></script>
+
+<script type="text/javascript" src="{% static 'js/nav.js' %}" ></script>
+
+{%endblock%}

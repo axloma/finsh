@@ -1,0 +1,193 @@
+{% extends "base.html" %}  
+{%load static%}
+{%block content %}      
+<section class=" home product_view fmedia" id="cart_sec">
+  <div class="register checkout-s  "> 
+    <fieldset  class="checkout ">
+        <form id='user-info'    >
+              {% comment %} {%csrf_token%} {% endcomment %}
+              <h1 class="btn btn-1 active" id="msgx">CHECKOUT</h1>
+              {%if messages %}
+              <h2 class="btn btn-2">ERORORORORORO</h2>
+              {%for msg in messages %}
+                  <h2 class="btn btn-1 active">{{msg}}</h2>
+              {%endfor%}
+
+              {%endif%}
+            {% comment %} {% csrf_token %} {% endcomment %}
+            <input required type='text' name='name' placeholder='Name...' class="btn ">
+            <input required type='email' name='email' placeholder='Emai...' id="EMAIL" class="btn ">
+            <input required type='text' name='address' placeholder='Address...' class="btn ">
+            <input required type='text' name='city' placeholder='City...'class="btn ">
+            <input required type='text' name='state' placeholder='State...'class="btn ">
+            <input required type='text' name='phone' placeholder='Phone...'class="btn ">
+            <input required type='text' name='zipcode' placeholder='ZipCode...'class="btn ">
+            <button type="submit" name="login" id='form' value='Continue' class="btn btn-1">submit</button>
+        </form>
+    </fieldset>
+    <h3 class='btn btn-1 active'  >TOTAL PRICE:${{totals}}<h3>
+</div>
+
+{%if cart_products %}
+  {% for product in cart_products %}
+    <div class="card card_rotation " id="card_rotation" data-product={{product.id}}>
+      <div class="car_cont " value="{{product.imageURL}}"> 
+        {% if product.image2.url  != "" %}   
+          <img src="{{product.imageURL}}" alt="" id="img_src" value="{{product.image2.url}}">
+        {% else %}
+          <img src="{{product.imageURL}}" alt="" id="img_src">
+        {% endif %}
+        <h2 class="c_h c_h_m">${{product.price|floatformat:2 }}EG</h3>
+        <p class="c_d c_d_m">{{product.description}}</p>
+        <button class="right" id="right"></button>
+        <button class="left" id="left"></button>
+      </div>
+      
+      <div class=" desc_m">
+        <ul class="c_d">
+          {% comment %} <li>id:{{product.id}}</li> {% endcomment %}
+          <li>name:{{product.name}}</li>
+          <li>description:{{product.description}} </li>
+          <li>price:{{product.price}}</li>
+          <li> product qty:
+            <select class="btn" id="select{{product.id}}" >
+              {% for key,value in quantities.items %}
+              {% if key == product.id|slugify %}
+                  <option selected >{{value}}</option>
+                {% endif %}
+                {% endfor %}
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </li>
+        </ul>
+
+          <div class="btn-box">
+              <button type="button" value="{{product.id}}"  id="add-cart"  class="btn btn-1 btn-2 rotation update-cart" data-action='remove' data-product={{product.id}}> add to cart </button>
+              <button type="button" value="{{product.id}}" data-index="{{product.id}}"  class="btn btn-1 update-carta" data-action='update'> update </button>
+              <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active">view</a>
+          </div>
+      </div>
+
+    </div>   
+<div class="descreption ">
+  <ul class="c_d">
+    {% comment %} <li>id:{{product.id}}</li> {% endcomment %}
+    <li>name:{{product.name}}</li>
+    <li>description:{{product.description}} </li>
+    <li>price:{{product.price}}</li>
+    <li> product qty:
+      <select class="btn" id="select{{product.id}}" >
+        {% for key,value in quantities.items %}
+        {% if key == product.id|slugify %}
+            <option selected >{{value}}</option>
+          {% endif %}
+          {% endfor %}
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </li>
+  </ul>
+
+    <div class="btn-box">
+        <button type="button" value="{{product.id}}"  id="add-cart"  class="btn btn-1 btn-2 rotation update-cart" data-action='remove' data-product={{product.id}}> add to cart </button>
+        <button type="button" value="{{product.id}}" data-index="{{product.id}}"  class="btn btn-1 update-carta" data-action='update'> update </button>
+        <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active">view</a>
+    </div>
+</div>
+
+
+{% endfor %}
+
+
+{%else%}
+  <div><h1 class="btn btn-1    ">bod marley</h1></div>
+  <h2 class="btn btn-1  btn-2  "> sorry your cart is empty u probably should add to it :( <h2>
+
+{%endif%}
+
+</section>   
+<script>
+
+  $("#hs").html("") ;
+  $("#cart_n").hide();
+  var total = '{{totals}}';
+  var inp = document.getElementsByTagName("input");
+  var form = document.getElementById('user-info');  
+  var home = "{% url 'home' %}" 
+  var process = "{% url 'process_order' %}"
+    {%if request.user.is_authenticated%}
+      console.log("USER IS AUTH")
+      form.name.value = "{{request.user.username}}"
+      form.email.value= "{{request.user.email}}"
+      form.phone.value= "{{request.user.customer.phone}}"
+    {%endif%}
+
+
+</script>
+<script  type="text/javascript" src="{% static 'js/orderdone.js' %}" ></script>
+
+<script  type='text/javascript'  >
+
+
+    var page = "CART";
+    const card_rotation = $("#card_rotation");
+   // const card_rotation_a = document.querySelectorAll('.card');
+    const card_rotation_a = document.querySelectorAll('.right');
+
+    const card = document.getElementsByClassName('card');
+    const right = $("#right");
+    const left = $("#left");
+    let xtime;
+    var img_src = $("#img_src");
+    var img_src_src = img_src.attr('src');
+    var img_src_value = img_src.attr('value');
+  //  console.log(Object.keys(cart).length,"CTL");
+
+    for(let i = 0 ; i < card.length ;i++){
+        card[i].addEventListener('click',function(){
+           const newimg = this.firstElementChild.getAttribute('value');
+    
+        });
+    }
+
+card_rotation_a.forEach( item => {
+  item.addEventListener("click", (e)=>{
+    let first = item.firstElementChild;
+    let img = first.firstElementChild;
+    //e.preventDefault()
+    firstimg = true;
+    item.classList.toggle("active");      
+    const src_i = img.getAttribute('src');
+    const src_v =img.getAttribute('value');
+function changeI(){
+  if(src_v ){
+    img.setAttribute('src', src_v);
+    img.setAttribute('value', src_i)
+  }else{
+    img.setAttribute('src', src_i);
+}}
+setTimeout(changeI,1300);  });}); 
+    //var cart = JSON.parse(getCookie('cart'))
+    //console.log(in_cart_a.length,"inL")
+    var urlx = "{% url 'cart_add' %}"
+    var urld = "{% url 'cart_delete' %}"
+    var urlu = "{% url 'cart_update' %}"
+    console.log(urlx)
+    var page = "cart_summary";         
+    const d = document.querySelectorAll(".rotation");
+    let carts = document.getElementById('cart_n');
+    let in_cart_a = {{ i|safe }}; 
+
+</script>
+<script  type="text/javascript" src="{% static 'js/process.js' %}" ></script>
+
+<script type="text/javascript" src="{% static 'js/nav.js' %}" ></script>
+
+{% endblock  %}
