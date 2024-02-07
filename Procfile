@@ -1,1 +1,1 @@
-web: gunicorn bob_marley.wsgi --log-file -
+web: gunicorn bodmarley/bob_marley.wsgi --log-file -
