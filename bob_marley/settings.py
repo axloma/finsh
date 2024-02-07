@@ -12,10 +12,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_ub3-+d8kdq-7e)4b9+3#4e@1efp8n=t)rj%4tsx&b*mol%!^b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
+CSRF_TRUSTED_ORIGINS = ['https://bodmarley.up.railway.app','https://*.127.0.0.1']
 
 # Application definition
 
@@ -110,6 +111,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS =['static/']
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 # Default primary key field type
