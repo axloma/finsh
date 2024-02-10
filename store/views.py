@@ -45,7 +45,7 @@ def home(request):
         return response
     con = MV_HOLD(request,"HOME")
     context = {'products':con["products"],'categorys':con["categorys"],'i':con["i"],
-               'i_dict':con["i_dict"] ,'products_s':products_s,'mx':con["mx"],'quantities':con["quantities"],"page":con["page"]}
+               'i_dict':con["i_dict"] ,'products_s':products_s,'mx':con["mx"],'quantities':con["quantities"],"page":con["page"],'item':con['item'],'nums':con['nums']}
     return render(request, 'home.html',context)
    
 def about(request):
