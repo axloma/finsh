@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+
+{% block content  %}
+
+
+<section class="register yasser_login" >
+
+    <fieldset class="register">
+    <form  method="POST" >
+    {% csrf_token %}
+    {%for msg in messages %}
+        <h2>{{msg}}</h2>
+    {%endfor%}
+    <legend>UPDATE_INFO </legend>
+    {{form.as_p}}
+  
+    <input type="submit" name="login" value="submit"  class="btn btn-1">
+    </form>
+    </fieldset>
+</section>
+<script>
+var page = "UPDATE_USER";
+    let s = document.querySelector(".search");
+    {% comment %} s.innerHTML = ""; {% endcomment %}
+    //hide cart 
+    $("#hs").html("") ;
+    $("#cart_n").hide();
+    //hide movie 
+    $(".movie").html("");
+    $(".movie").hide();
+
+</script>
+
+{% endblock  %}

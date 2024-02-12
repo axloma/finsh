@@ -1,29 +1,6 @@
-// function getToken(name){
-//   var cookieValue = null;
-//     if(document.cookie && document.cookie !== ''){
-//       var cookies = document.cookie.split(';');
-//      for(var i = 0 ; i < cookies.length;i++){
-//      var cookie = cookies[i].trim();
-//     //does this cookie string begin with the name we want 
-//         if(cookie.substring(0,name.length + 1)===( name + '=')){
-//           cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-//     break;
-//   }} }
-//   return cookieValue;
-//   }
 var csrftoken = getToken('csrftoken');
 document.addEventListener("DOMContentLoaded", (event) => {
  
-
-
-
-//window.addEventListener("load", (event) => { }); 
-//const csrftoken = Cookies.get('csrftoken');
-
-//console.log("TOKEN",csrftoken)
-//var stoken ="{{csrf_token}}"
-//console.log("STOKEN",stoken)
-    
       if( in_cart_a.length > 0){
         $('#cart_n_a').addClass(" active");
         $("#cart_n").show();
@@ -33,6 +10,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 //check if item exist in cart already
     d.forEach(link => {
       var pq = $('#select' + link.value + ' option:selected').text();
+      
       // var pq = $('#select' + link.value ).val();
 
       if(!pq || pq == undefined || pq == "None"){
@@ -107,6 +85,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           carts.setAttribute('data-content', json.qty);
           //$('#select'+link.value).text(json.pq).change();
           $('#select'+link.value).val(json.pq).change();
+          $('#selectx'+link.value).val(json.pq).change();
           //check for item quantity while remove it 
           if(json.pq <= 0 || json.pq == "NaN" || json.pq == "None" || json.pq == "NoNE" || json.pq == "null") {
             in_cart_a.splice(in_cart_a.indexOf(link.value),1);  
@@ -127,17 +106,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
       $(document).on('click','.update-carta',function(e){
         e.preventDefault(); 
         var productid = $(this).data('index');
+        var prq =  $('#select' + productid + ' option:selected').text();
+         // product_qty: $('#select' + productid + ' option:selected').text(),
+        if(page == "cart_summary"  && window.innerWidth > 700 ){
+          console.log("window")
+          prq = $('#selectx' + productid + ' option:selected').text();
+
+        }else{
+          prq =  $('#select' + productid + ' option:selected').text();
+
+        }    
         $.ajax({
             type:'POST',
             url: urlu,
             data: {
                 product_id: $(this).data('index'),
-                product_qty: $('#select' + productid + ' option:selected').text(),
+                product_qty: prq,
                 csrfmiddlewaretoken:csrftoken,
                 action:'post'        
             },
             success: function(json){
                 console.log("success update cart dic");
+                $('#select'+productid).val(json.qty).change();
+                $('#selectx'+productid).val(json.qty).change();
                // location.reload();//TODO reload afer update
             },
             error:function(xhr,errmsg,err){

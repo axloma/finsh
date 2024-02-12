@@ -42,7 +42,7 @@
         <button class="right" id="right"></button>
         <button class="left" id="left"></button>
       </div>
-      
+
       <div class=" desc_m">
         <ul class="c_d">
           {% comment %} <li>id:{{product.id}}</li> {% endcomment %}
@@ -72,15 +72,16 @@
           </div>
       </div>
 
-    </div>   
+    </div>  
+  
 <div class="descreption ">
   <ul class="c_d">
     {% comment %} <li>id:{{product.id}}</li> {% endcomment %}
     <li>name:{{product.name}}</li>
     <li>description:{{product.description}} </li>
     <li>price:{{product.price}}</li>
-    <li> product qty:
-      <select class="btn" id="select{{product.id}}" >
+    <li> product qty: 
+      <select class="btn" id="selectx{{product.id}}" >
         {% for key,value in quantities.items %}
         {% if key == product.id|slugify %}
             <option selected >{{value}}</option>
@@ -92,6 +93,7 @@
         <option value="4">4</option>
         <option value="5">5</option>
       </select>
+      
     </li>
   </ul>
 
@@ -136,7 +138,7 @@
 <script  type='text/javascript'  >
 
 
-    var page = "CART";
+    // var page = "CART";
     const card_rotation = $("#card_rotation");
    // const card_rotation_a = document.querySelectorAll('.card');
     const card_rotation_a = document.querySelectorAll('.right');
@@ -187,7 +189,6 @@ setTimeout(changeI,1300);  });});
 
 </script>
 <script  type="text/javascript" src="{% static 'js/process.js' %}" ></script>
-
 <script type="text/javascript" src="{% static 'js/nav.js' %}" ></script>
 
 {% endblock  %}

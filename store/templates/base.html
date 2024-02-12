@@ -70,7 +70,11 @@ console.log("Cart",cart)
   <footer>
    <div class="footer">
     <ul>
+        {%if request.user.is_authenticated%}
         <li class="btn btn-2 btn-1  active"> <a href="{% url 'about' %}" class="btn btn-2 btn-1 ">about us</a> </li>
+        {%else%}
+        <li class="btn btn-2 btn-1  active"> <a href="{% url 'home' %}" class="btn btn-2 btn-1 ">about us</a> </li>
+        {%endif%}
         <li class="btn btn-2 btn-1 "><a href="" class="btn btn-2 btn-1 "> LOCATION </a> </li>
         <li class="btn btn-2 btn-1 "><a href="" class="btn btn-2 btn-1 "> HISTORY </a> </li>
         <li class="btn btn-2 btn-1 active " ><a href="" class="btn btn-2 btn-1 "> CONTACT US </a> </li>

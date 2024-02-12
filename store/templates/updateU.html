@@ -10,14 +10,16 @@
     <form  method="POST" >
     {% csrf_token %}
     {%for msg in messages %}
-        <h2>{{msg}}</h2>
+        <h2 class="btn active">{{msg}}</h2>
     {%endfor%}
     <legend>UPDATE_INFO </legend>
     {{form.as_p}}
   
     <input type="submit" name="login" value="submit"  class="btn btn-1">
     </form>
-    
+    {%if page == "UPDATE_USER" %}
+    <a  href="{% url 'update_p' %}" class="btn btn-1  active">update Password</a>
+    {%endif%}
     </fieldset>
 </section>
 <script>

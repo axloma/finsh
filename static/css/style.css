@@ -909,8 +909,16 @@ a.btn.btn-1.btn-c {
     list-style: none;
     }
     .desc_m{
+        /* grid-column: -1/2; */
         display: none;
+
+
     }
+    /* .desc_m  > * {
+        display: none;
+        opacity: 0;
+        pointer-events: none;
+    } */
 
 ::marker{
     /* color: rgb(216, 39, 39); */

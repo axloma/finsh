@@ -28,7 +28,14 @@ for(let x = 0 ; x < updateBtnI.length;x++){
         var producId = this.dataset.index 
         var act = this.dataset.action
         var qt = $('#select' + producId + ' option:selected').text()
-
+        if(page == "cart_summary"  && window.innerWidth > 700 ){
+            console.log("window")
+            qt = $('#selectx' + producId + ' option:selected').text();
+  
+          }else{
+            qt =  $('#select' + producId + ' option:selected').text();
+  
+          }
         if(user === 'AnonymousUser'){
             console.log('productId:',producId,'act:',act)
             console.log('Userx:',user)

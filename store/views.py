@@ -3,7 +3,7 @@ from queue import Queue
 from django.shortcuts import render,redirect,get_object_or_404
 from django.contrib.auth import authenticate, login,logout
 from django.contrib import messages
-from .forms import LoginReg ,Update_user_form
+from .forms import LoginReg ,Update_user_form ,Change_p
 from django import forms
 from .models import *
 from cart.cart import Cart
@@ -52,6 +52,12 @@ def about(request):
     c_u = User.objects.get(id=request.user.id)
     c_u_c , created = Customer.objects.get_or_create(user=request.user)
     u_form_u =  Update_user_form(request.POST or None , instance=c_u_c)
+    u_form_u.fields["username"].initial = request.user.username
+    #disable text
+    for f in u_form_u.fields.values():
+            f.widget.attrs['disabled'] =True
+
+    # u_form_u['username'] = c_u.username
     context = MV_HOLD(request,"ABOUT")
     return render(request, 'about.html',{'form':u_form_u,'page':context["page"],'mx':context["mx"]})
 
@@ -103,10 +109,30 @@ def update_u_info(request):
             return redirect('about')
         return render(request, 'updateU.html',{'form':u_form,'page':con["page"],'mx':con["mx"],})
     else:
-        messages.success(request,"LOGIN FIRST IDIOT")
+        messages.success(request,"LOGIN FIRST ")
         return redirect('home')
               
-     
+def update_u_p(request):
+    con = MV_HOLD(request,"UPDATE_Password")
+    if request.user.is_authenticated:
+        c_u = request.user 
+        if request.method == "POST":
+            form = Change_p(c_u,request.POST)
+            if form.is_valid():
+                form.save()
+                login(request,c_u)
+                messages.success(request,"UPDATED SUCCESSFULLY")
+                return redirect('update_u_info')
+            else:
+                for error in list(form.errors.values()): #TODO get django form error And convert it to list
+                        messages.success(request,error)#PASS ERROR in msgs
+                        return redirect('update_p')
+        else:
+            form = Change_p(c_u)
+            #return render(request,'update_p.html',{'form':form,'page':con["page"],'mx':con["mx"]})
+            return render(request, 'updateU.html',{'form':form,'page':con["page"],'mx':con["mx"],})
+    else:
+        return redirect('home')
     
 
 def logout_U(request):
