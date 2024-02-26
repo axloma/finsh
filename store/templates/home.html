@@ -36,36 +36,7 @@
 <br>
 
 </section>
-<nav class="footer pagintor" > 
 
-  <ul class="btn btn-2">
-
-    <!--
-    <li class="btn btn-2 ">
-      Page {{item.number}} of {{item.paginator.num_pages}}
-      </li>
-    -->
-  {%if item.has_previous%}
-  <li class="btn btn-1 "><a href="?page=1" class="btn btn-1 ">&laquo First</a></li>
-  <li class="btn btn-2 "><a href="?page={{item.previous_page_number}}"  class="btn btn-1 "> previous </a></li>
-  
-  {% endif %}
-
-      {%for i in nums%}
-      {% if forloop.counter == item.number %}
-      <li class="btn btn-2 "><a href="?page={{  forloop.counter  }}"  class="btn btn-1 btn-3 active "> {{  forloop.counter  }}</a></li>
-      {%else%}
-      <li class="btn btn-2 "><a href="?page={{  forloop.counter  }}"  class="btn btn-1 btn-3  "> {{  forloop.counter  }}</a></li>
-      {% endif %}
-
-      {% endfor %}
-  {%if item.has_next %}
-  <li class="btn btn-2 "><a href="?page={{item.next_page_number}}"  class="btn btn-1 ">next</a></li>
-  <li class="btn btn-1 "><a href="?page={{item.paginator.num_pages}}"  class="btn btn-1 ">Last &raquo </a></li>
-  
-  {% endif %}
-</ul>
-</nav>
     <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
 
    <script >
@@ -78,6 +49,7 @@
     console.log(in_cart_a.length,"inL")
     var urlx = "{% url 'cart_add' %}"
     var urld = "{% url 'cart_delete' %}"
+    var c_ur = "{% url 'home' %}"
     console.log(urlx)
     var page = "HOME";
 </script>

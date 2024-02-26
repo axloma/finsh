@@ -2,9 +2,11 @@
 {% load static %}
 
 {%block content %}      
-<section class="home">
-  
-{% for product in products %}
+<section class="home" id="try">
+  {% comment%}
+<!-- {% for product in products %} -->
+{% endcomment %}
+{% for product in item %}
 <div class="card">
   <div class="car_cont">    
     <img src="{{product.imageURL}}" alt="">
@@ -42,6 +44,7 @@
     console.log(in_cart_a.length,"inL")
     var urlx = "{% url 'cart_add' %}"
     var urld = "{% url 'cart_delete' %}"
+    var c_ur = "{% url 'category' '*' %}"
 
     console.log(urlx)
     var page = "{{page}}";

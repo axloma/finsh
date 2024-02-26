@@ -13,7 +13,12 @@ urlpatterns = [
     path('update_p/', views.update_u_p, name="update_p"),
     path('product/<int:pk>', views.product, name="product"),
     path('category/<str:foo>', views.category, name="category"),
+    path('category/C_menue/<str:foo>', views.C_menue, name="C_menue"),
+    path('search/', views.search, name="search"),
+
     path('update_item/', views.updateItem, name="update_item"),
+    path('add_p/', views.add_p, name="add_p"),
+
     # path('cart/', include("cart.urls")),
      
     

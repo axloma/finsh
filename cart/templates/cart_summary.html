@@ -3,6 +3,7 @@
 {%block content %}      
 <section class=" home product_view fmedia" id="cart_sec">
   <div class="register checkout-s  "> 
+    <h3 class='btn btn-1 active' >TOTAL PRICE:${{totals}}</h3>
     <fieldset  class="checkout ">
         <form id='user-info'    >
               {% comment %} {%csrf_token%} {% endcomment %}
@@ -25,7 +26,6 @@
             <button type="submit" name="login" id='form' value='Continue' class="btn btn-1">submit</button>
         </form>
     </fieldset>
-    <h3 class='btn btn-1 active'  >TOTAL PRICE:${{totals}}<h3>
 </div>
 
 {%if cart_products %}
@@ -118,7 +118,14 @@
 <script>
 
   $("#hs").html("") ;
+ 
+  window.addEventListener("load", (event) => {
+  $(".footer").html("");
+  $("#fot").html("hi");
   $("#cart_n").hide();
+  $("#cart_n").html("");
+  })
+  
   var total = '{{totals}}';
   var inp = document.getElementsByTagName("input");
   var form = document.getElementById('user-info');  
@@ -186,7 +193,7 @@ setTimeout(changeI,1300);  });});
     const d = document.querySelectorAll(".rotation");
     let carts = document.getElementById('cart_n');
     let in_cart_a = {{ i|safe }}; 
-
+    
 </script>
 <script  type="text/javascript" src="{% static 'js/process.js' %}" ></script>
 <script type="text/javascript" src="{% static 'js/nav.js' %}" ></script>

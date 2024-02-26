@@ -9,11 +9,21 @@ from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 
+    
 class Category(models.Model):
     name = models.CharField(max_length=50)
-    
+    #menue = models.ForeignKey(Cmenue,on_delete=models.CASCADE,default=1)
+ 
     def __str__(self):
         return self.name 
+    
+class Cmenue(models.Model):
+    name = models.CharField(max_length=50)
+    Category = models.ForeignKey(Category,on_delete=models.CASCADE,default=1)
+    vak = models.CharField(max_length=50)
+    def __str__(self):
+        return self.name 
+    
 
 class Customer(models.Model):
     user = models.OneToOneField(User,on_delete=models.CASCADE,null=True,blank=True)
@@ -30,6 +40,7 @@ class Product(models.Model):
     name = models.CharField(max_length=50)
     price = models.DecimalField(default=0,decimal_places=2,max_digits=6)
     Category = models.ForeignKey(Category,on_delete=models.CASCADE,default=1)
+    Category_M = models.ForeignKey(Cmenue,on_delete=models.CASCADE,default=1)
     description = models.CharField(max_length=250,default='',blank=True,null=True)
     image = models.ImageField(upload_to='uploads/product/',blank=True,null=True,default='')
     image2 = models.ImageField(upload_to='uploads/product/',blank=True,null=True,default='')

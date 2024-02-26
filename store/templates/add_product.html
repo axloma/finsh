@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="home">
+<div>
+<p class="btn btn-1 active">
+    all information now is hidden 
+     <a href="{% url 'update_u_info' %}" class="btn btn-1  active">update</a>
+</p>
+</div>
+<div class="btn btn-1 active">
+     <fieldset class="register">
+    <form  method="POST" >
+   
+    </form>
+    {{name}}
+    {{price}}
+    {{im}}
+    
+    </fieldset>
+</div>
+</section>
+<script>
+ var page = "about";
+    $("#hs").html("") ;
+    $("#cart_n").hide();
+    $(".movie").html("");
+    $(".movie").hide();
+</script>
+{% endblock  %}

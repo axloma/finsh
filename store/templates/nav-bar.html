@@ -43,9 +43,10 @@
     </div>
 
     <div class="search" id="hs" >
-        <form action="" class="search-form" mrthod='GET'>
+        <form action="{% url 'search' %}" class="search-form" method='POST'>
+          {%csrf_token%}
             <input type="submit" name="s_search" id="s_search" value="search" class="btn btn-2 ">
-            <input type="search" name="search" id="search" class="btn btn-2 ">     
+            <input type="text" name="search" id="search" class="btn btn-2 ">     
             {%for msg in messages %}
                      <h2 class="btn btn-2">{{msg}}</h2>
             {%endfor%}
@@ -53,8 +54,16 @@
             <ul class="c_ul btn btn-2" id="c_ul">
                 <li  > <a  href="{% url 'home' %}" class="btn btn-1 active" id="all" > all </a>  </li>
                 {% for category in  categorys %}  
-                <li class="LTEST btn btn-1 active" ><a href={% url 'category' category.name %}  class=" btn btn-1 " id="mnlist_I"> {{category.name}} </a> </li>
-                {% endfor %}                
+                {%if page == "CATEGORY" %}
+                <li class="LTEST btn btn-1 active" ><a href={% url 'C_menue' category.name %}  class=" btn btn-1 " id="mnlist_I"> {{category.name}} </a> </li>
+
+                {%else%}
+                <li class="LTEST btn btn-1 active" ><a href={% url 'category' category.name %}  class=" btn btn-1 active" id="mnlist_I"  > {{category.name}} </a> </li>
+
+                {%endif%}
+                {% endfor %}       
+                <li class="LTEST btn btn-1 active" ><a href="{{ request.META.HTTP_REFERER }}"class=" btn btn-1 " >back</a></li>
+         
             </ul>
         </div>
         </form>
@@ -148,7 +157,7 @@ search.keyup(function(){
     htmlx = "";
     $.ajax({
       type:'POST',
-      url:'{% url 'home' %}',
+      url: c_ur ,
       data:{
       search: String(searchval),
       csrfmiddlewaretoken: '{{ csrf_token }}',

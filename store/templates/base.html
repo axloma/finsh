@@ -67,8 +67,38 @@ console.log("Cart",cart)
    {% block content %}
    {% endblock  %}
   
-  <footer>
-   <div class="footer">
+   <nav class="footer pagintor" > 
+
+    <ul class="btn btn-2">
+  
+      <!--
+      <li class="btn btn-2 ">
+        Page {{item.number}} of {{item.paginator.num_pages}}
+        </li>
+      -->
+    {%if item.has_previous%}
+    <li class="btn btn-2 "><a href="?page=1" class="btn btn-1 ">&laquo First</a></li>
+    <li class="btn btn-2 "><a href="?page={{item.previous_page_number}}"  class="btn btn-1 "> previous </a></li>
+    
+    {% endif %}
+  
+        {%for i in nums%}
+        {% if forloop.counter == item.number %}
+        <li class="btn btn-2 "><a href="?page={{  forloop.counter  }}"  class="btn btn-1 btn-3 active "> {{  forloop.counter  }}</a></li>
+        {%else%}
+        <li class="btn btn-2 "><a href="?page={{  forloop.counter  }}"  class="btn btn-1 btn-3  "> {{  forloop.counter  }}</a></li>
+        {% endif %}
+  
+        {% endfor %}
+    {%if item.has_next %}
+    <li class="btn btn-2 "><a href="?page={{item.next_page_number}}"  class="btn btn-1 ">next</a></li>
+    <li class="btn btn-2 "><a href="?page={{item.paginator.num_pages}}"  class="btn btn-1 ">Last &raquo </a></li>
+    
+    {% endif %}
+  </ul>
+  </nav>
+  <footer id="fot">
+   <div class="footer" >
     <ul>
         {%if request.user.is_authenticated%}
         <li class="btn btn-2 btn-1  active"> <a href="{% url 'about' %}" class="btn btn-2 btn-1 ">about us</a> </li>

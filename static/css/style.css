@@ -553,7 +553,7 @@ a.btn.btn-1.btn-c {
     margin-left: 1px;
     padding-left:1px;
     }
-    .search .search-form > input[type="search"]{
+    .search .search-form > input[type="text"]{
         grid-column: 3 / -4 ;
         grid-row: 1 / -1 ;
         height: 3rem;
@@ -564,7 +564,9 @@ a.btn.btn-1.btn-c {
     }
     .search .search-form > input[type="submit"]{
        
-        grid-column: -2 / -4 ;
+        /* grid-column: -2 / -4 ; */
+        grid-column: -2 / -1 ;
+
         grid-row: 1 / -1 ;
         height: 3rem;
         /* width: 20%; */
@@ -905,8 +907,12 @@ a.btn.btn-1.btn-c {
 }
 
  .descreption .c_d li {
-    background-color:green;
+    /* background-color:green; */
+    /* list-style: none; */
+    background-color: black;
     list-style: none;
+    font-size: 1.1rem;
+    color: white;
     }
     .desc_m{
         /* grid-column: -1/2; */
@@ -925,9 +931,18 @@ a.btn.btn-1.btn-c {
     background-color: black;
     font-size: 2rem;
 }
+.pagintor{
+    display: flex;
+    /* flex: 1; */
+}
+.pagintor ul{
+    flex-wrap:wrap;
+    overflow: hidden;
+}
 .pagintor ul li {
     list-style: none;
 }
+
 @media only screen and  (max-width:768px){    
     .nav-i .nav-el .nav-item{
         /* opacity: 0; */

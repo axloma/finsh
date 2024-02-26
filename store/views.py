@@ -14,20 +14,61 @@ from django.contrib.auth.models import User
 from django.core import serializers
 from django.core.serializers.json import DjangoJSONEncoder
 from django.views.decorators.csrf import csrf_exempt
-from . utils import MV_HOLD
+from . utils import MV_HOLD,lives
+from .models import Product
+from decimal import Decimal
 
 # # from django.view.
 # @csrf_exempt
 def category(request,foo):
     try:
+        # products_s = ()
+        #for search 
+        if request.POST.get('action') == 'post':
+            return lives(request)
+        #     #get data
+        #     product_str = str(request.POST.get('search'))
+        #     products_n = Product.objects.filter(Q(name__icontains=product_str) | Q(description__icontains=product_str))
+        #     products_s =  list( products_n.values())     
+        #     response = JsonResponse({'product_s':products_s})      
+        #     return response
         #utils function return dict category
+        
         con = MV_HOLD(request,"CATEGORY",foo)
-        context ={'products':con["products"] , 'category':con["category"], "categorys":con['categorys'] ,'i':con['i'] ,'mx':con["mx"],'page':con['page']}
+        context ={'products':con["products"] , 'category':con["category"], "categorys":con['categorys'] ,'i':con['i'] ,'mx':con["mx"],'page':con['page'],'item':con['item'],'nums':con['nums']}
         return render(request,'category.html',context )
     except:
         messages.error(request,"wrong cat")
         return redirect('home')
-    
+
+
+def search(request):
+    con = MV_HOLD(request,"SEARCH")
+        
+    if request.method == "POST":
+        searched = request.POST['search']
+        searched = Product.objects.filter(Q(name__icontains=searched) | Q(description__icontains=searched))
+        context ={'products':con["products"] , 'category':con["category"], "categorys":con['categorys'] ,'i':con['i'] ,'mx':con["mx"],'page':con['page'],'item':con['item'],'nums':con['nums'],'searched':searched}
+        return render(request,'search.html',context )
+    else:
+        context ={'products':con["products"] , 'category':con["category"], "categorys":con['categorys'] ,'i':con['i'] ,'mx':con["mx"],'page':con['page'],'item':con['item'],'nums':con['nums']}
+        return render(request,'search.html',context )
+
+
+
+def C_menue(request,foo):
+    try:
+        #for search 
+        if request.POST.get('action') == 'post':
+            return lives(request)
+          
+        #utils function return dict category
+        con = MV_HOLD(request,"CATEGORY_M",foo)
+        context ={'products':con["products"] , 'category':con["category"], "categorys":con['categorys'] ,'i':con['i'] ,'mx':con["mx"],'page':con['page'],'item':con['item'],'nums':con['nums']}
+        return render(request,'category.html',context )
+    except:
+        messages.error(request,"wrong cat")
+        return redirect('home')  
 def product(request,pk):
     con = MV_HOLD(request,"PRODUCT",pk)
     return render(request,'product_view.html', {"product":con["product"] ,"i":con['i'],
@@ -192,3 +233,22 @@ def updateItem(request):
     order.save()
 
     return JsonResponse('item was added',safe=False)
+
+def add_p(request):
+    #insert from scrapy 
+    p = Product
+    with open('disposable.json','r') as file:
+        data = json.load(file)
+        #print(len(data['name']))
+        #name = list(data['name'])
+    for i in data :
+        name = i['name']
+        price = str(i['price'])
+        im = 'images_folder/'+i['images'][0]['path']
+        newp = price[:6]
+        print(newp)
+        liquid = Category.objects.get(name="VAPE")
+        p.objects.create(name=name,price=newp,image=im,description=name,Category=liquid)
+        #p.save()
+        print("created")
+    return render(request,'add_product.html',{'name':name,'price':price,'im':im})

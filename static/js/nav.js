@@ -7,7 +7,7 @@
       //$("#hs").html("") ;
       $("#hs").hide();
       $("#cart_n").hide();
-      if(page == "CATEGORY"){
+      if(page == "CATEGORY" || page == "CATEGORY_M" || page == "SEARCH"){
         $("#hs").show();
         $("#all").removeClass("active");
       }
