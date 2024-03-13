@@ -9,6 +9,9 @@ from .models import Category,Customer,Product,Order,OrderItem,ShippingAddress,Cm
 class AdminReg(admin.ModelAdmin):
     list_display = ('name','price','id')
 
+class AdminRe(admin.ModelAdmin):
+    list_display = ('order','id','product','quantity')
+
 class AccountInLine(admin.StackedInline):
     model = Customer
     can_delete = False
@@ -27,7 +30,7 @@ admin.site.register(Cmenue)
 admin.site.register(Customer)
 admin.site.register(Product,AdminReg)
 admin.site.register(Order)
-admin.site.register(OrderItem)
+admin.site.register(OrderItem,AdminRe)
 admin.site.register(ShippingAddress)
 
 

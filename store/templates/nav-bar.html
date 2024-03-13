@@ -44,7 +44,7 @@
 
     <div class="search" id="hs" >
         <form action="{% url 'search' %}" class="search-form" method='POST'>
-          {%csrf_token%}
+          {% csrf_token %}
             <input type="submit" name="s_search" id="s_search" value="search" class="btn btn-2 ">
             <input type="text" name="search" id="search" class="btn btn-2 ">     
             {%for msg in messages %}

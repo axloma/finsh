@@ -57,10 +57,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
           carts.setAttribute('data-content', in_cart_a.length)
           carts.setAttribute('data-content',js.qty)
           console.log("sucess from outside",js.qty)
+          
           if  (js.qty == undefined ){
                console.log("SOMETHING WRONG ")
               }
           console.log(js,"JSON")
+          //total = json.total
+          //$('#total').text('TOTAL PRICE:$'+js.total).change();
     },
         error: function(xhr,errmsg,err){
         console.log("error adding",errmsg,err,xhr);
@@ -86,6 +89,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
           //$('#select'+link.value).text(json.pq).change();
           $('#select'+link.value).val(json.pq).change();
           $('#selectx'+link.value).val(json.pq).change();
+          total = json.total
+          $('#total').text('TOTAL PRICE:$'+json.total).change();
           //check for item quantity while remove it 
           if(json.pq <= 0 || json.pq == "NaN" || json.pq == "None" || json.pq == "NoNE" || json.pq == "null") {
             in_cart_a.splice(in_cart_a.indexOf(link.value),1);  
@@ -129,6 +134,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 console.log("success update cart dic");
                 $('#select'+productid).val(json.qty).change();
                 $('#selectx'+productid).val(json.qty).change();
+                $('#total').text('TOTAL PRICE:$'+json.total).change();
+                total = json.total
+                console.log(json.total,"TOTAL");
                // location.reload();//TODO reload afer update
             },
             error:function(xhr,errmsg,err){

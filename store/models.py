@@ -32,9 +32,9 @@ class Customer(models.Model):
     phone =  models.CharField(max_length=50)
     email =  models.EmailField(max_length=50)
     password = models.CharField(max_length=250,blank=True,null=True)
-    
+    old_c =  models.CharField(max_length=250,blank=True,null=True)
     def __str__(self):
-        return f'{self.first_name} {self.last_name}';
+        return f'{self.first_name} {self.last_name}'
 
 class Product(models.Model):
     name = models.CharField(max_length=50)

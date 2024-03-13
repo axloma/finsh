@@ -63,6 +63,7 @@ def MV_HOLD(request,page,p_I="1"):
 
         #categorys = list(Category.objects.get(name=p_I))
         mx = serializers.serialize("json", item,cls=DjangoJSONEncoder)
+
     else:
         mx = serializers.serialize("json", products,cls=DjangoJSONEncoder)
     dict_M = {'page':page,'mx':mx ,'products':products,'product':product,

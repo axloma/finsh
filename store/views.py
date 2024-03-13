@@ -17,6 +17,7 @@ from django.views.decorators.csrf import csrf_exempt
 from . utils import MV_HOLD,lives
 from .models import Product
 from decimal import Decimal
+from django.core.paginator import Paginator
 
 # # from django.view.
 # @csrf_exempt
@@ -43,17 +44,14 @@ def category(request,foo):
 
 
 def search(request):
-    con = MV_HOLD(request,"SEARCH")
-        
-    if request.method == "POST":
-        searched = request.POST['search']
-        searched = Product.objects.filter(Q(name__icontains=searched) | Q(description__icontains=searched))
-        context ={'products':con["products"] , 'category':con["category"], "categorys":con['categorys'] ,'i':con['i'] ,'mx':con["mx"],'page':con['page'],'item':con['item'],'nums':con['nums'],'searched':searched}
-        return render(request,'search.html',context )
-    else:
-        context ={'products':con["products"] , 'category':con["category"], "categorys":con['categorys'] ,'i':con['i'] ,'mx':con["mx"],'page':con['page'],'item':con['item'],'nums':con['nums']}
-        return render(request,'search.html',context )
-
+    if request.method == 'POST':
+         searched = request.POST['search']       
+         searched = Product.objects.filter(Q(name__icontains=searched) | Q(description__icontains=searched))
+         mx = serializers.serialize("json", searched,cls=DjangoJSONEncoder)
+         if not searched:
+                messages.error(request,"nothing  try again ")
+         return render(request,'search.html',{'searched':searched,'mx':mx})        
+    return render(request,'search.html',{})     
 
 
 def C_menue(request,foo):
@@ -193,6 +191,16 @@ def login_U(request):
             user = authenticate(request, username=username,password=password)
             if user is not None:
                 login(request, user)
+                #TODO get c cus
+                c_cus = Customer.objects.get(user__id=request.user.id)
+                print(c_cus)
+                old_c = c_cus.old_c
+                if old_c:
+                    conv_c = json.loads(old_c)
+                    cart = Cart(request)
+                    for key,value in conv_c.items():
+                        cart.add_db(request,product=key,quantity=value)
+
                 return redirect('home')
             else:
                 messages.error(request,"wrong credential")

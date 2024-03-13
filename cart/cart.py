@@ -1,8 +1,9 @@
-from store.models import Product
+from store.models import Product,Customer
 from django.http import JsonResponse,HttpRequest,HttpResponse
 import json
 from django.contrib.auth.models import User
 from django.shortcuts import render
+
 class Cart():
     def __init__(self,request) :
         if request.user.is_authenticated:
@@ -25,7 +26,29 @@ class Cart():
                 cart = {}
                 # cart = json.loads(request.COOKIES['cart'])
             self.cart = cart
-          
+    def add_db(self,request,product,quantity):
+        product_id = str(product) 
+        product_qty = str(quantity)
+        #logic 
+        if product_id in self.cart:
+            self.cart[product_id] = int(product_qty)
+            print(self.cart)
+            #self.cart.pop(product_id)                  
+        else:
+            self.cart[product_id] = int(product_qty)
+            print(self.cart)
+            #self.cart[product_id] = int(product_id)
+            # self.cart[product_id] = {'price': str(product.price)}        
+        if request.user.is_authenticated:
+            print('USer',request.user)
+            #TODO get current user 
+            print("SELF",request.user.id)
+            c_u = Customer.objects.filter(user__id=request.user.id)
+            c_cart =str(self.cart)
+            print(c_u,"USER")
+            c_cart = c_cart.replace("\'","\"")
+            c_u.update(old_c=c_cart)
+            self.session.modified = True          
     def add(self,request,product,quantity):
         product_id = str(product.id) 
         product_qty = str(quantity)
@@ -41,6 +64,13 @@ class Cart():
             # self.cart[product_id] = {'price': str(product.price)}        
         if request.user.is_authenticated:
             print('USer',request.user)
+            #TODO get current user 
+            print("SELF",request.user.id)
+            c_u = Customer.objects.filter(user__id=request.user.id)
+            c_cart =str(self.cart)
+            print(c_u,"USER")
+            c_cart = c_cart.replace("\'","\"")
+            c_u.update(old_c=c_cart)
             self.session.modified = True    
 
     #get the length of item in cart 
@@ -93,6 +123,13 @@ class Cart():
             if request.user.is_authenticated:
                 print('US',request.user)
                 print(self.cart)
+                #TODO get current user 
+                print("SELF",request.user.id)
+                c_u = Customer.objects.filter(user__id=request.user.id)
+                c_cart =str(self.cart)
+                print(c_u,"USER")
+                c_cart = c_cart.replace("\'","\"")
+                c_u.update(old_c=c_cart)
                 self.session.modified = True
                 print(self.cart)
 
@@ -111,6 +148,13 @@ class Cart():
         print(self.cart)
         if request.user.is_authenticated:
             print('US',request.user)
+            #TODO get current user 
+            print("SELF",request.user.id)
+            c_u = Customer.objects.filter(user__id=request.user.id)
+            c_cart =str(self.cart)
+            print(c_u,"USER")
+            c_cart = c_cart.replace("\'","\"")
+            c_u.update(old_c=c_cart)
             self.session.modified = True
         return thing 
     

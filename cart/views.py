@@ -139,7 +139,8 @@ def cart_delete(request):
        #return cart quantity 
         #get Item qunt
         pq = cart.get_itemq(product_id)
-        response = JsonResponse({'qty':cart_quantity,'pq':pq})
+        total = cart.cart_total()
+        response = JsonResponse({'qty':cart_quantity,'pq':pq,'total':total})
         return response
     
 def cart_update(request):
@@ -147,9 +148,10 @@ def cart_update(request):
       if request.POST.get('action') == 'post':
         #get data
         product_id = int(request.POST.get('product_id'))
-        product_qty = int(request.POST.get('product_qty'))  
+        product_qty = int(request.POST.get('product_qty'))
         cart.update(request,product=product_id,quantity=product_qty)
-        response = JsonResponse({'qty':product_qty})
+        total = cart.cart_total()
+        response = JsonResponse({'qty':product_qty,"total":total})
         return response
     
 @csrf_exempt    

@@ -3,7 +3,7 @@
 {%block content %}      
 <section class=" home product_view fmedia" id="cart_sec">
   <div class="register checkout-s  "> 
-    <h3 class='btn btn-1 active' >TOTAL PRICE:${{totals}}</h3>
+    <h3 class='btn btn-1 active' id="total">TOTAL PRICE:${{totals}}</h3>
     <fieldset  class="checkout ">
         <form id='user-info'    >
               {% comment %} {%csrf_token%} {% endcomment %}

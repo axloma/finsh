@@ -16,7 +16,7 @@ for(let item = 0 ; item < updateBtn.length;item++){
             addCookieItem(productId,action,qt)
         }else{
             console.log('user logged in')
-            updateUserOrder(productId,action,qt)
+            //updateUserOrder(productId,action,qt)
         }
    
     })
@@ -43,7 +43,7 @@ for(let x = 0 ; x < updateBtnI.length;x++){
             addCookieItem(producId,act,qt)
         }else{
             console.log('user logged in')
-            //updateUserOrder(productId,action)
+            //updateUserOrder(productId,act,qt)
         }
    
     })
