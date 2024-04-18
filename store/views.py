@@ -245,18 +245,40 @@ def updateItem(request):
 def add_p(request):
     #insert from scrapy 
     p = Product
-    with open('disposable.json','r') as file:
+    # with open('disposable.json','r') as file:
+    with open('liquid2.json','r') as file:    
         data = json.load(file)
         #print(len(data['name']))
         #name = list(data['name'])
     for i in data :
         name = i['name']
-        price = str(i['price'])
+        price = str(i['price']).replace(',','.')
+        nprice = list(i['price'])
+        xp = ""
+        for ip in nprice:
+            print(ip,"PRI")
+            ipx = ip + "-"
+            xp += ipx
+            print(xp)
+        newdisc = name +'\n'+ xp
+        print(newdisc)
+        price2 = price.strip()
+        print(price2)
+        # d_price = float(price2)
         im = 'images_folder/'+i['images'][0]['path']
-        newp = price[:6]
+        print(im)
+        # newp = price[:8]
+        # newp = price2[:6].replace('.',"")
+        newp = xp[:6]
+        print("NEWP",newp)
         print(newp)
-        liquid = Category.objects.get(name="VAPE")
-        p.objects.create(name=name,price=newp,image=im,description=name,Category=liquid)
-        #p.save()
+        print(im)
+        # print(d_price)
+        # liquid = Category.objects.get(name="VAPE")
+        liquid = Category.objects.get(name="liquid")
+
+        # p.objects.create(name=name,price=newp,image=im,description=name,Category=liquid)
+        # p.save()
         print("created")
-    return render(request,'add_product.html',{'name':name,'price':price,'im':im})
+        print(newp)
+    return render(request,'add_product.html',{'name':name,'price':newp,'im':im})
