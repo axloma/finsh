@@ -10,7 +10,7 @@ class AdminReg(admin.ModelAdmin):
     list_display = ('name','price','id')
 
 class AdminRe(admin.ModelAdmin):
-    list_display = ('order','id','product','quantity')
+    list_display = ('order','id','product','quantity','date_added','product_id')
 
 class AccountInLine(admin.StackedInline):
     model = Customer

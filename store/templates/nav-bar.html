@@ -109,7 +109,7 @@
       $('#'+c_d).text(product_list[switchTo].fields.name);
       $('#'+c_h).text(product_list[switchTo].fields.price);
       $('#'+id).attr('src','/media/'+product_list[switchTo].fields.image)
-      let xtime = setTimeout(switche, 5000, product_list, switchTo + 1,c_d,c_h,id);
+      let xtime = setTimeout(switche, 9000, product_list, switchTo + 1,c_d,c_h,id);
      
       if (switchTo >= product_list.length - 1 ){
         clearTimeout(xtime);

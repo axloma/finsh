@@ -605,7 +605,7 @@ a.btn.btn-1.btn-c {
         position: absolute;
         /* top:; */
         opacity: -1;
-        transition: all .5s ease-in-out 1s;
+        /* transition: all .5s ease-in-out 1s; */
     }
     .category:hover > * {
         opacity: 1;
@@ -1216,5 +1216,20 @@ a.btn.btn-1.btn-c {
             bottom: 0;
             grid-column: 1/-1;
             grid-row: 2/-1;
+        }
+        .category .c_ul   {
+            position: absolute;
+            /* top:; */
+            opacity: -1;
+            /* transition: all .5s ease-in-out 1s; */
+            pointer-events: none;
+        }
+      
+        .c_ul.open{
+            opacity: 1;
+            z-index: 1;
+            pointer-events:visible;
+            transition: 2s;
+            /* transition-delay: 0.6s; */
         }
 }
