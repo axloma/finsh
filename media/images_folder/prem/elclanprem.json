@@ -1,0 +1,432 @@
+[
+    {
+        "name": "Pink Panther",
+        "disc": "Pink Panther Smoothie  بينك بانثر سموزي⁩",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/pink-panther-cotton-candy",
+        "img": "https://el-clan.com/cdn/shop/products/pink-panther-pink-panther-smoothie-bynk-banthr-smozy-el-clancom-274391.jpg?v=1708332211&width=645",
+        "img_path": "Pink-Panther-Smoothie--بينك-بانثر-سموزي⁩---Pink-Panther----الكلان-فيب.jpg",
+        "id": 1
+    },
+    {
+        "name": "RIPE VAPES",
+        "disc": "Ripe Vapes VCT Banana توباكو موز",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/ripe-vapes-vct-banana",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-ripe-vapes-ripe-vapes-vct-banana-tobako-moz-el-clancom-395817.jpg?v=1708332006&width=645",
+        "img_path": "Ripe-Vapes-VCT-Banana-توباكو-موز---RIPE-VAPES----الكلان-فيب.jpg",
+        "id": 2
+    },
+    {
+        "name": "RIPE VAPES",
+        "disc": "Ripe Vapes Grape Freez عنب ساقع",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/ripe-vapes-grape-freez",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-ripe-vapes-ripe-vapes-grape-freez-aanb-sakaa-el-clancom-667676.jpg?v=1708331752&width=645",
+        "img_path": "Ripe-Vapes-Grape-Freez-عنب-ساقع---RIPE-VAPES----الكلان-فيب.jpg",
+        "id": 3
+    },
+    {
+        "name": "RIPE VAPES",
+        "disc": "Ripe Vapes VCT Sweet Almond توباكو لوز",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/ripe-vapes-vct-sweet-almond",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-ripe-vapes-ripe-vapes-vct-sweet-almond-tobako-loz-el-clancom-438239.jpg?v=1708331798&width=645",
+        "img_path": "Ripe-Vapes-VCT-Sweet-Almond-توباكو-لوز---RIPE-VAPES----الكلان-فيب.jpg",
+        "id": 4
+    },
+    {
+        "name": "RIPE VAPES",
+        "disc": "Ripe Vapes Watermelon Freez بطيخ ساقع",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/ripe-vapes-watermelon-freez",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-ripe-vapes-ripe-vapes-watermelon-freez-btykh-sakaa-el-clancom-954259.jpg?v=1708331952&width=645",
+        "img_path": "Ripe-Vapes-Watermelon-Freez-بطيخ-ساقع---RIPE-VAPES----الكلان-فيب.jpg",
+        "id": 5
+    },
+    {
+        "name": "Pink Panther",
+        "disc": "Pink Panther Remix  بينك بانثر ريمكس",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/pink-panther-candy-remix",
+        "img": "https://el-clan.com/cdn/shop/products/pink-panther-pink-panther-remix-bynk-banthr-rymks-el-clancom-765206.jpg?v=1708332215&width=645",
+        "img_path": "Pink-Panther-Remix--بينك-بانثر-ريمكس---Pink-Panther----الكلان-فيب.jpg",
+        "id": 6
+    },
+    {
+        "name": "RIPE VAPES",
+        "disc": "Ripe Vapes Strawberry Freez فراوله ساقع",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/ripe-vapes-strawberry-freez",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-ripe-vapes-ripe-vapes-strawberry-freez-fraolh-sakaa-el-clancom-682740.jpg?v=1708331152&width=645",
+        "img_path": "Ripe-Vapes-Strawberry-Freez-فراوله-ساقع---RIPE-VAPES----الكلان-فيب.jpg",
+        "id": 7
+    },
+    {
+        "name": "Pink Panther",
+        "disc": "Pink Panther Black Currant soft drink كاندي زبيب",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/pink-panther-soft-drink",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-pink-panther-pink-panther-black-currant-soft-drink-kandy-zbyb-el-clancom-426954.jpg?v=1708332163&width=645",
+        "img_path": "Pink-Panther-Black-Currant-soft-drink-كاندي-زبيب---Pink-Panther----الكلان-فيب.jpg",
+        "id": 8
+    },
+    {
+        "name": "RIPE VAPES",
+        "disc": "Ripe Vapes SaltNic VCT Banana توباكو موز",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/ripe-vapes-vct-banana-salt",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-ripe-vapes-ripe-vapes-saltnic-vct-banana-tobako-moz-el-clancom-317837.jpg?v=1708331143&width=645",
+        "img_path": "Ripe-Vapes-SaltNic-VCT-Banana-توباكو-موز---RIPE-VAPES----الكلان-فيب.jpg",
+        "id": 9
+    },
+    {
+        "name": "Pink Panther",
+        "disc": "Pink Panther Colada  بينك بانثر اناناس جوز هند ⁩⁩",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/pink-panther-colada",
+        "img": "https://el-clan.com/cdn/shop/products/pink-panther-pink-panther-colada-bynk-banthr-ananas-joz-hnd-el-clancom-930852.jpg?v=1708332214&width=645",
+        "img_path": "Pink-Panther-Colada--بينك-بانثر-اناناس-جوز-هند-⁩⁩---Pink-Panther----الكلان-فيب.jpg",
+        "id": 10
+    },
+    {
+        "name": "RIPE VAPES",
+        "disc": "Ripe Vapes Mango Freez مانجو ساقع",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/ripe-vapes-mango-freez",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-ripe-vapes-ripe-vapes-mango-freez-manjo-sakaa-el-clancom-300546.jpg?v=1708331408&width=645",
+        "img_path": "Ripe-Vapes-Mango-Freez-مانجو-ساقع---RIPE-VAPES----الكلان-فيب.jpg",
+        "id": 11
+    },
+    {
+        "name": "Pink Panther",
+        "disc": "Pink Panther Blackcurrant Candy Ice بينك بانثر ساقع ⁩⁩",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/pink-panther-blackcurrant-candy-ice",
+        "img": "https://el-clan.com/cdn/shop/products/pink-panther-pink-panther-blackcurrant-candy-ice-bynk-banthr-sakaa-el-clancom-461711.jpg?v=1708332215&width=645",
+        "img_path": "Pink-Panther-Blackcurrant-Candy-Ice-بينك-بانثر-ساقع-⁩⁩---Pink-Panther----الكلان-فيب.jpg",
+        "id": 12
+    },
+    {
+        "name": "Five Pawns E-Juice",
+        "disc": "Five Pawns District One21 Salted Caramel كراميل زبده",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/five-pawns-district-one21-salted-caramel",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-five-pawns-e-juice-five-pawns-district-one21-salted-caramel-kramyl-zbdh-el-clancom-291892.jpg?v=1708331505&width=645",
+        "img_path": "Five-Pawns-District-One21-Salted-Caramel-كراميل-زبده---Five-Pawns-E-Juice----الكلان-فيب.jpg",
+        "id": 13
+    },
+    {
+        "name": "Five Pawns E-Juice",
+        "disc": "Five Pawns Villain Vapors Dillinger كراميل فانيلا كاستر",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/five-pawns-villain-vapors-dillinger",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-five-pawns-e-juice-five-pawns-villain-vapors-dillinger-kramyl-fanyla-kastr-el-clancom-130300.jpg?v=1708330597&width=645",
+        "img_path": "Five-Pawns-Villain-Vapors-Dillinger-كراميل-فانيلا-كاستر---Five-Pawns-E-Juice----الكلان-فيب.jpg",
+        "id": 14
+    },
+    {
+        "name": "Five Pawns E-Juice",
+        "disc": "Five Pawns Villain Vapors Capone فانيلا تبغ",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/five-pawns-capone",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-five-pawns-e-juice-five-pawns-villain-vapors-capone-fanyla-tbgh-el-clancom-127761.jpg?v=1708330702&width=645",
+        "img_path": "Five-Pawns-Villain-Vapors-Capone-فانيلا-تبغ---Five-Pawns-E-Juice----الكلان-فيب.jpg",
+        "id": 15
+    },
+    {
+        "name": "Pink Panther",
+        "disc": "Pink Panther SaltNic Blackcurrant soft drink كاندي زبيب",
+        "price": "550.00 جنيه",
+        "newprice": "550.00 جنيه",
+        "link": "https://el-clan.com/products/pink-panther-saltnic-black-currant-soft-drink",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-pink-panther-pink-panther-saltnic-blackcurrant-soft-drink-kandy-zbyb-el-clancom-718967.jpg?v=1708331845&width=645",
+        "img_path": "Pink-Panther-SaltNic-Blackcurrant-soft-drink-كاندي-زبيب---Pink-Panther----الكلان-فيب.jpg",
+        "id": 16
+    },
+    {
+        "name": "Five Pawns E-Juice",
+        "disc": "Five Pawns Castle Long جوزهند لوز",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/five-pawns-castle-long-%D8%AC%D9%88%D8%B2%D9%87%D9%86%D8%AF-%D9%84%D9%88%D8%B2",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-five-pawns-e-juice-five-pawns-castle-long-jozhnd-loz-el-clancom-312817.jpg?v=1708332068&width=645",
+        "img_path": "Five-Pawns-Castle-Long-جوزهند-لوز---Five-Pawns-E-Juice----الكلان-فيب.jpg",
+        "id": 17
+    },
+    {
+        "name": "RIPE VAPES",
+        "disc": "Ripe Vapes VCT Cafe توباكو قهوة",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/ripe-vapes-vct-cafe",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-ripe-vapes-ripe-vapes-vct-cafe-tobako-kho-el-clancom-228554.jpg?v=1708331257&width=645",
+        "img_path": "Ripe-Vapes-VCT-Cafe-توباكو-قهوة---RIPE-VAPES----الكلان-فيب.jpg",
+        "id": 18
+    },
+    {
+        "name": "Pink Panther",
+        "disc": "Pink Panther Frozen Blackcurrant  بينك بانثر عنب ساقع⁩⁩",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/pink-panther-frozen-blackcurrant",
+        "img": "https://el-clan.com/cdn/shop/products/pink-panther-pink-panther-frozen-blackcurrant-bynk-banthr-aanb-sakaa-el-clancom-756051.jpg?v=1708332214&width=645",
+        "img_path": "Pink-Panther-Frozen-Blackcurrant--بينك-بانثر-عنب-ساقع⁩⁩---Pink-Panther----الكلان-فيب.jpg",
+        "id": 19
+    },
+    {
+        "name": "Pink Panther",
+        "disc": "Pink Panther Gold Lychee  بينك بانثر جولد ليتشي⁩⁩⁩⁩",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/pink-panther-gold-new",
+        "img": "https://el-clan.com/cdn/shop/products/pink-panther-pink-panther-gold-lychee-bynk-banthr-jold-lytshy-el-clancom-992648.jpg?v=1708332213&width=645",
+        "img_path": "Pink-Panther-Gold-Lychee--بينك-بانثر-جولد-ليتشي⁩⁩⁩⁩---Pink-Panther----الكلان-فيب.jpg",
+        "id": 20
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz Iced Strawberry Mango فراولة مانجو",
+        "price": "475.00 جنيه",
+        "newprice": "475.00 جنيه",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-strawberry-mango",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-iced-strawberry-mango-fraol-manjo-el-clancom-513894.jpg?v=1708330851&width=645",
+        "img_path": "Cloud-Nurdz-Iced-Strawberry-Mango-فراولة-مانجو---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 21
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz SaltNic Iced Watermelon Berry بطيخ توت",
+        "price": "500.00 جنيه450.00 جنيه",
+        "newprice": "450.00",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-saltnic-watermelon-berry",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-saltnic-iced-watermelon-berry-btykh-tot-el-clancom-145487.jpg?v=1708331460&width=645",
+        "img_path": "Cloud-Nurdz-SaltNic-Iced-Watermelon-Berry-بطيخ-توت---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 22
+    },
+    {
+        "name": "Horny Flava",
+        "disc": "Horny SaltNic Grape هورني عنب",
+        "price": "475.00 جنيه",
+        "newprice": "475.00 جنيه",
+        "link": "https://el-clan.com/products/horny-grape-salt",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-horny-flava-horny-saltnic-grape-horny-aanb-el-clancom-831532.jpg?v=1708332158&width=645",
+        "img_path": "Horny-SaltNic-Grape-هورني-عنب---Horny-Flava----الكلان-فيب.jpg",
+        "id": 23
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz SaltNic Iced Peach Blue Raspberry خوخ توت",
+        "price": "500.00 جنيه450.00 جنيه",
+        "newprice": "450.00",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-saltnic-peach-blue-raspberry",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-saltnic-iced-peach-blue-raspberry-khokh-tot-el-clancom-628141.jpg?v=1708330432&width=645",
+        "img_path": "Cloud-Nurdz-SaltNic-Iced-Peach-Blue-Raspberry-خوخ-توت---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 24
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz Iced Blue Raspberry Lemon توت ليمون",
+        "price": "475.00 جنيه",
+        "newprice": "475.00 جنيه",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-blue-raspberry-lemon",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-iced-blue-raspberry-lemon-tot-lymon-el-clancom-645548.jpg?v=1708331145&width=645",
+        "img_path": "Cloud-Nurdz-Iced-Blue-Raspberry-Lemon-توت-ليمون---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 25
+    },
+    {
+        "name": "Pink Panther",
+        "disc": "Pink Panther Sour  بينك بانثر ⁩⁩⁩⁩",
+        "price": "575.00 جنيه",
+        "newprice": "575.00 جنيه",
+        "link": "https://el-clan.com/products/pink-panther-sour",
+        "img": "https://el-clan.com/cdn/shop/products/pink-panther-pink-panther-sour-bynk-banthr-el-clancom-113885.jpg?v=1708332214&width=645",
+        "img_path": "Pink-Panther-Sour--بينك-بانثر-⁩⁩⁩⁩---Pink-Panther----الكلان-فيب.jpg",
+        "id": 26
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz Iced Watermelon Berry بطيخ توت",
+        "price": "475.00 جنيه",
+        "newprice": "475.00 جنيه",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-watermelon-berry-1",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-iced-watermelon-berry-btykh-tot-el-clancom-959747.jpg?v=1708332114&width=645",
+        "img_path": "Cloud-Nurdz-Iced-Watermelon-Berry-بطيخ-توت---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 27
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz Iced Strawberry Lemon فراوله ليمون",
+        "price": "475.00 جنيه",
+        "newprice": "475.00 جنيه",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-strawberry-lemon",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-iced-strawberry-lemon-fraolh-lymon-el-clancom-404215.jpg?v=1708330337&width=645",
+        "img_path": "Cloud-Nurdz-Iced-Strawberry-Lemon-فراوله-ليمون---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 28
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz Iced Peach Blue Raspberry خوخ توت",
+        "price": "500.00 جنيه475.00 جنيه",
+        "newprice": "475.00",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-peach-blue-raspberry-1",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-iced-peach-blue-raspberry-khokh-tot-el-clancom-766867.jpg?v=1708330150&width=645",
+        "img_path": "Cloud-Nurdz-Iced-Peach-Blue-Raspberry-خوخ-توت---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 29
+    },
+    {
+        "name": "Horny Flava",
+        "disc": "Horny Carmine Custard كاستر فراوله",
+        "price": "550.00 جنيه",
+        "newprice": "550.00 جنيه",
+        "link": "https://el-clan.com/products/horny-carmine-custard",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-horny-flava-horny-carmine-custard-kastr-fraolh-el-clancom-542077.jpg?v=1708330956&width=645",
+        "img_path": "Horny-Carmine-Custard-كاستر-فراوله---Horny-Flava----الكلان-فيب.jpg",
+        "id": 30
+    },
+    {
+        "name": "Horny Flava",
+        "disc": "Horny Grape هورني عنب",
+        "price": "550.00 جنيه",
+        "newprice": "550.00 جنيه",
+        "link": "https://el-clan.com/products/horny-grape",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-horny-flava-horny-grape-horny-aanb-el-clancom-652231.jpg?v=1708332109&width=645",
+        "img_path": "Horny-Grape-هورني-عنب---Horny-Flava----الكلان-فيب.jpg",
+        "id": 31
+    },
+    {
+        "name": "Horny Flava",
+        "disc": "Horny Strawberry هورني فراوله",
+        "price": "550.00 جنيه",
+        "newprice": "550.00 جنيه",
+        "link": "https://el-clan.com/products/horny-strawberry",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-horny-flava-horny-strawberry-horny-fraolh-el-clancom-547732.jpg?v=1708332000&width=645",
+        "img_path": "Horny-Strawberry-هورني-فراوله---Horny-Flava----الكلان-فيب.jpg",
+        "id": 32
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz Iced Kiwi Melon كيوى بطيخ",
+        "price": "475.00 جنيه",
+        "newprice": "475.00 جنيه",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-kiwi-melon",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-iced-kiwi-melon-kyo-btykh-el-clancom-639697.jpg?v=1708332016&width=645",
+        "img_path": "Cloud-Nurdz-Iced-Kiwi-Melon-كيوى-بطيخ---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 33
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz Iced Juicy Mango عصير مانجو",
+        "price": "500.00 جنيه475.00 جنيه",
+        "newprice": "475.00",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-juicy-mango",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-iced-juicy-mango-aasyr-manjo-el-clancom-826929.jpg?v=1708330702&width=645",
+        "img_path": "Cloud-Nurdz-Iced-Juicy-Mango-عصير-مانجو---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 34
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz Iced Grape Apple عنب تفاح",
+        "price": "500.00 جنيه475.00 جنيه",
+        "newprice": "475.00",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-grape-apple-2",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-iced-grape-apple-aanb-tfah-el-clancom-433086.jpg?v=1708330342&width=645",
+        "img_path": "Cloud-Nurdz-Iced-Grape-Apple-عنب-تفاح---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 35
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz Iced Sour Watermelon Strawberry بطيخ فراولة",
+        "price": "500.00 جنيه475.00 جنيه",
+        "newprice": "475.00",
+        "link": "https://el-clan.com/products/copy-of-cloud-nurdz-iced-sour-watermelon-strawberry",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-iced-sour-watermelon-strawberry-btykh-fraol-el-clancom-464323.jpg?v=1708332015&width=645",
+        "img_path": "Cloud-Nurdz-Iced-Sour-Watermelon-Strawberry-بطيخ-فراولة---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 36
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz SaltNic Iced Juicy Mango مانجو",
+        "price": "500.00 جنيه450.00 جنيه",
+        "newprice": "450.00",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-saltnic-juicy-mango",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-saltnic-iced-juicy-mango-manjo-el-clancom-648463.jpg?v=1708330339&width=645",
+        "img_path": "Cloud-Nurdz-SaltNic-Iced-Juicy-Mango-مانجو---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 37
+    },
+    {
+        "name": "Horny Flava",
+        "disc": "Horny Strawberry Lemonade ليمون فراوله",
+        "price": "550.00 جنيه",
+        "newprice": "550.00 جنيه",
+        "link": "https://el-clan.com/products/horny-strawberry-lemonade",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-horny-flava-horny-strawberry-lemonade-lymon-fraolh-el-clancom-626427.jpg?v=1708331507&width=645",
+        "img_path": "Horny-Strawberry-Lemonade-ليمون-فراوله---Horny-Flava----الكلان-فيب.jpg",
+        "id": 38
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz SaltNic Iced Blue Raspberry Lemon توت ليمون",
+        "price": "500.00 جنيه450.00 جنيه",
+        "newprice": "450.00",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-saltnic-blue-raspberry-lemon",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-saltnic-iced-blue-raspberry-lemon-tot-lymon-el-clancom-606292.jpg?v=1708330142&width=645",
+        "img_path": "Cloud-Nurdz-SaltNic-Iced-Blue-Raspberry-Lemon-توت-ليمون---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 39
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz Iced Grape Strawberry عنب فراولة",
+        "price": "500.00 جنيه475.00 جنيه",
+        "newprice": "475.00",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-grape-strawberry-1",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-iced-grape-strawberry-aanb-fraol-el-clancom-401779.jpg?v=1708330587&width=645",
+        "img_path": "Cloud-Nurdz-Iced-Grape-Strawberry-عنب-فراولة---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 40
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz Iced Watermelon Apple بطيخ تفاح",
+        "price": "475.00 جنيه",
+        "newprice": "475.00 جنيه",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-watermelon-apple",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-iced-watermelon-apple-btykh-tfah-el-clancom-930713.jpg?v=1708330429&width=645",
+        "img_path": "Cloud-Nurdz-Iced-Watermelon-Apple-بطيخ-تفاح---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 41
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz SaltNic Iced Watermelon Apple بطيخ تفاح",
+        "price": "500.00 جنيه450.00 جنيه",
+        "newprice": "450.00",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-saltnic-watermelon-apple",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-saltnic-iced-watermelon-apple-btykh-tfah-el-clancom-212442.jpg?v=1708330142&width=645",
+        "img_path": "Cloud-Nurdz-SaltNic-Iced-Watermelon-Apple-بطيخ-تفاح---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 42
+    },
+    {
+        "name": "Cloud Nurdz E-Juice",
+        "disc": "Cloud Nurdz SaltNic Iced Strawberry Lemon فراولة ليمون",
+        "price": "500.00 جنيه450.00 جنيه",
+        "newprice": "450.00",
+        "link": "https://el-clan.com/products/cloud-nurdz-iced-saltnic-strawberry-lemon",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-lykoyd-mstord-cloud-nurdz-e-juice-cloud-nurdz-saltnic-iced-strawberry-lemon-fraol-lymon-el-clancom-202544.jpg?v=1708330227&width=645",
+        "img_path": "Cloud-Nurdz-SaltNic-Iced-Strawberry-Lemon-فراولة-ليمون---Cloud-Nurdz-E-Juice----الكلان-فيب.jpg",
+        "id": 43
+    }
+]

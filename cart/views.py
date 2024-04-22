@@ -182,6 +182,17 @@ def processOrder(request):
             )   
         #clear cart 
         # cart_quantity = cart.__len__()
+        ix = list(cart.get_prods2())
+        #add order item for unauthentic user 
+        for i in ix :
+           q = cart.get_itemq(i)
+           p = Product.objects.get(id=i)
+           orderitem = OrderItem.objects.create(product=p,order=order,quantity=q)
+           orderitem.save()
+        order.quantity = order.get_cart_items
+        order.save()
+        print("cartbefore",cart.__len__())
+
         cart.cls(request)
     else:
         cus = data['form']['email']
@@ -213,10 +224,7 @@ def processOrder(request):
         #         "extra_tags": message.tags,
         # })
         
-            # return redirect('home')
-        
-            
-            
+            # return redirect('home')       
         customer , created = Customer.objects.get_or_create(email=cus,first_name=cusn)
         # customer.name = cusn
         customer.save()

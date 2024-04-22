@@ -1,0 +1,92 @@
+[
+    {
+        "name": "voopoo",
+        "disc": "Argus 40 ارجوس بود⁩",
+        "price": "2,200.00 جنيه2,000.00 جنيه",
+        "newprice": "2,000.00",
+        "link": "https://el-clan.com/collections/vape-hardware/full-kit/products/argus-40",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-voopoo-argus-40-arjos-bod-el-clancom-167404.jpg?v=1708330143&width=645",
+        "img_path": "Argus-40-ارجوس-بود⁩---voopoo----الكلان-فيب.jpg",
+        "id": 1
+    },
+    {
+        "name": "Vapor Storm",
+        "disc": "Puma KIT بوما كيت",
+        "price": "2,400.00 جنيه",
+        "newprice": "2,400.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware/full-kit/products/%D8%A8%D9%88%D9%85%D8%A7-%D9%83%D9%8A%D8%AA-puma-200tc-kit",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-mod-o-kyt-mstord-vapor-storm-puma-kit-boma-kyt-el-clancom-709297.jpg?v=1708331362&width=645",
+        "img_path": "Puma-KIT-بوما-كيت---Vapor-Storm----الكلان-فيب.jpg",
+        "id": 2
+    },
+    {
+        "name": "Vaporesso",
+        "disc": "Vaporesso Gen 200 Kit جين 200 كيت",
+        "price": "3,700.00 جنيه",
+        "newprice": "3,700.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware/full-kit/products/vaporesso-gen-200-kit",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-mod-o-kyt-mstord-vaporesso-vaporesso-gen-200-kit-jyn-200-kyt-el-clancom-417072.jpg?v=1708331711&width=645",
+        "img_path": "Vaporesso-Gen-200-Kit-جين-200-كيت---Vaporesso----الكلان-فيب.jpg",
+        "id": 3
+    },
+    {
+        "name": "voopoo",
+        "disc": "Drag 3 TPP X Kit دراج ٣ كيت",
+        "price": "4,100.00 جنيه",
+        "newprice": "4,100.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware/full-kit/products/drag-3-tpp-x-kit",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-mod-o-kyt-mstord-voopoo-drag-3-tpp-x-kit-draj-kyt-el-clancom-830758.jpg?v=1708330500&width=645",
+        "img_path": "Drag-3-TPP-X-Kit-دراج-٣-كيت---voopoo----الكلان-فيب.jpg",
+        "id": 4
+    },
+    {
+        "name": "voopoo",
+        "disc": "Drag 4 kit⁩ دراج 4 كيت",
+        "price": "4,300.00 جنيه3,950.00 جنيه",
+        "newprice": "3,950.00",
+        "link": "https://el-clan.com/collections/vape-hardware/full-kit/products/drag-4-kit",
+        "img": "https://el-clan.com/cdn/shop/products/voopoo-drag-4-kit-draj-4-kyt-el-clancom-861679.jpg?v=1708332210&width=645",
+        "img_path": "Drag-4-kit⁩-دراج-4-كيت---voopoo----الكلان-فيب.jpg",
+        "id": 5
+    },
+    {
+        "name": "Vaporesso",
+        "disc": "Target 100 Kit تارجت ١٠٠ كيت",
+        "price": "3,800.00 جنيه",
+        "newprice": "3,800.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware/full-kit/products/target-100-kit",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-mod-o-kyt-mstord-vaporesso-target-100-kit-tarjt-kyt-el-clancom-140713.jpg?v=1708331363&width=645",
+        "img_path": "Target-100-Kit-تارجت-١٠٠-كيت---Vaporesso----الكلان-فيب.jpg",
+        "id": 6
+    },
+    {
+        "name": "Vaporesso",
+        "disc": "Vaporesso Gen 80 S Kit جين ٨٠ كيت",
+        "price": "3,350.00 جنيه",
+        "newprice": "3,350.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware/full-kit/products/vaporesso-gen-80-s-kit",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-mod-o-kyt-mstord-vaporesso-vaporesso-gen-80-s-kit-jyn-kyt-el-clancom-815880.jpg?v=1708331849&width=645",
+        "img_path": "Vaporesso-Gen-80-S-Kit-جين-٨٠-كيت---Vaporesso----الكلان-فيب.jpg",
+        "id": 7
+    },
+    {
+        "name": "voopoo",
+        "disc": "Argus GT 2 Kit ارجوس كيت ٢",
+        "price": "4,000.00 جنيه",
+        "newprice": "4,000.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware/full-kit/products/argus-gt-2-kit",
+        "img": "https://el-clan.com/cdn/shop/products/voopoo-argus-gt-2-kit-arjos-kyt-el-clancom-335966.jpg?v=1708332223&width=645",
+        "img_path": "Argus-GT-2-Kit-ارجوس-كيت-٢---voopoo----الكلان-فيب.jpg",
+        "id": 8
+    },
+    {
+        "name": "Geekvape",
+        "disc": "GeekVape Z200 Kit زد ٢٠٠ كيت",
+        "price": "4,000.00 جنيه - 4,500.00 جنيه",
+        "newprice": "4,500.00",
+        "link": "https://el-clan.com/collections/vape-hardware/full-kit/products/geekvape-z200-kit",
+        "img": "https://el-clan.com/cdn/shop/files/photo1709124884_1.jpg?v=1709125013&width=645",
+        "img_path": "GeekVape-Z200-Kit-زد-٢٠٠-كيت.jpg",
+        "id": 9
+    }
+]

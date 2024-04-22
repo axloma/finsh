@@ -1,0 +1,632 @@
+[
+    {
+        "name": "Oxva",
+        "disc": "Oxva Xlim Pro Pod اكسليم برو",
+        "price": "1,800.00 جنيه1,575.00 جنيه",
+        "newprice": "1,575.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/oxva-xlim-pro-pod?_pos=1&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/oxva-oxva-xlim-pro-pod-akslym-bro-el-clancom-756796.jpg?v=1708332213&width=645",
+        "img_path": "Oxva-Xlim-Pro-Pod-اكسليم-برو---Oxva----الكلان-فيب.jpg",
+        "id": 1
+    },
+    {
+        "name": "Vaporesso",
+        "disc": "Osmall Pod  بود اوسمول⁩",
+        "price": "750.00 جنيه",
+        "newprice": "750.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/osmall-pod?_pos=2&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-vaporesso-osmall-pod-bod-aosmol-el-clancom-791884.jpg?v=1703145626&width=645",
+        "img_path": "Osmall-Pod--بود-اوسمول⁩---Vaporesso----الكلان-فيب.jpg",
+        "id": 2
+    },
+    {
+        "name": "voopoo",
+        "disc": "Drag X دراج اكس",
+        "price": "2,300.00 جنيه2,150.00 جنيه",
+        "newprice": "2,150.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/drag-x?_pos=3&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-voopoo-drag-x-draj-aks-el-clancom-676679.jpg?v=1708330397&width=645",
+        "img_path": "Drag-X-دراج-اكس---voopoo----الكلان-فيب.jpg",
+        "id": 3
+    },
+    {
+        "name": "Oxva",
+        "disc": "Oxva Xlim SQ Pro Pod اكسليم اس كيو برو بود",
+        "price": "1,900.00 جنيه1,775.00 جنيه",
+        "newprice": "1,775.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/oxva-xlim-sq-pro-pod?_pos=4&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-oxva-oxva-xlim-sq-pro-pod-akslym-as-kyo-bro-bod-el-clancom-944017.jpg?v=1703145624&width=645",
+        "img_path": "Oxva-Xlim-SQ-Pro-Pod-اكسليم-اس-كيو-برو-بود---Oxva----الكلان-فيب.jpg",
+        "id": 4
+    },
+    {
+        "name": "Uwell",
+        "disc": "Uwell Caliburn G2 Pod  كاليبورن جي٢",
+        "price": "1,650.00 جنيه1,350.00 جنيه",
+        "newprice": "1,350.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/uwell-caliburn-g2-pod?_pos=5&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-uwell-uwell-caliburn-g2-pod-kalyborn-jy-el-clancom-532268.jpg?v=1708331376&width=645",
+        "img_path": "Uwell-Caliburn-G2-Pod--كاليبورن-جي٢---Uwell----الكلان-فيب.jpg",
+        "id": 5
+    },
+    {
+        "name": "Geekvape",
+        "disc": "Geekvape Sonder U Pod سوندر يو",
+        "price": "1,000.00 جنيه875.00 جنيه",
+        "newprice": "875.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/geekvape-sonder-u-pod?_pos=6&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-geekvape-geekvape-sonder-u-pod-sondr-yo-el-clancom-481860.jpg?v=1708330691&width=645",
+        "img_path": "Geekvape-Sonder-U-Pod-سوندر-يو---Geekvape----الكلان-فيب.jpg",
+        "id": 6
+    },
+    {
+        "name": "Vapor Storm",
+        "disc": "Ares SE Pod  بود اريس اس اي",
+        "price": "625.00 جنيه",
+        "newprice": "625.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/ares-se-pod?_pos=7&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-vapor-storm-ares-se-pod-bod-arys-as-ay-el-clancom-363520.jpg?v=1708330130&width=645",
+        "img_path": "Ares-SE-Pod--بود-اريس-اس-اي---Vapor-Storm----الكلان-فيب.jpg",
+        "id": 7
+    },
+    {
+        "name": "voopoo",
+        "disc": "Argus 40 ارجوس بود⁩",
+        "price": "2,200.00 جنيه2,000.00 جنيه",
+        "newprice": "2,000.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/argus-40?_pos=8&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-voopoo-argus-40-arjos-bod-el-clancom-167404.jpg?v=1708330143&width=645",
+        "img_path": "Argus-40-ارجوس-بود⁩---voopoo----الكلان-فيب.jpg",
+        "id": 8
+    },
+    {
+        "name": "Geekvape",
+        "disc": "Geekvape Wenax Stylus ويناكس بود",
+        "price": "1,350.00 جنيه1,250.00 جنيه",
+        "newprice": "1,250.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/geekvape-wenax-stylus?_pos=9&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-geekvape-geekvape-wenax-stylus-oynaks-bod-el-clancom-919142.jpg?v=1708330689&width=645",
+        "img_path": "Geekvape-Wenax-Stylus-ويناكس-بود---Geekvape----الكلان-فيب.jpg",
+        "id": 9
+    },
+    {
+        "name": "Geekvape",
+        "disc": "Geekvape Wenax K1 كيه وان بود",
+        "price": "1,275.00 جنيه1,175.00 جنيه",
+        "newprice": "1,175.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/geekvape-wenax-k1?_pos=10&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-geekvape-geekvape-wenax-k1-kyh-oan-bod-el-clancom-408129.jpg?v=1708330750&width=645",
+        "img_path": "Geekvape-Wenax-K1-كيه-وان-بود---Geekvape----الكلان-فيب.jpg",
+        "id": 10
+    },
+    {
+        "name": "Uwell",
+        "disc": "Caliburn GK2 Pod  كاليبورن جي كيه ٢",
+        "price": "1,950.00 جنيه1,625.00 جنيه",
+        "newprice": "1,625.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/caliburn-gk2-pod?_pos=11&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-uwell-caliburn-gk2-pod-kalyborn-jy-kyh-el-clancom-227325.jpg?v=1708330200&width=645",
+        "img_path": "Caliburn-GK2-Pod--كاليبورن-جي-كيه-٢---Uwell----الكلان-فيب.jpg",
+        "id": 11
+    },
+    {
+        "name": "Geekvape",
+        "disc": "Geekvape Sonder Q Pod سوندر كيو",
+        "price": "1,250.00 جنيه850.00 جنيه",
+        "newprice": "850.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/geekvape-sonder-q-pod?_pos=12&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-geekvape-geekvape-sonder-q-pod-sondr-kyo-el-clancom-973943.jpg?v=1708330765&width=645",
+        "img_path": "Geekvape-Sonder-Q-Pod-سوندر-كيو---Geekvape----الكلان-فيب.jpg",
+        "id": 12
+    },
+    {
+        "name": "Vaporesso",
+        "disc": "Zero 2 pod  زيرو بود ٢",
+        "price": "1,325.00 جنيه",
+        "newprice": "1,325.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/zero-2-pod?_pos=13&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-vaporesso-zero-2-pod-zyro-bod-el-clancom-931312.jpg?v=1708331764&width=645",
+        "img_path": "Zero-2-pod--زيرو-بود-٢---Vaporesso----الكلان-فيب.jpg",
+        "id": 13
+    },
+    {
+        "name": "Vaporesso",
+        "disc": "XROS Mini  اكسروس ميني",
+        "price": "1,225.00 جنيه1,075.00 جنيه",
+        "newprice": "1,075.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/xros-mini?_pos=14&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-vaporesso-xros-mini-aksros-myny-el-clancom-553966.jpg?v=1708331670&width=645",
+        "img_path": "XROS-Mini--اكسروس-ميني---Vaporesso----الكلان-فيب.jpg",
+        "id": 14
+    },
+    {
+        "name": "Oxva",
+        "disc": "Oxva Xlim Pod اكسليم بود",
+        "price": "1,650.00 جنيه1,425.00 جنيه",
+        "newprice": "1,425.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/oxva-xlim-pod?_pos=15&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-oxva-oxva-xlim-pod-akslym-bod-el-clancom-358049.jpg?v=1708331160&width=645",
+        "img_path": "Oxva-Xlim-Pod-اكسليم-بود---Oxva----الكلان-فيب.jpg",
+        "id": 15
+    },
+    {
+        "name": "voopoo",
+        "disc": "Drag S  دراج اس",
+        "price": "2,250.00 جنيه",
+        "newprice": "2,250.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/drag-s?_pos=16&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-voopoo-drag-s-draj-as-el-clancom-541323.jpg?v=1708330425&width=645",
+        "img_path": "Drag-S--دراج-اس---voopoo----الكلان-فيب.jpg",
+        "id": 16
+    },
+    {
+        "name": "Smok",
+        "disc": "Smok Nord 2 سموك نورد",
+        "price": "1,825.00 جنيه1,675.00 جنيه",
+        "newprice": "1,675.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/smok-nord-2?_pos=17&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-smok-smok-nord-2-smok-nord-el-clancom-333671.jpg?v=1708331208&width=645",
+        "img_path": "Smok-Nord-2-سموك-نورد---Smok----الكلان-فيب.jpg",
+        "id": 17
+    },
+    {
+        "name": "Uwell",
+        "disc": "Uwell Caliburn X Pod  كاليبورن اكس",
+        "price": "1,850.00 جنيه1,675.00 جنيه",
+        "newprice": "1,675.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/uwell-caliburn-x-pod?_pos=18&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-uwell-uwell-caliburn-x-pod-kalyborn-aks-el-clancom-809312.jpg?v=1708331424&width=645",
+        "img_path": "Uwell-Caliburn-X-Pod--كاليبورن-اكس---Uwell----الكلان-فيب.jpg",
+        "id": 18
+    },
+    {
+        "name": "Geekvape",
+        "disc": "Geekvape Wenax M1 ويناكس ام وان",
+        "price": "1,075.00 جنيه950.00 جنيه",
+        "newprice": "950.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/geekvape-wenax-m1?_pos=19&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/files/photo1708515777_1.jpg?v=1708515956&width=645",
+        "img_path": "Geekvape-Wenax-M1-ويناكس-ام-وان.jpg",
+        "id": 19
+    },
+    {
+        "name": "Uwell",
+        "disc": "Caliburn G Pod  كاليبورن جي",
+        "price": "1,650.00 جنيه1,100.00 جنيه",
+        "newprice": "1,100.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/caliburn-g-pod?_pos=20&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-uwell-caliburn-g-pod-kalyborn-jy-el-clancom-512794.jpg?v=1708330198&width=645",
+        "img_path": "Caliburn-G-Pod--كاليبورن-جي---Uwell----الكلان-فيب.jpg",
+        "id": 20
+    },
+    {
+        "name": "voopoo",
+        "disc": "Drag E60 دراج اي ٦٠",
+        "price": "2,300.00 جنيه",
+        "newprice": "2,300.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/drag-e60?_pos=21&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-voopoo-drag-e60-draj-ay-6-el-clancom-702309.jpg?v=1708330354&width=645",
+        "img_path": "Drag-E60-دراج-اي-٦٠---voopoo----الكلان-فيب.jpg",
+        "id": 21
+    },
+    {
+        "name": "voopoo",
+        "disc": "Argus Pod ارجوس بود⁩",
+        "price": "1,625.00 جنيه",
+        "newprice": "1,625.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/argus-pod?_pos=22&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-voopoo-argus-pod-arjos-bod-el-clancom-653274.jpg?v=1708330128&width=645",
+        "img_path": "Argus-Pod-ارجوس-بود⁩---voopoo----الكلان-فيب.jpg",
+        "id": 22
+    },
+    {
+        "name": "Vaporesso",
+        "disc": "Zero S pod  زيرو بود اس",
+        "price": "1,225.00 جنيه",
+        "newprice": "1,225.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/zero-s-pod?_pos=23&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-vaporesso-zero-s-pod-zyro-bod-as-el-clancom-831725.jpg?v=1708331852&width=645",
+        "img_path": "Zero-S-pod--زيرو-بود-اس---Vaporesso----الكلان-فيب.jpg",
+        "id": 23
+    },
+    {
+        "name": "Uwell",
+        "disc": "Caliburn AK2 Pod  كاليبورن ايه كيه ٢",
+        "price": "1,600.00 جنيه1,100.00 جنيه",
+        "newprice": "1,100.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF/products/caliburn-ak2-pod?_pos=24&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-uwell-caliburn-ak2-pod-kalyborn-ayh-kyh-el-clancom-977697.jpg?v=1708330376&width=645",
+        "img_path": "Caliburn-AK2-Pod--كاليبورن-ايه-كيه-٢---Uwell----الكلان-فيب.jpg",
+        "id": 24
+    },
+    {
+        "name": "Geekvape",
+        "disc": "Digiflavor U Pod ديجي فلافر يو بود",
+        "price": "1,500.00 جنيه1,225.00 جنيه",
+        "newprice": "1,225.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/digiflavor-u-pod?_pos=25&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-geekvape-digiflavor-u-pod-dyjy-flafr-yo-bod-el-clancom-551822.jpg?v=1708330498&width=645",
+        "img_path": "Digiflavor-U-Pod-ديجي-فلافر-يو-بود---Geekvape----الكلان-فيب.jpg",
+        "id": 25
+    },
+    {
+        "name": "Uwell",
+        "disc": "Caliburn A3 Pod كاليبورن ايه ٣",
+        "price": "1,425.00 جنيه1,100.00 جنيه",
+        "newprice": "1,100.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/caliburn-a3-pod?_pos=26&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-uwell-caliburn-a3-pod-kalyborn-ayh-el-clancom-720359.jpg?v=1708330194&width=645",
+        "img_path": "Caliburn-A3-Pod-كاليبورن-ايه-٣---Uwell----الكلان-فيب.jpg",
+        "id": 26
+    },
+    {
+        "name": "Vaporesso",
+        "disc": "Osmall 2 Pod  بود اوسمول ⁩٢",
+        "price": "925.00 جنيه",
+        "newprice": "925.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/osmall-2-pod?_pos=27&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-vaporesso-osmall-2-pod-bod-aosmol-el-clancom-612689.jpg?v=1708331308&width=645",
+        "img_path": "Osmall-2-Pod--بود-اوسمول-⁩٢---Vaporesso----الكلان-فيب.jpg",
+        "id": 27
+    },
+    {
+        "name": "Geekvape",
+        "disc": "Geekvape Wenax Q Pod ويناكس كيو",
+        "price": "1,375.00 جنيه",
+        "newprice": "1,375.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/geekvape-wenax-q-pod?_pos=28&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-geekvape-geekvape-wenax-q-pod-oynaks-kyo-el-clancom-164552.jpg?v=1708330689&width=645",
+        "img_path": "Geekvape-Wenax-Q-Pod-ويناكس-كيو---Geekvape----الكلان-فيب.jpg",
+        "id": 28
+    },
+    {
+        "name": "Geekvape",
+        "disc": "Geekvape Wenax K2 كيه تو بود",
+        "price": "1,450.00 جنيه1,225.00 جنيه",
+        "newprice": "1,225.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/geekvape-wenax-k2?_pos=29&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-geekvape-geekvape-wenax-k2-kyh-to-bod-el-clancom-785473.jpg?v=1708330655&width=645",
+        "img_path": "Geekvape-Wenax-K2-كيه-تو-بود---Geekvape----الكلان-فيب.jpg",
+        "id": 29
+    },
+    {
+        "name": "Uwell",
+        "disc": "Caliburn A2s Pod  كاليبورن ايه ٢ اس",
+        "price": "1,250.00 جنيه1,175.00 جنيه",
+        "newprice": "1,175.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/caliburn-a2s-pod?_pos=30&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-uwell-caliburn-a2s-pod-kalyborn-ayh-as-el-clancom-814176.jpg?v=1708330351&width=645",
+        "img_path": "Caliburn-A2s-Pod--كاليبورن-ايه-٢-اس---Uwell----الكلان-فيب.jpg",
+        "id": 30
+    },
+    {
+        "name": "Vaporesso",
+        "disc": "XROS 3 Mini  اكسروس ٣ ميني",
+        "price": "1,350.00 جنيه",
+        "newprice": "1,350.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/xros-3-mini?_pos=31&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-vaporesso-xros-3-mini-aksros-myny-el-clancom-439600.jpg?v=1708331623&width=645",
+        "img_path": "XROS-3-Mini--اكسروس-٣-ميني---Vaporesso----الكلان-فيب.jpg",
+        "id": 31
+    },
+    {
+        "name": "Uwell",
+        "disc": "Caliburn Tent Pod كاليبورن تينت",
+        "price": "1,675.00 جنيه1,625.00 جنيه",
+        "newprice": "1,625.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/caliburn-tent-pod?_pos=32&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-uwell-caliburn-tent-pod-kalyborn-tynt-el-clancom-470950.jpg?v=1708330202&width=645",
+        "img_path": "Caliburn-Tent-Pod-كاليبورن-تينت---Uwell----الكلان-فيب.jpg",
+        "id": 32
+    },
+    {
+        "name": "Geekvape",
+        "disc": "Geekvape Wenax U ويناكس يو بود",
+        "price": "1,400.00 جنيه1,350.00 جنيه",
+        "newprice": "1,350.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/geekvape-wenax-u?_pos=33&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-geekvape-geekvape-wenax-u-oynaks-yo-bod-el-clancom-565221.jpg?v=1708330746&width=645",
+        "img_path": "Geekvape-Wenax-U-ويناكس-يو-بود---Geekvape----الكلان-فيب.jpg",
+        "id": 33
+    },
+    {
+        "name": "voopoo",
+        "disc": "Vinci Pod SE  فينشي بود اس اى",
+        "price": "1,150.00 جنيه975.00 جنيه",
+        "newprice": "975.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/vinci-pod-se?_pos=34&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-voopoo-vinci-pod-se-fynshy-bod-as-a-el-clancom-875526.jpg?v=1708331573&width=645",
+        "img_path": "Vinci-Pod-SE--فينشي-بود-اس-اى---voopoo----الكلان-فيب.jpg",
+        "id": 34
+    },
+    {
+        "name": "voopoo",
+        "disc": "Argus Pod SE ارجوس بود⁩ اس اى",
+        "price": "1,450.00 جنيه",
+        "newprice": "1,450.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/argus-pod-se?_pos=35&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/voopoo-argus-pod-se-arjos-bod-as-a-el-clancom-521756.jpg?v=1708332209&width=645",
+        "img_path": "Argus-Pod-SE-ارجوس-بود⁩-اس-اى---voopoo----الكلان-فيب.jpg",
+        "id": 35
+    },
+    {
+        "name": "Uwell",
+        "disc": "Caliburn Tent KoKo Pod كاليبورن تينت كوكو",
+        "price": "1,975.00 جنيه1,525.00 جنيه",
+        "newprice": "1,525.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/caliburn-tent-koko-pod?_pos=36&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-uwell-caliburn-tent-koko-pod-kalyborn-tynt-koko-el-clancom-464001.jpg?v=1708330340&width=645",
+        "img_path": "Caliburn-Tent-KoKo-Pod-كاليبورن-تينت-كوكو---Uwell----الكلان-فيب.jpg",
+        "id": 36
+    },
+    {
+        "name": "Vaporesso",
+        "disc": "Vaporesso Luxe QS Pod لوكس كيو اس⁩",
+        "price": "1,375.00 جنيه",
+        "newprice": "1,375.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/vaporesso-luxe-qs-pod?_pos=37&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-vaporesso-vaporesso-luxe-qs-pod-loks-kyo-as-el-clancom-586015.jpg?v=1708331477&width=645",
+        "img_path": "Vaporesso-Luxe-QS-Pod-لوكس-كيو-اس⁩---Vaporesso----الكلان-فيب.jpg",
+        "id": 37
+    },
+    {
+        "name": "voopoo",
+        "disc": "Voopoo Doric 20 دوريك ٢٠ بود",
+        "price": "1,275.00 جنيه1,250.00 جنيه",
+        "newprice": "1,250.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/voopoo-doric-20?_pos=38&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-voopoo-voopoo-doric-20-doryk-bod-el-clancom-687173.jpg?v=1708331867&width=645",
+        "img_path": "Voopoo-Doric-20-دوريك-٢٠-بود---voopoo----الكلان-فيب.jpg",
+        "id": 38
+    },
+    {
+        "name": "Nevoks",
+        "disc": "Nevoks Feelin A1 نيفوكس فيلين",
+        "price": "1,500.00 جنيه1,400.00 جنيه",
+        "newprice": "1,400.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/nevoks-feelin-a1?_pos=39&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-nevoks-nevoks-feelin-a1-nyfoks-fylyn-el-clancom-721250.jpg?v=1708331513&width=645",
+        "img_path": "Nevoks-Feelin-A1-نيفوكس-فيلين---Nevoks----الكلان-فيب.jpg",
+        "id": 39
+    },
+    {
+        "name": "Voopoo",
+        "disc": "Drag S  New دراج اس جديد",
+        "price": "2,300.00 جنيه",
+        "newprice": "2,300.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/drag-s-new?_pos=40&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/voopoo-drag-s-new-draj-as-jdyd-el-clancom-965124.jpg?v=1708332216&width=645",
+        "img_path": "Drag-S--New-دراج-اس-جديد---Voopoo----الكلان-فيب.jpg",
+        "id": 40
+    },
+    {
+        "name": "Uwell",
+        "disc": "Caliburn GK3 Pod كاليبورن جى كيه ٣",
+        "price": "1,725.00 جنيه",
+        "newprice": "1,725.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/caliburn-gk3-pod?_pos=41&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/files/photo1708775960_2.jpg?v=1708776192&width=645",
+        "img_path": "Caliburn-GK3-Pod-كاليبورن-جى-كيه-٣.jpg",
+        "id": 41
+    },
+    {
+        "name": "Geekvape",
+        "disc": "Geekvape AU (Aegis U) Pod ايه يو بود",
+        "price": "1,275.00 جنيه1,150.00 جنيه",
+        "newprice": "1,150.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/geekvape-au-aegis-u-pod?_pos=42&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-geekvape-geekvape-au-aegis-u-pod-ayh-yo-bod-el-clancom-715630.jpg?v=1708330650&width=645",
+        "img_path": "Geekvape-AU-(Aegis-U)-Pod-ايه-يو-بود---Geekvape----الكلان-فيب.jpg",
+        "id": 42
+    },
+    {
+        "name": "Vaporesso",
+        "disc": "Luxe Q Pod  بود لوكس كيو⁩",
+        "price": "1,349.00 جنيه",
+        "newprice": "1,349.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/luxe-q-pod?_pos=43&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-vaporesso-luxe-q-pod-bod-loks-kyo-el-clancom-366597.jpg?v=1708330945&width=645",
+        "img_path": "Luxe-Q-Pod--بود-لوكس-كيو⁩---Vaporesso----الكلان-فيب.jpg",
+        "id": 43
+    },
+    {
+        "name": "Uwell",
+        "disc": "Uwell Caliburn Pod  كاليبورن بود",
+        "price": "875.00 جنيه",
+        "newprice": "875.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/uwell-caliburn-pod?_pos=44&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-uwell-uwell-caliburn-pod-kalyborn-bod-el-clancom-500103.jpg?v=1708331421&width=645",
+        "img_path": "Uwell-Caliburn-Pod--كاليبورن-بود---Uwell----الكلان-فيب.jpg",
+        "id": 44
+    },
+    {
+        "name": "Vapor Storm",
+        "disc": "Akus Pod بود ايكوس",
+        "price": "1,025.00 جنيه",
+        "newprice": "1,025.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/akus-pod?_pos=45&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-vapor-storm-akus-pod-bod-aykos-el-clancom-412141.jpg?v=1708330051&width=645",
+        "img_path": "Akus-Pod-بود-ايكوس---Vapor-Storm----الكلان-فيب.jpg",
+        "id": 45
+    },
+    {
+        "name": "Uwell",
+        "disc": "Caliburn KOKO Prime Vision كوكو برايم فيوشن",
+        "price": "1,100.00 جنيه",
+        "newprice": "1,100.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/caliburn-koko-prime-vision-%D9%83%D9%88%D9%83%D9%88-%D8%A8%D8%B1%D8%A7%D9%8A%D9%85-%D9%81%D9%8A%D9%88%D8%B4%D9%86?_pos=46&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-uwell-caliburn-koko-prime-vision-koko-braym-fyoshn-el-clancom-984522.jpg?v=1708330345&width=645",
+        "img_path": "Caliburn-KOKO-Prime-Vision-كوكو-برايم-فيوشن---Uwell----الكلان-فيب.jpg",
+        "id": 46
+    },
+    {
+        "name": "Uwell",
+        "disc": "Caliburn GZ2 كاليبرن جي زد",
+        "price": "1,600.00 جنيه1,200.00 جنيه",
+        "newprice": "1,200.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/caliburn-gz2?_pos=47&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-uwell-caliburn-gz2-kalybrn-jy-zd-el-clancom-655496.jpg?v=1708330352&width=645",
+        "img_path": "Caliburn-GZ2-كاليبرن-جي-زد---Uwell----الكلان-فيب.jpg",
+        "id": 47
+    },
+    {
+        "name": "Geekvape",
+        "disc": "Geekvape Obelisk U Pod اوبليسك يو بود",
+        "price": "1,475.00 جنيه1,150.00 جنيه",
+        "newprice": "1,150.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=2/products/geekvape-obelisk-u-pod?_pos=48&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-geekvape-geekvape-obelisk-u-pod-aoblysk-yo-bod-el-clancom-670874.jpg?v=1708330650&width=645",
+        "img_path": "Geekvape-Obelisk-U-Pod-اوبليسك-يو-بود---Geekvape----الكلان-فيب.jpg",
+        "id": 48
+    },
+    {
+        "name": "Uwell",
+        "disc": "Caliburn GK2 Vision Pod كاليبورن جي كيه ٢ فيشن",
+        "price": "1,350.00 جنيه",
+        "newprice": "1,350.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/caliburn-gk2-vision-pod?_pos=49&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/files/photo1709193649_2.jpg?v=1709193978&width=645",
+        "img_path": "Caliburn-GK2-Vision-Pod-كاليبورن-جي-كيه-٢-فيشن.jpg",
+        "id": 49
+    },
+    {
+        "name": "voopoo",
+        "disc": "Argus G Pod ارجوس جى",
+        "price": "1,350.00 جنيه",
+        "newprice": "1,350.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/argus-g?_pos=50&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/voopoo-argus-g-arjos-j-el-clancom-341368.jpg?v=1708332209&width=645",
+        "img_path": "Argus-G-ارجوس-جى---voopoo----الكلان-فيب.jpg",
+        "id": 50
+    },
+    {
+        "name": "Oxva",
+        "disc": "Oxva Xlim SE2 اوكسافا اكسليم اس ايه ٢",
+        "price": "1,500.00 جنيه1,325.00 جنيه",
+        "newprice": "1,325.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/oxva-xlim-se2?_pos=51&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/files/photo1708777664.jpg?v=1708777800&width=645",
+        "img_path": "Oxva-Xlim-SE2-اوكسافا-اكسليم-اس-ايه-٢.jpg",
+        "id": 51
+    },
+    {
+        "name": "voopoo",
+        "disc": "Vinci 3 Mod Pod فينشى 3 مود بود",
+        "price": "2,300.00 جنيه1,775.00 جنيه",
+        "newprice": "1,775.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/vinci-3-mod-pod?_pos=52&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/voopoo-vinci-3-mod-pod-fynsh-3-mod-bod-el-clancom-409105.jpg?v=1708332218&width=645",
+        "img_path": "Vinci-3-Mod-Pod-فينشى-3-مود-بود---voopoo----الكلان-فيب.jpg",
+        "id": 52
+    },
+    {
+        "name": "voopoo",
+        "disc": "Vinci Q Pod Kit فينشي كيو بود",
+        "price": "1,200.00 جنيه1,075.00 جنيه",
+        "newprice": "1,075.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/vinci-q-pod-kit?_pos=53&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-voopoo-vinci-q-pod-kit-fynshy-kyo-bod-el-clancom-374105.jpg?v=1708331573&width=645",
+        "img_path": "Vinci-Q-Pod-Kit-فينشي-كيو-بود---voopoo----الكلان-فيب.jpg",
+        "id": 53
+    },
+    {
+        "name": "Lost Vape",
+        "disc": "Lostvape Ursa Mini اورسا ميني ⁩⁩",
+        "price": "1,500.00 جنيه",
+        "newprice": "1,500.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/lostvape-ursa-mini?_pos=54&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/products/fyb-hardoyr-bod-mstord-lost-vape-lostvape-ursa-mini-aorsa-myny-el-clancom-713414.jpg?v=1708331140&width=645",
+        "img_path": "Lostvape-Ursa-Mini-اورسا-ميني-⁩⁩---Lost-Vape----الكلان-فيب.jpg",
+        "id": 54
+    },
+    {
+        "name": "Uwell",
+        "disc": "Caliburn AZ3 Pod كاليبورن اية زد ٣",
+        "price": "1,600.00 جنيه1,100.00 جنيه",
+        "newprice": "1,100.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/caliburn-az3-pod?_pos=55&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/files/photo1709109633_3.jpg?v=1709109731&width=645",
+        "img_path": "Caliburn-AZ3-Pod-كاليبورن-اية-زد-٣.jpg",
+        "id": 55
+    },
+    {
+        "name": "Geekvape",
+        "disc": "Geekvape Wenax Q Pod (ويناكس كيو( العلبة الكبيرة",
+        "price": "1,550.00 جنيه",
+        "newprice": "1,550.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/geekvape-wenax-q-pod-1?_pos=56&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/files/fyb-hardoyr-bod-mstord-geekvape-geekvape-wenax-q-pod-oynaks-kyo-el-clancom-639333_1ebca91c-60da-48cd-bb8d-b6430ac4f2bb.jpg?v=1709196080&width=645",
+        "img_path": "Geekvape-Wenax-Q-Pod-(ويناكس-كيو(-العلبة-الكبيرة.jpg",
+        "id": 56
+    },
+    {
+        "name": "Voopoo",
+        "disc": "Doric Q Pod دوريك كيو",
+        "price": "1,000.00 جنيه850.00 جنيه",
+        "newprice": "850.00",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/doric-q-pod?_pos=57&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/files/photo1709108456.jpg?v=1709108490&width=645",
+        "img_path": "Doric-Q-Pod-دوريك-كيو.jpg",
+        "id": 57
+    },
+    {
+        "name": "Geekvape",
+        "disc": "Geekvape Wenax K2 Big Box كيه تو بود(العلبة الكبيرة )",
+        "price": "1,550.00 جنيه",
+        "newprice": "1,550.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/geekvape-wenax-k2-1?_pos=58&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/files/fyb-hardoyr-bod-mstord-geekvape-geekvape-wenax-k2-kyh-to-bod-el-clancom-865330_4d2100b0-7b09-4bc4-9962-eb74a59de253.jpg?v=1709195362&width=645",
+        "img_path": "Geekvape-Wenax-K2-Big-Box-كيه-تو-بود(العلبة-الكبيرة-).jpg",
+        "id": 58
+    },
+    {
+        "name": "Voopoo",
+        "disc": "Drag Q دراج كيو",
+        "price": "2,000.00 جنيه",
+        "newprice": "2,000.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/drag-q?_pos=59&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/files/photo1708771058_2.jpg?v=1708771167&width=645",
+        "img_path": "Drag-Q-دراج-كيو.jpg",
+        "id": 59
+    },
+    {
+        "name": "Vapefly",
+        "disc": "Vapefly Jester 2 جيستر ٢",
+        "price": "1,300.00 جنيه",
+        "newprice": "1,300.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/vapefly-jester-2?_pos=60&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/files/photo1709197576_1.jpg?v=1709197667&width=645",
+        "img_path": "Vapefly-Jester-2-جيستر-٢.jpg",
+        "id": 60
+    },
+    {
+        "name": "Vapefly",
+        "disc": "Vapefly Manners R Pod مينيرز ار بود",
+        "price": "1,300.00 جنيه",
+        "newprice": "1,300.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/vapefly-manners-r-pod?_pos=61&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/files/photo1709119474_3.jpg?v=1709119567&width=645",
+        "img_path": "Vapefly-Manners-R-Pod-مينيرز-ار-بود.jpg",
+        "id": 61
+    },
+    {
+        "name": "Voopoo",
+        "disc": "Argus Z Pod ارجوس زد بود",
+        "price": "1,200.00 جنيه",
+        "newprice": "1,200.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/argus-z-pod?_pos=62&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/files/photo1708933433_1.jpg?v=1708933550&width=645",
+        "img_path": "Argus-Z-Pod-ارجوس-زد-بود.jpg",
+        "id": 62
+    },
+    {
+        "name": "Uwell",
+        "disc": "Caliburn Ironfist L Pod كاليبورن ايرون فيستل بود",
+        "price": "1,900.00 جنيه",
+        "newprice": "1,900.00 جنيه",
+        "link": "https://el-clan.com/collections/vape-hardware?filter.p.product_type=%D9%81%D9%8A%D8%A8+%D9%87%D8%A7%D8%B1%D8%AF%D9%88%D9%8A%D8%B1+-+%D8%A8%D9%88%D8%AF+%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF&page=3/products/caliburn-ironfist-l-pod?_pos=63&_fid=c6e8949a5&_ss=c",
+        "img": "https://el-clan.com/cdn/shop/files/photo1709113309_1.jpg?v=1709113403&width=645",
+        "img_path": "Caliburn-Ironfist-L-Pod-كاليبورن-ايرون-فيستل-بود.jpg",
+        "id": 63
+    }
+]

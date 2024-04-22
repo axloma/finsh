@@ -27,7 +27,12 @@ def MV_HOLD(request,page,p_I="1"):
     item_nums = "a" * item.paginator.num_pages
     products = Product.objects.all()
     # product = Product.objects.get(id=int(p_I))
-    product = Product.objects.get(id=627)
+    first = Product.objects.first()
+    firstid = int(first.id)
+    # product = Product.objects.get(id=627)
+    product = Product.objects.get(id=firstid)
+
+
     categorys = Category.objects.all()
     category = Category.objects.get(name="VAPE")
     ids = Cart(request)

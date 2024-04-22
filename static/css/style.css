@@ -467,9 +467,12 @@ a.btn.btn-1.btn-c {
         position: relative;
         transform: translate(3rem,-2rem);
         align-self:flex-start ;
-        top: 3rem;
+        /* top: 3rem; */
         /* left: -1rem; */
-        right: 0;
+        /* right: 0; */
+
+        top: 2rem;
+        right: 3rem;
     }
     .nav-item li:first-child{
         /* transform:translateX(3rem); */
@@ -496,8 +499,11 @@ a.btn.btn-1.btn-c {
     .nav-item li:nth-child(4){
         /* transform:translateX(3rem); */
         position: relative;
-        top:0.7rem;
-        right: -2rem;
+        /* top:0.7rem; */
+        top:2rem;
+        /* right: -2rem; */
+        right: 1rem;
+
         transform: scale(0.88,0.8);
     }
      .cart_n {
