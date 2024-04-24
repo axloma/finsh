@@ -20,7 +20,7 @@ from decimal import Decimal
 from decimal import Context, Decimal, getcontext
 
 from django.core.paginator import Paginator
-
+import re
 # # from django.view.
 # @csrf_exempt
 def category(request,foo):
@@ -269,12 +269,15 @@ def add_p(request):
     # with open('ovsegtank.json','r') as file:  
     
     allp = Product.objects.all()
+    print(allp.count(),"NUMP")
     ls =  []
-    ct = "PRIMUM_liquid"
-    cm = "premuim_a"
+    ct = "VAPE"
+    cm = "disposable"
+
+
     for i in allp:
         ls.append(i.name)
-    print(ls)
+    # print(ls)
     # with open('coil.json','r') as file:            
     # with open('elclandispos.json','r') as file: 
     # with open('elclanpod.json','r') as file:
@@ -283,8 +286,9 @@ def add_p(request):
     # with open('media/images_folder/mod/elclanmod.json','r') as file:
     # with open('media/images_folder/tank/elclantank.json','r') as file:
     # with open('media/images_folder/tools/elclantools.json','r') as file: 
-    with open('media/images_folder/prem/elclanprem.json','r') as file:     
-                
+    # with open('media/images_folder/siomarlall/siomarlall.json','r') as file:     
+    with open('ovsegdispos.json','r') as file:   
+        
             data = json.load(file)
             #print(len(data['name']))
             #name = list(data['name'])
@@ -293,16 +297,70 @@ def add_p(request):
             name = i['name']
             price = str(i['price']).replace(',','')
             #FOR ELCLAN dispos
-            newprice = str(i['newprice']).replace(',','').replace('جنيه','')
-            disc = str(i['disc'])
+            # newprice = str(i['newprice']).replace(',','').replace('جنيه','')
+            # newprice = str(i['newprice']).replace(',','').replace('EGP.','').replace('EGP','')
+            # newprice = str(i['newprice'])
+            # match = re.search(r'^(.+)\ ?(\.+)$',str(newprice))
+            # print(match,"M")
+            # if match:
+            #     print(match,"x")
+            #     newprice = match.group(1)
+            # print(newprice)
+            # newprice.replace(' .','')
+            # disc = str(i['disc'])
             # img = 'images_folder/'+i['img_path']
             # img = 'images_folder/'+i['img_path']
             # img = 'images_folder/kit/'+i['img_path']
             # img = 'images_folder/coil/'+i['img_path']
-            img = 'images_folder/prem/'+i['img_path']
+            # img = 'images_folder/DISPO/'+i['img_path']
+            # img = 'images_folder/siomarlall/'+i['fimg']
+            my_string = " "
+            try:
+                Nic = str(i['Nic'])
+                Nicl =i['Nico']
+                # print(Nicl,'NICL')
+                # my_string = ",".join(str(elementx) for elementx in i['Nico'])
+                # nl = list(Nicl)
+                # string_list = [str(dd) for dd in nl]
+                # nlt = []
+                
+                for x  in Nicl:
+                    print(x,"XX")
+                    my_string = ",".join(str(cc) for cc in x)
+                    print(my_string)
+                    # for ix in x:
+                    #     nlt.append(ix)
+                    #     print(ix,"IT")
+                        
+                # print(nlt,"ft")
+                print("hi")
+                # nlt = []
+                # for item in nlt:
+                    # print(item,"IT")
+                # print(string_list)
+                # print(Nic)
+            except:
+                Nic = ""
+                Nicl = ""
+                print('reach e')
+                print(Nicl,'NICL')
+
+            try:
+                # Nic = str(i['Nic'])
+                simg = 'images_folder/siomarlall/'+i['simg']
+                print(simg,"SMG")
+                print(Nic)
+            except:
+                simg = ""
+                print(simg,"SMGE")
+            # if  i['Nic'] is not None :
+            #     print("HI")
+           
+
             ##########
             link = str(i['link'])
-            # im = 'images_folder/'+i['images'][0]['path']
+            im = 'images_folder/'+i['images'][0]['path']
+            # print(im,"IM")
             # nic = str(i['NICOTINE'])
             # ndisc = name + "\n" + "NIC: " + nic
             # nprice = list(i['price'])
@@ -315,7 +373,14 @@ def add_p(request):
             # newdisc = name +'\n'+ xp
             # print(newdisc)
             #TODO make sure product not already exist
-            if name in ls :
+            disc = name 
+            price2 = price
+            price2 = price2[:8]
+            dp = Decimal(price2)
+            print(dp,"PRIcE")
+            # print(price2,"PRICE2")
+            # d_price = float(price2)
+            if name in ls  :
                 print("NAME ALREADY EXIST",name)
                 ps = Product.objects.filter(name=name,description=disc)
                 print(ps.count(),"COUNT")
@@ -327,21 +392,21 @@ def add_p(request):
                             print(s.description,"PRODUCT DISC ")
                             print(s.Category_M,"CAT")
                             print(s.Category,"CATe")
-                            if name == s.name and Decimal(newprice) == s.price and disc == s.description:
+                            if name == s.name and Decimal(dp) == s.price and disc == s.description and s.outsidelink == link:
                                 print("PRODUCT ALREADY IN DB IDIOT")
       
                 else:
                     print("IT NOT THE SAME ")
                     liquid = Category.objects.get(name=ct)
                     cmenu = Cmenue.objects.get(name=cm)
-                    
-                    p.objects.create(name=name,price=newprice,image=img,description=disc,Category=liquid,outsidelink=link,Category_M=cmenu)             
+                    p.objects.create(name=name,price=dp,image=im,description=name,Category=liquid,outsidelink=link,Category_M=cmenu)
+
+                    # p.objects.create(name=name,price=newprice,image=img,description=disc,Category=liquid,outsidelink=link,Category_M=cmenu,Nic=Nic)           
+                    # p.objects.create(name=name,price=newprice,image=img,description=disc,Category=liquid,outsidelink=link,Category_M=cmenu)   
+                    # p.objects.create(name=name,price=newprice,image=img,image2=simg,description=disc,Category=liquid,outsidelink=link,Category_M=cmenu,Nic=my_string)   
+          
             else:
-                # price2 = price
-                # price2 = price2[:8]
-                # dp = Decimal(price2)
-                # print(price2,"PRICE2")
-                # d_price = float(price2)
+             
                 
                 # print(im,"IMAGR_PATHE")
                 # newp = price[:8]
@@ -360,35 +425,35 @@ def add_p(request):
                 # print(newp.quantize(Decimal('1000.000'))) 
                 # newp = newp.quantize(Decimal('100.000'))
                 # print(d_price)
-                # liquid = Category.objects.get(name="VAPE")
-                # liquid = Category.objects.get(name="PRIMUM_liquid")   
-                # liquid = Category.objects.get(name="liquid")   
-                # cmenu = Cmenue.objects.get(name="E_liquid")
-                # cmenu = Cmenue.objects.get(name="MTL_liquid")
-                # cmenu = Cmenue.objects.get(name="SALT_Liquid")
-                # cmenu = Cmenue.objects.get(name="TANK")
-                # cmenu = Cmenue.objects.get(name="Accessories")
-                # cmenu = Cmenue.objects.get(name="coils-cartridges")
-                # cmenu = Cmenue.objects.get(name="disposable")
-                # cmenu = Cmenue.objects.get(name="POD")
-                # cmenu = Cmenue.objects.get(name="Accessories")
+         
 
                 liquid = Category.objects.get(name=ct)
                 cmenu = Cmenue.objects.get(name=cm)
+                # p.objects.create(name=name,price=newprice,image=img,image2=simg,description=disc,Category=liquid,outsidelink=link,Category_M=cmenu,Nic=my_string)   
 
-                p.objects.create(name=name,price=newprice,image=img,description=disc,Category=liquid,outsidelink=link,Category_M=cmenu)
+                # p.objects.create(name=name,price=newprice,image=img,image2=simg,description=disc,Category=liquid,outsidelink=link,Category_M=cmenu)   
+
+                # p.objects.create(name=name,price=newprice,image=img,description=disc,Category=liquid,outsidelink=link,Category_M=cmenu)             
+
+              
+                # p.objects.create(name=name,price=newprice,image=img,description=disc,Category=liquid,outsidelink=link,Category_M=cmenu,Nic=Nicl)
+            
+                
+                # p.objects.create(name=name,price=newprice,image=img,description=disc,Category=liquid,outsidelink=link,Category_M=cmenu)
 
                 # cmenu = Cmenue.objects.get(name="kit")
                 # liquid = Category.objects.get(name="liquid")
                 # p.objects.create(name=name,price=dp,image=im,description=ndisc,Category=liquid,outsidelink=link,Category_M=cmenu)
                 # p.objects.create(name=name,price=dp,image=im,description=name,Category=liquid,outsidelink=link,Category_M=cmenu)
-                # p.objects.create(name=name,price=dp,image=im,description=name,Category=liquid,outsidelink=link,Category_M=cmenu)
+                p.objects.create(name=name,price=dp,image=im,description=name,Category=liquid,outsidelink=link,Category_M=cmenu)
                 # p.objects.create(name=name,price=newp,image=im,description=name,Category=liquid,outsidelink=link)
                 # p.objects.create(name=name,price=newp,image=im,description=name,Category=liquid)
                 # p.save()
                 print("created")
+
                 # print(newp)
-    except  :
-        print("ERRROR")
-        
-    return render(request,'add_product.html',{'name':name,'price':price,'im':img})
+    except  Exception as error:
+        # print(newprice,"NP")
+        print("ERRROR",error)
+    
+    return render(request,'add_product.html',{'name':name,'price':price,'im':im})

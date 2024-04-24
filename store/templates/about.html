@@ -1,12 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="home">
-<div>
-<p class="btn btn-1 active">
-    all information now is hidden 
-     <a href="{% url 'update_u_info' %}" class="btn btn-1  active">update</a>
-</p>
-</div>
+<section class="home info">
+
 <div class="btn btn-1 active">
      <fieldset class="register">
     <form  method="POST" >
@@ -19,9 +14,18 @@
   
     {% comment %} <input type="submit" name="login" value="submit"  class="btn btn-1"> {% endcomment %}
     </form>
-    
+  
     </fieldset>
 </div>
+<div class="info_order">
+    <p class="btn">order</p>
+</div>
+<div>
+    <p class="btn btn-1 active">
+        all information now is hidden 
+         <a href="{% url 'update_u_info' %}" class="btn btn-1  active">update</a>
+    </p>
+    </div>
 </section>
 <script>
  var page = "about";

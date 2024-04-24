@@ -22,7 +22,7 @@ class Cmenue(models.Model):
     Category = models.ForeignKey(Category,on_delete=models.CASCADE,default=1)
     vak = models.CharField(max_length=50)
     def __str__(self):
-        return self.name 
+        return self.name
     
 
 class Customer(models.Model):
@@ -47,6 +47,7 @@ class Product(models.Model):
     is_sale = models.BooleanField(default=False)
     sale_price = models.DecimalField(default=0,decimal_places=2,max_digits=6)
     outsidelink = models.CharField(max_length=255,blank=True,null=True,default='')
+    Nic = models.CharField(max_length=255,blank=True,null=True,default="")
     def __str__(self):
         return self.name
     #TODO prevent error if no img 

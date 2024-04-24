@@ -7,7 +7,7 @@ from .models import Category,Customer,Product,Order,OrderItem,ShippingAddress,Cm
 # Register your models here.
 
 class AdminReg(admin.ModelAdmin):
-    list_display = ('name','price','id')
+    list_display = ('name','price','id','Category_M')
 
 class AdminRe(admin.ModelAdmin):
     list_display = ('order','id','product','quantity','date_added','product_id')
