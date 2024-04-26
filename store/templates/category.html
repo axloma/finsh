@@ -7,13 +7,14 @@
 <!-- {% for product in products %} -->
 {% endcomment %}
 {% for product in item %}
-<div class="card">
+<div class="card"  id="car_contv">
   <div class="car_cont">    
     <img src="{{product.imageURL}}" alt="">
     <h2 class="c_h">${{product.price}}EG</h3>
-    <p class="c_d">{{product.description}}</p>
-     
-    <div class="btn-box">
+    <p class="c_d menuev"  id="c_dmv">{{product.description}}</p>
+    <p class="c_d menuev ">{{product.Nic}}</p>
+
+    <div class="btn-box menuev">
     <select class="btn select" id="select{{product.id}}" >
           {% for key,value in quantities.items %}
           {% if key == product.id|slugify %}
@@ -27,7 +28,7 @@
           
           </select>
       <button type="button" value="{{product.id}}"  id="add-cart"  class="btn btn-1 btn-2 rotation update-cart" data-action='add' data-product={{product.id}}>add to cart </button>  
-      <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active">view</a>
+      <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active" id="viewel">view</a>
     </div>
   </div>
 </div>
@@ -48,9 +49,12 @@
 
     console.log(urlx)
     var page = "{{page}}";
+
+
 </script>
 <script  type="text/javascript" src="{% static 'js/process.js' %}" ></script>
-<script type="text/javascript" src="{% static 'js/nav.js' %}" ></script>
+
+<!-- <script type="text/javascript" src="{% static 'js/nav.js' %}" ></script> -->
 
 
 {%endblock%}

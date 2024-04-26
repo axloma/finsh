@@ -11,7 +11,9 @@
 
     <div class="card "  id="car_contv" >
         <div class="car_cont">    
-          <img src="{{product.imageURL}}" alt="">
+          <!-- <img src="{{product.imageURL}}" alt=""> -->
+          <img src="{{product.imageURL}}" alt=""  loading="eager">
+
           <h2 class="c_h">${{product.price|floatformat:2}}EG</h3>
           <p class="c_d menuev " id="c_dmv">{{product.description}}</p>
           <p class="c_d menuev ">{{product.Nic}}</p>
@@ -29,7 +31,7 @@
           
           </select>
           <button type="button" value="{{product.id}}"  id="add-cart"  class="btn btn-1 btn-2 rotation update-cart" data-action='add' data-product={{product.id}}> add to cart </button>
-          <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active">view</a>
+          <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active" id="viewel">view</a>
         </div>
     </div>
   </div>
@@ -85,6 +87,7 @@ var update = document.querySelectorAll('#car_contv');
     })
 }
 */
+/*
 var update = document.querySelectorAll('#car_contv');
     // const itemc_p = document.querySelectorAll('.menuev ');
     
@@ -100,10 +103,15 @@ var update = document.querySelectorAll('#car_contv');
       console.log("HIHI")
     })
 }
+
+*/
 </script>
 <script  type="text/javascript" src="{% static 'js/process.js' %}" ></script>
+
+<!-- <script  type="text/javascript" src="{% static 'js/nav.js' %}" ></script> -->
 
 
 {%endblock%}
 
 
+ <!-- sizes="(min-width: 1300px)calc((1280px - 275px) * 0.33),(min-width: 1000px)calc((100vw - 275px) * 0.33),50vw" width="430" height="310" loading="eager" -->

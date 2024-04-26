@@ -145,3 +145,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
     });
   });
+
+
+  var update = document.querySelectorAll('#car_contv');
+  // const itemc_p = document.querySelectorAll('.menuev ');
+  
+  for(let item = 0 ; item < update.length;item++){
+  const itemc_p = document.querySelectorAll('.btn-box  ');
+  const itemc_d = document.querySelectorAll('#c_dmv');
+  update[item].addEventListener('click',function(){    
+
+    itemc_p[item ].classList.toggle('open')
+    itemc_d[item ].classList.toggle('open')
+    // itemc_p.classList.toggle('open');
+    // $(".c_d").toggleClass("open");
+    console.log("HIHI")
+  })
+}

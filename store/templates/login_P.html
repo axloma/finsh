@@ -34,6 +34,8 @@
     chang.click( (e)=> {
         console.log("clic")
     e.preventDefault();
+    chang.toggleClass('open')
+
     let x = $("#pass");
     if (view === false){
     x.attr("type","text");
@@ -47,6 +49,7 @@
     }
 });
     //
-    
+
+
 </script>
 {% endblock  %}
