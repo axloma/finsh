@@ -312,16 +312,18 @@ def add_p(request):
                             print(s.Category,"CATe")
                             print(len(ps),"PSLEN")
                             # time.sleep(2)
-                            if name == s.name and ndp == s.price  and disc == s.description and s.outsidelink == link  :
+                            # if name == s.name and ndp == s.price  and disc == s.description and s.outsidelink == link  :
+                            if name == s.name  and disc.strip() == s.description.strip() and s.outsidelink.strip() == link.strip()  :
+                             
                                 print("PRODUCT ALREADY IN DB IDIOT")
 
                             else:
                                 print("IT NOT THE SAME ",i['id'])
                                 time.sleep(10)
-                                p.objects.create(name=name,price=ndp,image=im,description=disc,Category=cat,outsidelink=link,Category_M=cmenu)
+                                # p.objects.create(name=name,price=ndp,image=im,description=disc,Category=cat,outsidelink=link,Category_M=cmenu)
             else:
                 try:
-                    p.objects.create(name=name,price=ndp,image=im,description=disc,Category=cat,outsidelink=link,Category_M=cmenu)
+                    # p.objects.create(name=name,price=ndp,image=im,description=disc,Category=cat,outsidelink=link,Category_M=cmenu)
 
                     print("created",i['id'])
                     time.sleep(5)
@@ -333,3 +335,22 @@ def add_p(request):
         print("ERRROR",error)
     
     return render(request,'add_product.html',{'name':name,'price':price,'im':im})
+def modifyprice():
+     ct = "VAPE"
+     cm = "ACCESSORIES"
+     cat = Category.objects.get(name=ct)
+     ps = Product.objects.filter(Category=cat)
+     for s in ps :
+         print(s.name,s.price)
+         ndp = s.price + s.price * 10 /100 
+         if s.price >= 2000 :
+             ndp = s.price + s.price * 5 /100 
+             print("HIGHER")
+         print(ndp)
+         s.price = ndp
+         s.save()
+         print(s.name,"MODIFIED")
+
+
+
+# modifyprice()

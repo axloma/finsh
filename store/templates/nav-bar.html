@@ -70,8 +70,8 @@
     </div>
 </nav>
 
-<script>
-    $("#menuicon").click(()=> {
+<script  >
+    $("#menuicon").click( ()=> {
     $("#menuicon").toggleClass("open");
     $("#menulist").toggleClass("openmenue");
   });
@@ -79,12 +79,12 @@
     $("#c_ul").toggleClass("open");
  
   });
-
+/*
      {% comment %} $("#mnlist_I").click(()=> {
     $("#all").removeClass("active");
     $("#mnlist_I").addClass("active");
   }); {% endcomment %}
-
+*/
   var m = document.querySelectorAll(".LTEST");
   m.forEach( item => {
       item.addEventListener("click", (e)=>{
@@ -97,12 +97,15 @@
           xna.classList.add("active");
       });
   });
+
+
+  ////////FOR MOVIE
   try{
       var page = "{{page}}";
-      console.log("CURENTPAGE",page)
+      // console.log("CURENTPAGE",page)
     //for product movie 
     if(page != "LOGIN" || "CHECKOUT"){
-        console.log("PAGE IS NOT LOGIN HI")
+        // console.log("PAGE IS NOT LOGIN HI")
         //if(page == "LOGIN"){}
     let product_list = {{ mx|safe }};
     function switche(product_list,switchTo,c_d,c_h,id){
@@ -120,10 +123,11 @@
     if(product_list.length > 0 ){
     switche(product_list,0, 'c_d','c_h','img_mv');
     }
+
     }
-  }catch(err){
-      console.log(err)
-  }
+    } catch(err){
+        console.log(err)
+    }
   
 </script>
 
@@ -191,6 +195,7 @@ search.keyup(function(){
     });                    
       }
   });
+  /*
 //let cart = document.getElementById('cart_n');   
     {% comment %} var d = document.querySelectorAll(".rotation");
 
@@ -201,6 +206,8 @@ search.keyup(function(){
     var urlx = "{% url 'cart_add' %}"
     var urld = "{% url 'cart_delete' %}"
     console.log(urlx) {% endcomment %}
+*/
+
     var page = "SEARCH";
    
 
