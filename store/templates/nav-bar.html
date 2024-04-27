@@ -37,7 +37,7 @@
         <li><a href={% url 'category' "liquid" %} class="btn btn-1 ">liquid</a></li>
         <li><a href={% url 'category' 'SMOKING' %} class="btn btn-1 ">Smoking</a></li>
         <li><a href={% url 'category' "PRIMUM_liquid" %} class="btn btn-1 ">PRIMUM</a></li>
-        <li><a href="/" class="btn btn-1  active">smoke</a></li>
+        <li><a href="/" class="btn btn-1  active">BSMOKER</a></li>
     </ul>
     </div>
     </div>
@@ -58,7 +58,7 @@
                 <li class="LTEST btn btn-1 active" ><a href={% url 'C_menue' category.name %}  class=" btn btn-1 " id="mnlist_I"> {{category.name}} </a> </li>
 
                 {%else%}
-                <li class="LTEST btn btn-1 active" ><a href={% url 'category' category.name %}  class=" btn btn-1 active" id="mnlist_I"  > {{category.name}} </a> </li>
+                <li class="LTEST btn btn-1 active" ><a href={% url 'category' category.name %}  class=" btn btn-1 " id="mnlist_I"  > {{category.name}} </a> </li>
 
                 {%endif%}
                 {% endfor %}       

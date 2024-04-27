@@ -41,11 +41,39 @@
    </select></li>
    
 </ul>
-<div class="btn-box">
+    <div class="btn-box">
     <button type="button" value="{{product.id}}"  id="add-cart"  class="btn btn-1 btn-2 rotation update-cart " data-action='add' data-product={{product.id}}> add to cart </button>
     {% comment %} <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active">view</a> {% endcomment %}
     <button type="button" value="{{product.id}}" data-index="{{product.id}}"  class="btn btn-1 update-carta" data-action='update' > update </button>
    </div>
+</div>
+
+
+<div class="img-list" >
+   
+        <ul>
+           
+        {% if product.image2.url  != "" %}   
+        <li>     <picture>   
+       <img src="{{product.image2.url}}" alt=""  >
+        </picture>
+         </li>
+         <li> <picture>    
+            <img src="{{product.image2.url}}" alt="" >
+         </picture>
+              </li>
+      
+       <li> <picture>   
+       <img src="{{product.imageURL}}" alt="" >
+            </picture>
+        </li>
+
+        {% endif %}
+         </ul>
+     
+   
+
+
 </div>
 
 </section>

@@ -498,11 +498,11 @@ a.btn.btn-1.btn-c {
         position: relative;
         transform: translate(3rem,-2rem);
         align-self:flex-start ;
-        /* top: 3rem; */
+        top: 3rem;
         /* left: -1rem; */
         /* right: 0; */
 
-        top: 2rem;
+        /* top: 2rem; */
         right: 3rem;
     }
     .nav-item li:first-child{
@@ -841,7 +841,7 @@ a.btn.btn-1.btn-c {
     grid-column: 2 / 3;
     transition: rotate 2s ease-in-out;
     /* max-height: 13rem; */
-
+    height: 160%;
 }
 .home .product_view{
     perspective: 1000rem;
@@ -984,10 +984,59 @@ a.btn.btn-1.btn-c {
         opacity: 0;
         pointer-events: none;
     } */
+    .img-list {
+        position: relative;
+        display: grid;
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+        margin: 0;
+        padding: 0;
+        left:0;
+        background-color: var(--sec-color);
+        border: 4px solid var(--main-color);
+    }
+
+    .img-list ul {
+        position: relative;
+        display: flex;
+        /* gap: 0.5rem; */
+        overflow: hidden;
+        margin:0;
+        flex-direction: column;
+        /* display: grid; */
+        /* gap:1rem; */
+        /* margin:0.5rem; */
+        /* border: 3px solid var(--clr-bg); */
+        /* border: 3px solid gray; */
+
+        left: 0;
+        /* padding: 0.3rem; */
+        padding:0;
+        background-color: var(--clr-bg);
+    }
+    .img-list ul li{
+        position: relative;
+        /* display: flex; */
+        height: 35%;
+        width: 100%;
+        list-style: none;
+        /* border: 3px solid var(--clr-bg); */
+        border: 4px solid var(--sec-color);
+        padding: 0;
+
+    }
+    .img-list ul li img{
+        position: relative;
+        object-fit: cover;
+        height: 100%;
+        width: 95%;
+        /* object-position: center center; */
+        /* left: -2rem; */
+    }
 
 ::marker{
     /* color: rgb(216, 39, 39); */
-    background-color: black;
+    background-color: rgb(237, 1, 1);
     font-size: 2rem;
 }
 .pagintor{
