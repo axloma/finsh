@@ -25,25 +25,22 @@
        
     {% if product.image2.url  != "" %}   
     <li>     <picture>   
-   <img src="{{product.image2.url}}" alt=""  >
+   <img src="{{product.image2.url}}" alt=""  id="img_rotation">
     </picture>
      </li>
      <li> <picture>    
-        <img src="{{product.image2.url}}" alt="" >
+        <img src="{{product.image2.url}}" alt="" id="img_rotation">
      </picture>
           </li>
   
    <li> <picture>   
-   <img src="{{product.imageURL}}" alt="" >
+   <img src="{{product.imageURL}}" alt="" id="img_rotation">
         </picture>
     </li>
 
     {% endif %}
      </ul>
  
-
-
-
 </div>
 <div class=" descreption ">
 
@@ -93,7 +90,7 @@ var page = "{{page}}";
     
     console.log(img_src_src + "source");
     right.click( ()=> {    
-        console.log("right clicked");
+        // console.log("right clicked");
         card_rotation.toggleClass("active");
         setTimeout(alerttime,500);  
         //     
@@ -104,6 +101,7 @@ var page = "{{page}}";
         console.log('left clicked');
         card_rotation.toggleClass("active");
     });
+    //ternoaray operator TODO change img
     function alerttime(){
         var src = (img_src.attr('src') === img_src_src)
         ? img_src_value
@@ -111,6 +109,22 @@ var page = "{{page}}";
      $("#img_src").attr('src', src);
 
 }
+
+fty = document.querySelectorAll("#img_rotation")
+fty.forEach(item => {item.addEventListener("click",function(){
+    // img_src_src = this.src;
+    // this.src=''
+console.log("hi",this.src)
+// img_src_src = this.src
+// setTimeout(alerttime,700);
+// $("#img_src").attr('value', img_src_src);
+var src = (img_src.attr('src') === img_src_src)
+        ? img_src_value
+        : img_src_src ;
+$("#img_src").attr('value', src);
+$("#img_src").attr('src', this.src);
+
+})});
 </script>
   <script >
 ///////////////////////////////////////////////////////////////
