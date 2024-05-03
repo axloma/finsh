@@ -140,8 +140,9 @@ def reg_U(request):
             login(request,user)
             return redirect('home')
         else:
-            messages.error(request,"error")
-            return redirect('register')
+            # messages.error(request,"error")
+            return render(request, 'register.html',{"form":form,'i':i,"mx":mx})
+            # return redirect('register')
     return render(request, 'register.html',{"form":form,'i':i,"mx":mx})
 
 def update_u_info(request):

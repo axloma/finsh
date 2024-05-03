@@ -268,3 +268,156 @@ def add_p(request):
     
     return render(request,'add_product.html',{'name':name,'price':price,'im':im})
 
+
+
+
+    #########hold registeration form 
+    
+{% extends "base.html" %}
+{% block content  %}
+
+
+<section class="register yasser_login" >
+
+    <fieldset class="register">
+<form action="{% url 'register'  %}" method="POST" >
+    {% csrf_token %}
+    {%for msg in messages %}
+        <h2>{{msg}}</h2>
+    {%endfor%}
+    <!-- {% if form.errors %}
+
+     <li>   {{ form.errors }} </li>
+  
+    {% endif %} -->
+    {% comment %}
+    <!-- {{ form.non_field_errors }} -->
+    {{ form.subject.errors }}
+    {% endcomment %}
+    <small class="btn btn-2 ">{{  form.subject.label_tag  }}</small>
+
+    {% for field in form %}
+    {{ form.non_field_errors }}
+    <!-- add class to field -->
+    {% if field.errors %}
+
+    <li>{{ field.label }}:  {{ field.errors|striptags }}</li>
+  {%comment%}  {{ field|add_classes:'active'}} {%endcomment%}
+    {% if field.help_text %}
+        <small class="btn btn-2  active">{{ field.errors|striptags }}</small>
+    {% endif %}
+
+    {% endif %}
+    {% endfor %}
+    {% for field in form %}
+    {% if field.errors %}
+    <p class="btn btn-2">{{ field.label }}:
+        <small style="color:rgb(245, 15, 7)" class="btn btn-2 active">{{ field.errors|safe }}</small>
+ 
+    </p>
+        <{{ field.help_text|cut:"<"|cut:">" }} class="btn btn-2 active">
+    {% endif %}
+{% endfor %}
+    
+    <legend>register </legend>
+    {{form.as_p}}
+
+
+    <!--  -->
+    {% comment %} <p>
+        <label for="username" >username</label>
+        <input type="text" name="username" id="username" placeholder="username" autofocus>
+    </p> 
+    <p>
+        <label for="email" >email</label>
+        <input type="text" name="email" id="username" placeholder="username" autofocus>
+    </p>
+    <p>
+    <label for="phone" >phone</label>
+    <input type="text" name="phone" id="phone" placeholder="username" autofocus>
+    </p>
+    <p>
+    <label for="pass" >password</label>
+    <button id="view" onclick="changattr()" class= "btn btn-1 "> view password </button>
+    <input type="password" name="pass1" id="pass1" placeholder="password">
+    </p>
+    <p>
+        <label for="pass" >repeat password</label>
+        <input type="password" name="pass" id="pass" placeholder="password">
+        </p> {% endcomment %}
+    <input type="submit" name="login" value="submit"  class="btn btn-1">
+    </form>
+    
+    </fieldset>
+    <style>
+        ul {
+    list-style: none;
+    background: gray;
+    text-align: start;
+    justify-content: flex-start;
+}
+    </style>
+</section>
+<script>
+var page = "REGISTER";
+    let s = document.querySelector(".search");
+    {% comment %} s.innerHTML = ""; {% endcomment %}
+    //hide cart 
+    $("#hs").html("") ;
+    $("#cart_n").hide();
+    //hide movie 
+    $(".movie").html("");
+    $(".movie").hide();
+
+
+</script>
+
+{% endblock  %}
+
+
+        <!-- {% if field|input_type == 'TextInput' %} -->
+        {{ form.name['class'] ="class="btn btn-1 btn-2" }}
+        </div>
+        <div class="form-group">
+        {{ form.email.label(class="btn btn-1 btn-2 ") }}
+        {{ form.email(class="btn btn-1 btn-2 active") }}</div>
+
+
+
+        {{field.name}}
+   {{field.id}}
+   {%comment%}
+    {{field.help_text}}
+    <!-- <p class="btn  "> a</p> -->
+    {{field.name}}
+    {{field}}
+    <!-- <p>{{field}}</p> -->
+    {% endcomment %}
+
+
+
+
+
+
+
+
+    {% if field.errors %}
+    {{field.id}}
+    <p class="btn btn-2">{{ field.label }}:
+        <small style="color:rgb(245, 15, 7)" class="btn btn-1 btn-2 active">{{ field.errors|safe }}</small>
+    </p>
+    <script>
+        var xname = '{{field.name}}'
+        console.log("XNAME",xname)
+        xl = document.getElementsByName(xname)
+        xl.forEach(element => {
+            element.classList.add("active");
+        
+        }); 
+     
+    </script>
+    {% endif %}
+{% endfor %}
+
+
+    {{ form.non_field_errors }}

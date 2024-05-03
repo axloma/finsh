@@ -453,7 +453,7 @@ a.btn.btn-1.btn-c {
         top: -2rem;
   
     } */
-
+   
     .nav-el .reg{
         transform: translateX(1.4rem)rotatey(90deg);
         
@@ -465,7 +465,10 @@ a.btn.btn-1.btn-c {
         padding-right: 2rem;
         /* margin-right: 3rem; */
         margin-top: 0;
+        background-color: var(--sec-color);
+
     }
+ 
     .nav-el .reg  li a{
         background-color: aliceblue;
         margin-top: 0.7rem;

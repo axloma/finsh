@@ -8,12 +8,38 @@
 
     <fieldset class="register">
 <form action="{% url 'register'  %}" method="POST" >
+
     {% csrf_token %}
     {%for msg in messages %}
         <h2>{{msg}}</h2>
     {%endfor%}
     <legend>register </legend>
-    {{form.as_p}}
+    <!-- <div class="form-group"> -->
+        {%for e in form%}
+        {% if e.errors %}
+        <li class="errorlist" style="display:list-item;"> E: {{ e.errors|striptags }}</li>
+        {% endif %}
+        {% endfor %}
+        {{form.as_p}}
+      
+   {% for field in form %}
+    {% if field.errors %}
+  
+    <script>
+        var xname = '{{field.name}}'
+        console.log("XNAME",xname)
+        xl = document.getElementsByName(xname)
+       
+        xl.forEach(element => {
+            element.classList.add("active");
+        
+        });     
+    </script>
+    {% endif %}
+{% endfor %}
+    
+
+
     {% comment %} <p>
         <label for="username" >username</label>
         <input type="text" name="username" id="username" placeholder="username" autofocus>
@@ -34,14 +60,29 @@
     <p>
         <label for="pass" >repeat password</label>
         <input type="password" name="pass" id="pass" placeholder="password">
-        </p> {% endcomment %}
+        </p> 
+        {% endcomment %}
+
     <input type="submit" name="login" value="submit"  class="btn btn-1">
-    </form>
-    
+    </form>  
     </fieldset>
+    <style>
+        ul {
+    list-style: none;
+    background: rgb(30, 8, 233);
+    text-align: start;
+    justify-content: flex-start;
+}
+.errorlist{
+    background-color: red;
+    list-style: none;
+    display: none;
+}
+    </style>
 </section>
 <script>
 var page = "REGISTER";
+
     let s = document.querySelector(".search");
     {% comment %} s.innerHTML = ""; {% endcomment %}
     //hide cart 
@@ -51,7 +92,20 @@ var page = "REGISTER";
     $(".movie").html("");
     $(".movie").hide();
 
+    // lab = document.getElementsByTagName('label');
+    lab = document.querySelectorAll('label');
 
+     for(let i = 0;i < lab.length;i++){
+        // lab[i].classList.add("btn","btn-1","active");
+        // lab[i].classList.add("btn-1");
+        // lab[i].classList.add("active");
+    }
+    // console.log(labels)
+    lab.forEach(element => {
+        // element.classList.add("btn","btn-1");
+        console.log(element)
+    
+     });     
 </script>
 
 {% endblock  %}
