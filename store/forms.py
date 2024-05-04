@@ -22,7 +22,7 @@ class LoginReg(UserCreationForm):
         # labels={
         #     "username": " username",
         # }
-        error_messages=""
+        # error_messages=""
     
     def __init__(self,*args,**kwargs):
         super(LoginReg,self).__init__(*args,**kwargs)
@@ -36,10 +36,8 @@ class LoginReg(UserCreationForm):
         # self.fields['password1'].help_text = mark_safe(_(
         #     f'<small style="color:var(--cls-neon)">{self.fields["password1"].help_text}</small>'
         # )) 
-        # helper = FormHelper()
-        # helper.form_class = 'form-group'
-        # helper.layout = Layout(  )
-        # self.fields['username'].widget.attrs['i']= 1
+   
+
   
         self.fields['password2'].widget.attrs['class'] = "btn btn-1 "
         self.fields['password2'].help_text = ""

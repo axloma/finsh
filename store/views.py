@@ -75,9 +75,7 @@ def product(request,pk):
     return render(request,'product_view.html', {"product":con["product"] ,"i":con['i'],
                                                 'quantities':con['quantities'],'mx':con["mx"],'page':con['page']})
 # @csrf_exempt
-def home(request):
-
-    
+def home(request):    
     first = Product.objects.first()
     print(first.id,"ID")
     print(first.name,"NAME")

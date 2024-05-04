@@ -421,3 +421,17 @@ var page = "REGISTER";
 
 
     {{ form.non_field_errors }}
+
+
+class CustomModelAdmin(admin.ModelAdmin):  
+    list_display = ('get_products')
+    def get_products(self, obj):
+        return "\n".join([p.name for p in obj.Product.all()])
+    
+    def __init__(self, model, admin_site):
+        self.search_fields = ['id']
+        self.list_display = [field.name for field in model._meta.concrete_fields]
+        # self.list_display = ([ field.name for field in  model._meta.concrete_fields if not field.many_to_many and not field.one_to_many ])
+        # self.list_display = [self.get_products,]
+
+        super(CustomModelAdmin, self).__init__(model, admin_site)

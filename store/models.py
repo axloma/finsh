@@ -69,6 +69,7 @@ class Order(models.Model):
     date_orderd = models.DateTimeField(auto_now_add=True)
     status = models.BooleanField(default=False,blank=False,null=True)   
     transaction_id = models.CharField(max_length=200,null=True)
+    shiped =  models.BooleanField(default=False,blank=False,null=True) 
     def __str__(self):
         return str(self.id)
     

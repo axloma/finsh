@@ -50,7 +50,7 @@
             {%for msg in messages %}
                      <h2 class="btn btn-2">{{msg}}</h2>
             {%endfor%}
-            <div class="category btn btn-1" id="mnlist">menue
+            <div class="category btn btn-1" id="mnlist"><span id="mnlist_n">menue</span>
             <ul class="c_ul btn btn-2" id="c_ul">
                 <li  > <a  href="{% url 'home' %}" class="btn btn-1 active" id="all" > all </a>  </li>
                 {% for category in  categorys %}  
@@ -71,14 +71,31 @@
 </nav>
 
 <script  >
+$(document).ready(function() {//code 
+  if(page == "CATEGORY" || page ==  "CATEGORY_M"){
+    var page_url = window.location.href;
+    var page_id = page_url.substring(page_url.lastIndexOf('/') + 1); //GET SECTION NAME
+      console.log("HILH",page_id)
+//       console.log("{{category.name}}")
+      $("#mnlist_n").text('{{category.name}}')
+     
+    }
+    else{
+      // $("#mnlist_n").text('MENUE')
+    }
+    // console.log(page,"PAGE")
+
+});
+  
     $("#menuicon").click( ()=> {
     $("#menuicon").toggleClass("open");
     $("#menulist").toggleClass("openmenue");
   });
    $("#mnlist").click(()=> {
-    $("#c_ul").toggleClass("open");
+    $("#c_ul").toggleClass("open"); 
  
   });
+
 /*
      {% comment %} $("#mnlist_I").click(()=> {
     $("#all").removeClass("active");
