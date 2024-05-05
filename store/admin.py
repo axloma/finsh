@@ -2,13 +2,18 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import User
 
-from .models import Category,Customer,Product,Order,OrderItem,ShippingAddress,Cmenue
+from .models import Category,Customer,Product,Order,OrderItem,ShippingAddress,Cmenue,P_IMG
 
 # Register your models here.
+class ImageInLine(admin.StackedInline):
+    model = P_IMG
+    can_delete = False
+    verbose_name_plural = "IMAGES"
 
 class AdminReg(admin.ModelAdmin):
     search_fields = ['name']
     list_display = ('name','price','id','Category_M')
+    inlines = (ImageInLine,)
 
 class AdminRe(admin.ModelAdmin):
     search_fields = ['order__id']

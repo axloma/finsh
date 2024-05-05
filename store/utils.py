@@ -47,6 +47,9 @@ def MV_HOLD(request,page,p_I="1"):
         ls.append(p_I)
         pro = Product.objects.filter(id__in=ls)
         product = Product.objects.get(id=int(p_I))
+        # images = P_IMG.objects.filter(product=product)
+        # product = Product.objects.get(id=int(p_I)).prefetch_related('product_images')
+
         mx = serializers.serialize("json", pro,cls=DjangoJSONEncoder)
     elif page == "CATEGORY" :
         category = Category.objects.get(name=p_I)

@@ -22,8 +22,9 @@
 <div class="img-list" >
    
     <ul>
-       
+       {%comment%}
     {% if product.image2.url  != "" %}   
+
     <li>     <picture>   
    <img src="{{product.image2.url}}" alt=""  id="img_rotation">
     </picture>
@@ -37,10 +38,18 @@
    <img src="{{product.imageURL}}" alt="" id="img_rotation">
         </picture>
     </li>
+    {% endif %}
+    {%endcomment%}
 
+    {% if images != "" %}   
+    {% for img in images %}
+    <li> <picture>   
+        <img src="{{img}}" id="img_rotation"/>
+    </picture>
+         </li>
+    {% endfor %}
     {% endif %}
      </ul>
- 
 </div>
 <div class=" descreption ">
 
@@ -83,26 +92,85 @@ var page = "{{page}}";
     const card_rotation = $("#card_rotation");
     const right = $("#right");
     const left = $("#left");
+    const imgs = {{imagesx|safe}};
     let xtime;
     var img_src = $("#img_src");
     var img_src_src = img_src.attr('src');
     var img_src_value = img_src.attr('value');
     
     console.log(img_src_src + "source");
+    var sw = 0 
+    var btn = "right"
     right.click( ()=> {    
         // console.log("right clicked");
         card_rotation.toggleClass("active");
-        setTimeout(alerttime,500);  
+        // setTimeout(alerttime,500);  
+
+    //  if(imgs.length > 0 ){
+   
+    // if (sw >= imgs.length  ){
+    //     sw = 0
+        // clearTimeout(xtime);
+        // return false;
+        // }  
+        btn = "right"
+       sw = switche(imgs,sw,btn );
+        // sw++ 
+    // }
+    
         //     
     });
     left.click( () => {       
         //clearTimeout(xtime);//will clear the timer 
-        setTimeout(alerttime,700);
+        // setTimeout(alerttime,700);
         console.log('left clicked');
         card_rotation.toggleClass("active");
+        btn = "left"
+        sw = switche(imgs,sw,btn );
     });
-    //ternoaray operator TODO change img
+ 
+//TODO FUNCTION to change images on click 
+    function switche(imgs,switchTo,btn){
+     if(imgs.length > 0 ){
+        try{
+        if(btn=='right'){      
+        $('#'+'img_src').attr('src','/media/'+imgs[switchTo ].fields.image)
+        switchTo++ 
+    }
+      if (btn=='left' && switchTo <= 1  == false){           
+        switchTo--
+        $('#'+'img_src').attr('src','/media/'+imgs[switchTo-1].fields.image)    
+       }
+    }catch(err){console.log(err.message)}
+        console.log(imgs.length)
+        if (switchTo >= imgs.length +1 ){
+            switchTo = 0 
+            $('#'+'img_src').attr('src',"{{product.imageURL}}");
+            return switchTo;
+       }            
+       
+       console.log(imgs.length,"I",switchTo,"S")
+       console.log(switchTo <= 1 )
+       return switchTo;
+   }   
+     
+    //   let xtime = setTimeout(switche, 9000, imgs, switchTo + 1);
+    //  console.log(imgs[switchTo].fields.image,switchTo,"SWITCHTO")
+    //  switchTo++
+    //   if (switchTo >= imgs.length - 1 ){
+    //     switchTo = 0
+    //     // clearTimeout(xtime);
+    //     // return false;
+    //     }    
+      
+
+    }
+        //ternoaray operator TODO change img
+
     function alerttime(){
+    // imgs = JSON.stringify(imgs)
+
+    console.log(imgs)
         var src = (img_src.attr('src') === img_src_src)
         ? img_src_value
         : img_src_src ;
@@ -111,20 +179,29 @@ var page = "{{page}}";
 }
 
 fty = document.querySelectorAll("#img_rotation")
-fty.forEach(item => {item.addEventListener("click",function(){
+for (let i = 0 ; i < fty.length ; i ++){     
+    fty[i].addEventListener("click",function(){
+        $("#img_src").attr('src', fty[i].src);
+        sw = i + 1
+    });
+   
+}
+
+//fty.forEach(item => {item.addEventListener("click",function(){
+ 
     // img_src_src = this.src;
     // this.src=''
-console.log("hi",this.src)
+//console.log("hi",this.src)
 // img_src_src = this.src
 // setTimeout(alerttime,700);
 // $("#img_src").attr('value', img_src_src);
-var src = (img_src.attr('src') === img_src_src)
-        ? img_src_value
-        : img_src_src ;
-$("#img_src").attr('value', src);
-$("#img_src").attr('src', this.src);
+//var src = (img_src.attr('src') === img_src_src)
+//        ? img_src_value
+        // : img_src_src ;
+// $("#img_src").attr('value', src);
+// $("#img_src").attr('src', this.src);
 
-})});
+// })});
 </script>
   <script >
 ///////////////////////////////////////////////////////////////

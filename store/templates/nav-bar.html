@@ -76,14 +76,13 @@ $(document).ready(function() {//code
     var page_url = window.location.href;
     var page_id = page_url.substring(page_url.lastIndexOf('/') + 1); //GET SECTION NAME
       console.log("HILH",page_id)
-//       console.log("{{category.name}}")
-      $("#mnlist_n").text('{{category.name}}')
-     
+      $("#mnlist_n").text('{{category.name}}')   
     }
     else{
       // $("#mnlist_n").text('MENUE')
     }
     // console.log(page,"PAGE")
+    // let in_cart_a = {{ i|safe }}
 
 });
   

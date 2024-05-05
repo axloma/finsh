@@ -36,6 +36,7 @@ class Customer(models.Model):
     def __str__(self):
         return f'{self.first_name} {self.last_name}'
 
+ 
 class Product(models.Model):
     name = models.CharField(max_length=50)
     price = models.DecimalField(default=0,decimal_places=2,max_digits=8)
@@ -44,6 +45,7 @@ class Product(models.Model):
     description = models.CharField(max_length=250,default='',blank=True,null=True)
     image = models.ImageField(upload_to='uploads/product/',blank=True,null=True,default='')
     image2 = models.ImageField(upload_to='uploads/product/',blank=True,null=True,default='')
+    # allmg = models.ForeignKey(P_IMG,on_delete=models.SET_NULL,default="",null=True,blank=True)
     is_sale = models.BooleanField(default=False)
     sale_price = models.DecimalField(default=0,decimal_places=2,max_digits=6)
     outsidelink = models.CharField(max_length=255,blank=True,null=True,default='')
@@ -58,7 +60,23 @@ class Product(models.Model):
         except:
             url = ''
         return url
- 
+
+class P_IMG(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.SET_NULL, 
+              null=True, related_name='product_images')
+    image = models.ImageField(null=True, blank=True, default='',max_length=250)
+    #TODO prevent error if no img 
+    @property
+    def imagesURL(self):
+        try:
+            url = self.image.url
+        except:
+            url = ''
+        return url
+    def __str__(self):
+        return self.imagesURL
+
+
 class Order(models.Model):
     Product = models.ForeignKey(Product,on_delete=models.CASCADE,null=True,blank=True)
     customer = models.ForeignKey(Customer,on_delete=models.SET_NULL,blank=True,null=True)

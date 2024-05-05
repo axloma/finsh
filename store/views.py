@@ -72,8 +72,12 @@ def C_menue(request,foo):
         return redirect('home')  
 def product(request,pk):
     con = MV_HOLD(request,"PRODUCT",pk)
+    p = Product.objects.get(id=pk)
+    images = P_IMG.objects.filter(product=p)
+    imagesx = serializers.serialize("json", images,cls=DjangoJSONEncoder)
+    # print(d[2])
     return render(request,'product_view.html', {"product":con["product"] ,"i":con['i'],
-                                                'quantities':con['quantities'],'mx':con["mx"],'page':con['page']})
+                                                'quantities':con['quantities'],'mx':con["mx"],'page':con['page'],'images':images,'imagesx':imagesx})
 # @csrf_exempt
 def home(request):    
     first = Product.objects.first()
