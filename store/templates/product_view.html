@@ -133,7 +133,13 @@ var page = "{{page}}";
     function switche(imgs,switchTo,btn){
      if(imgs.length > 0 ){
         try{
-        if(btn=='right'){      
+        if(btn=='right'){    
+            if (switchTo >= imgs.length ){
+                $('#'+'img_src').attr('src',"{{product.imageURL}}");
+                return switchTo;
+
+
+            }  
         $('#'+'img_src').attr('src','/media/'+imgs[switchTo ].fields.image)
         switchTo++ 
     }
@@ -141,7 +147,10 @@ var page = "{{page}}";
         switchTo--
         $('#'+'img_src').attr('src','/media/'+imgs[switchTo-1].fields.image)    
        }
-    }catch(err){console.log(err.message)}
+    }catch(err){console.log(err.message)
+        // $('#'+'img_src').attr('src',"{{product.imageURL}}");
+
+    }
         console.log(imgs.length)
         if (switchTo >= imgs.length +1 ){
             switchTo = 0 

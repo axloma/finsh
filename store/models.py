@@ -62,8 +62,9 @@ class Product(models.Model):
         return url
 
 class P_IMG(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.SET_NULL, 
-              null=True, related_name='product_images')
+    product = models.ForeignKey(Product, on_delete=models.SET_NULL,null=True)
+    # product = models.ForeignKey(Product, on_delete=models.SET_NULL, 
+    #           null=True, related_name='productimages')
     image = models.ImageField(null=True, blank=True, default='',max_length=250)
     #TODO prevent error if no img 
     @property

@@ -75,6 +75,11 @@ def product(request,pk):
     p = Product.objects.get(id=pk)
     images = P_IMG.objects.filter(product=p)
     imagesx = serializers.serialize("json", images,cls=DjangoJSONEncoder)
+    # trypre = Product.objects.prefetch_related('p_img_set').all()#TODO get all product of imags 
+    hb=Product.objects.all().prefetch_related('p_img_set').get(id=p.id) #TODO get product according prefetch
+    trypre = P_IMG.objects.select_related('product').all()#TODO get all product of imags 
+    print(trypre[0].product,"TSELECTRELATED")
+    print(hb.p_img_set.all(),"HHHHB")
     # print(d[2])
     return render(request,'product_view.html', {"product":con["product"] ,"i":con['i'],
                                                 'quantities':con['quantities'],'mx':con["mx"],'page':con['page'],'images':images,'imagesx':imagesx})
