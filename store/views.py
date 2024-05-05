@@ -94,7 +94,7 @@ def home(request):
     if request.POST.get('action') == 'post':
         #get data
         product_str = str(request.POST.get('search'))
-        products_n = Product.objects.filter(name__icontains=product_str)
+        products_n = Product.objects.filter(name__icontains=product_str)[:10]
         products_s =  list( products_n.values())     
         response = JsonResponse({'product_s':products_s})      
         return response
