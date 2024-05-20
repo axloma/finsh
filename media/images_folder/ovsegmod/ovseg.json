@@ -1,0 +1,65 @@
+[
+    {
+        "name": "VAPORESSO TARGET 100 KIT | فابوريسو تارجيت 100 كيت",
+        "disc": null,
+        "price": "EGP3,100.00",
+        "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/vaporesso-target-100-kit/",
+        "id": 1
+    },
+    {
+        "name": "GEEKVAPE Z200 200W MOD | جييك فيب زد ٢٠٠",
+        "disc": null,
+        "price": "EGP3,150.00",
+        "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/geekvape-z200-200w-mod/",
+        "id": 2
+    },
+    {
+        "name": "VOOPOO ARGUS MT 100W MOD | فوبو ارجوس ام تي مود",
+        "disc": null,
+        "price": "EGP2,700.00",
+        "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/voopoo-argus-mt-100w-mod/",
+        "id": 3
+    },
+    {
+        "name": "VOOPOO DRAG M100S MOD | فوبو دراج ام ١٠٠ اس مود",
+        "disc": null,
+        "price": "EGP2,750.00",
+        "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/voopoo-drag-m100s-mod/",
+        "id": 4
+    },
+    {
+        "name": "VOOPOO Drag 4 177W Box Mod | ڤوبو دراج ٤ مود",
+        "disc": null,
+        "price": "EGP3,000.00",
+        "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/voopoo-drag-4-177w-box-mod/",
+        "id": 5
+    },
+    {
+        "name": "Vaporesso TARGET 100 Mod | ڤابريسو تارجت ١٠٠ مود",
+        "disc": null,
+        "price": "EGP2,650.00",
+        "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/vaporesso-target-100-mod/",
+        "id": 6
+    },
+    {
+        "name": "VOOPOO ARGUS GT 2 Mod | فوبو ارجوس جي تي 2 مود",
+        "disc": null,
+        "price": "EGP3,000.00",
+        "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/voopoo-argus-gt-2-200w-mod/",
+        "id": 7
+    },
+    {
+        "name": "Ambition Mods Converter Tube Mod | امبيشن مودز كونفرتر تيوب",
+        "disc": null,
+        "price": "EGP2,300.00",
+        "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/ambition-mods-converter-tube-mod/",
+        "id": 8
+    },
+    {
+        "name": "Vapor Storm Puma MOD | ڤيبور ستورم بوما مود",
+        "disc": null,
+        "price": "EGP1,550.00",
+        "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/vapor-storm-puma-200w-tc-box-mod/",
+        "id": 9
+    }
+]

@@ -43,7 +43,7 @@
     </div>
 
     <div class="search" id="hs" >
-        <form action="{% url 'search' %}" class="search-form" method='POST'>
+        <form action="{% url 'search' 15 %}" class="search-form" method='POST' id="sform">
           {% csrf_token %}
             <input type="submit" name="s_search" id="s_search" value="search" class="btn btn-2 ">
             <input type="text" name="search" id="search" class="btn btn-2 ">     
@@ -162,6 +162,7 @@ var htmlx = "";
 var content = $("#try").html();
 var searchval = search.val().trim();
 
+
 $(document).ready(function(){
 if(htmlx == ""){
     content = $("#try").html();
@@ -228,9 +229,6 @@ search.keyup(function(){
    
 
   </script>
-
-
  
- <script  type="text/javascript" src="{% static 'js/process.js' %}" ></script>
 <script type='text/javvascript' src="{% static 'js/nav.js' %}"></script>
 

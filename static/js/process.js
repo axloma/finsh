@@ -1,6 +1,9 @@
 var csrftoken = getToken('csrftoken');
+var update = document.querySelectorAll('#car_contv');
+
 document.addEventListener("DOMContentLoaded", (event) => {
- 
+  var d = document.querySelectorAll(".rotation");
+
       if( in_cart_a.length > 0){
         $('#cart_n_a').addClass(" active");
         $("#cart_n").show();
@@ -28,7 +31,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 //
     link.addEventListener("click", (e)=>{
-      //e.preventDefault();
+      e.preventDefault();
 ////////TODO add item if it doesn't exist
      pq = $('#select' + link.value + ' option:selected').text();
 
@@ -95,7 +98,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           if(json.pq <= 0 || json.pq == "NaN" || json.pq == "None" || json.pq == "NoNE" || json.pq == "null") {
             in_cart_a.splice(in_cart_a.indexOf(link.value),1);  
             link.classList.toggle("rotation");
-            link.textContent = "add m to cart ";
+            link.textContent = "add to cart ";
             link.dataset.action = "add";
             location.reload()
 
@@ -147,7 +150,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
 
-  var update = document.querySelectorAll('#car_contv');
   // const itemc_p = document.querySelectorAll('.menuev ');
   
   for(let item = 0 ; item < update.length;item++){

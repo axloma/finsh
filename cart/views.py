@@ -16,7 +16,8 @@ from django.contrib import messages
 
 def cart_summary(request):
     if request.user.is_authenticated:
-        customer = request.user.customer
+        # customer = request.user.customer
+        customer , created = Customer.objects.get_or_create(user=request.user,first_name=request.user.username)
         #TODO query objects or create it 
         order, created = Order.objects.get_or_create(customer=customer,status=False)
         items = order.orderitem_set.all()#TODO get all order from child

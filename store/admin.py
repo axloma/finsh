@@ -40,7 +40,7 @@ class Customize_user_admin(UserAdmin):
 class CustomModelAdmin(admin.ModelAdmin):  
     
     def __init__(self, model, admin_site):
-        self.search_fields = ['id']
+        self.search_fields = ['id','product__name']
         self.list_display = [field.name for field in model._meta.concrete_fields]
         # self.list_display = ([ field.name for field in  model._meta.concrete_fields if not field.many_to_many and not field.one_to_many ])
         # self.list_display = [self.get_products,]
@@ -54,6 +54,8 @@ admin.site.register(Category)
 admin.site.register(Cmenue)
 admin.site.register(Customer)
 admin.site.register(Product,AdminReg)
+admin.site.register(P_IMG,CustomModelAdmin)
+
 admin.site.register(Order,CustomModelAdmin)
 admin.site.register(OrderItem,CustomModelAdmin)
 admin.site.register(ShippingAddress)

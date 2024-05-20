@@ -435,3 +435,443 @@ class CustomModelAdmin(admin.ModelAdmin):
         # self.list_display = [self.get_products,]
 
         super(CustomModelAdmin, self).__init__(model, admin_site)
+
+
+
+        `
+    {% for product in searched %}
+<div class="card">
+  <div class="car_cont">    
+    <img src="{{product.imageURL}}" alt="">
+    <h2 class="c_h">'$'{{product.price}}EG</h3>
+    <p class="c_d">{{product.description}}</p>    
+    <div class="btn-box">
+    <select class="btn select" id="select{{product.id}}" >
+          {% for key,value in quantities.items %}
+          {% if key == product.id|slugify %}
+              <option selected >{{value}}</option>
+          {% endif %}{% endfor %}
+            <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>         
+          </select>
+      <button type="button" value="{{product.id}}"  id="add-cart"  class="btn btn-1 btn-2 rotation update-cart" data-action='add' data-product={{product.id}}>add to cart </button>  
+      <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active">view</a>
+    </div>
+  </div>
+</div>
+{% endfor %}
+`
+
+
+    `{% for product in res %}
+    console.log(product.price,"PRICE");
+    <div class="card">
+      <div class="car_cont">    
+        <img src="{{product.imageURL}}" alt="">
+        <h2 class="c_h">'$'{{product.price}}EG</h3>
+        <p class="c_d">{{product.description}}</p>    
+      
+      </div>
+    </div>
+    {% endfor %}
+    `
+
+
+    //   function s()
+//   {
+   
+//     s_search.addEventListener('click',(e)=> {
+//     e.preventDefault()
+//     searchfor = search.val().trim();
+//     console.log(sf.value,"VALUE");
+//     xv = sf.value;
+//     // form.submit()
+//     return xv;
+//   })
+
+// };
+//   var searchfor = s()
+var eventl = window.MutationObserver || window.WebKitMutationObserver;
+evchange = 'DOMSubtreeModified' || "DOMContentLoaded"
+
+
+
+
+
+
+
+
+
+//////////////////
+
+var quntityof = 1;
+var updateBtn = document.getElementsByClassName('update-cart');
+var updateBtnI = document.getElementsByClassName('update-carta');
+//mutation observe
+var targetNode = document.body;
+// configuration of the observer
+const config = { characterData: true,subtree: true };
+// callback function
+const callback = function (observer) { 
+    console.log('Changes Detected');
+    var CHANGE = true;
+
+    };
+// Create observer instance
+const observer = new MutationObserver(callback);
+// pass in the target node and configuration 
+var tf = observer.observe(targetNode, config);
+console.log(observer,"OB",callback,"CALLBACK")
+console.log("loaded succefully");
+console.log(tf,"TRFA")
+
+// var eventl = window.MutationObserver || window.WebKitMutationObserver;
+// document.addEventListener(eventl ,(event) => {
+
+    // event.preventDefault()//
+evchange = 'DOMSubtreeModified' || "DOMContentLoaded"
+
+// document.body.addEventListener("DOMContentLoaded" ,(event) => { 
+    // event.preventDefault() 
+for(let item = 0 ; item < updateBtn.length;item++){
+    updateBtn[item].addEventListener('click',function(){
+        var productId = this.dataset.product 
+        var action = this.dataset.action
+        var qt = $('#select' + productId + ' option:selected').text()
+        if(user == 'AnonymousUser'){
+            console.log("USER",user,"action",action)
+
+            addCookieItem(productId,action,qt)
+        }else{
+            console.log('user logged in')
+            //updateUserOrder(productId,action,qt)
+        }
+   
+    })
+}
+//to update item
+for(let x = 0 ; x < updateBtnI.length;x++){
+    updateBtnI[x].addEventListener('click',function(){
+        console.log("CLICKED UPDATE")
+        var producId = this.dataset.index 
+        var act = this.dataset.action
+        var qt = $('#select' + producId + ' option:selected').text()
+        if(page == "cart_summary"  && window.innerWidth > 700 ){
+            console.log("window")
+            qt = $('#selectx' + producId + ' option:selected').text();
+  
+          }else{
+            qt =  $('#select' + producId + ' option:selected').text();
+  
+          }
+        if(user === 'AnonymousUser'){
+            console.log('productId:',producId,'act:',act)
+            console.log('Userx:',user)
+
+            addCookieItem(producId,act,qt)
+        }else{
+            console.log('user logged in')
+            //updateUserOrder(productId,act,qt)
+        }
+   
+    })
+}
+
+function addCookieItem(productId,action,qt){
+    console.log('not logged in ')
+    if(action == 'add'){
+      if(cart[productId] == undefined){
+        if(!qt){
+            cart[productId] = 1;
+        }else{
+        // cart[productId]= {'quantity':1}
+         cart[productId] = parseInt(qt);
+         //cart[productId] = quntityof;
+         //cart[productId] = $('#select' + productId + ' option:selected').text()
+        }
+        }else{
+        //  cart[productId]['quantity'] += 1
+        cart[productId] += 1
+    }
+
+    }
+    if(action == 'remove'){
+        console.log("USER",user,"action",action)
+
+        // cart[productId]['quantity'] -=1
+        cart[productId] = qt - 1 ;
+        // cart[productId] -= 1
+        // if(cart[productId]['quantity']<= 0){
+           if(cart[productId] <= 0){
+            console.log('removed item')
+            delete cart[productId]
+        }
+    }
+    if(action == 'update'){
+        //var qt = $('#select' + productId + ' option:selected').text()
+        console.log("USER",user,"action",action)
+        if(!qt || cart[productId] == undefined || qt == "None"){
+            console.log('qt none yasser');
+            cart[productId] = 1;
+        }else{ 
+        // cart[productId]= {'quantity':1}
+         cart[productId] = parseInt(qt);
+         }
+    }
+    // document.cookie = 'cart='+JSON.stringify(cart)+"; path=/";
+    document.cookie = 'cart='+JSON.stringify(cart)+";domain; path=/";
+}
+
+    //send dat to backend with ajax
+
+function updateUserOrder(productId,action,qt){
+    console.log('user logged in')
+   
+    var url = '/update_item/'
+    fetch(url,{
+        method: 'POST',
+        headers:{
+            'Content-Type':'application/json',
+            'X-CSRFToken': csrftoken,
+        },
+        body:JSON.stringify({"productId":productId,"qt":qt,"action":action})
+    })
+    .then((response)=>{
+        return response.json()
+    })
+    .then((data) => {
+        //clear cart by reassign it 
+        cart = {}
+        document.cookie = 'cart='+JSON.stringify(cart)+";domain; path=/";     
+    })
+}
+
+// });
+
+
+
+  {% comment %} <script  src="{% static 'js/mainjs.js' %}"></script> {% endcomment %}
+  {% comment %} <script src="{% static 'js/nav.js' %}"></script> {% endcomment %}
+<!-- <script type="text/javascript" src="{% static 'js/nav.js' %}" ></script> -->
+<!-- <script  type="text/javascript" src="{% static 'js/nav.js' %}" ></script> -->
+
+{% extends "base.html" %}  
+{% load static %}
+
+{%block content %}      
+<section class="home" id="try">
+  {% comment%}
+<!-- {% for product in products %} -->
+{% endcomment %}
+
+{% for product in searched %}
+<div class="card">
+  <div class="car_cont">    
+    <img src="{{product.imageURL}}" alt="">
+    <h2 class="c_h">${{product.price}}EG</h3>
+    <p class="c_d">{{product.description}}</p>
+     
+    <div class="btn-box">
+    <select class="btn select" id="select{{product.id}}" >
+          <!-- {% for key,value in quantities.items %}
+          {% if key == product.id|slugify %} -->
+              <option selected >{{value}}</option>
+          {% endif %}{% endfor %}
+            <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          
+          </select>
+      <button type="button" value="{{product.id}}"  id="add-cart"  class="btn btn-1 btn-2 rotation update-cart" data-action='add' data-product={{product.id}}>add to cart </button>  
+      <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active">view</a>
+    </div>
+  </div>
+</div>
+{% endfor %}
+<!-- <form action="" class="" method='GET'> -->
+<!-- <button type="button" id="load"  class="btn btn-1 btn-2"  center>more</button>   -->
+
+<!-- </form> -->
+</section>
+<button type="submit" name="" id="load"  class="btn btn-2 ">LOAD MORE</button>
+
+<script >
+///////////////////////////////////////////////////////////////
+
+    // var d = document.querySelectorAll(".rotation");
+    let carts = document.getElementById('cart_n');
+    let in_cart_a = {{ i|safe }};
+    //var cart = JSON.parse(getCookie('cart'))
+    console.log(in_cart_a.length,"inL")
+    var urlx = "{% url 'cart_add' %}"
+    var urld = "{% url 'cart_delete' %}"
+    var c_ur = "{% url 'category' '*' %}"
+
+    console.log(urlx)
+    var page = "{{page}}";
+    console.log(page,"PAGE")
+    
+
+
+
+</script>
+
+{%block javascript}
+<script>
+  const s_search = document.getElementById('s_search')
+  const form = document.getElementById("sform")
+  let sf = document.getElementById("search")
+  var xv = "{{serchfor}}"
+  let limit = 15
+  let vi = document.getElementById("try")
+  htmlx = ""
+
+
+document.getElementById('load').addEventListener('click',()=>{
+console.log("BTNCLICK")
+console.log("LIMIT",limit+=6)
+loadmore()
+limit+=6
+
+})
+
+  function loadmore(){
+$.ajax({
+  type:'GET',
+  url : `/search/${limit}`,
+  data: {sfor:xv},
+  success:function(response){
+    console.log("SUCESS");
+    // console.log(response['mx'])
+    console.log(response.data);
+    console.log(response.mxl,"END");
+    const res = response.data;
+    if ( response.mxl){
+      $("#load").addClass('active').attr('disabled','disabled').text("END")
+        console.log(limit,"L",response.mxl,"MXL")
+    };
+      // console.log(product,"PROD")
+   
+    // res.forEach((value)=> {
+    $.each(response.data, function(key, pvalue) {
+      // console.log(element.name,"NAME");
+      htmlx +=`<div class="card" id="card" value={{data}}>
+              <div class="car_cont">    
+                <img src='/media/${pvalue.image}' alt="">
+                <h2 class="c_h">$${pvalue.price}EG</h3>
+                <p class="c_d">${pvalue.description}</p>
+                <div class="btn-box">
+                  <select class="btn select" id="select${pvalue.id}" >
+                    <option selected >1</option>  
+                </select>
+                <button type="button" value=${pvalue.id}  id="add-cart"  class="btn btn-1 btn-2 rotation update-cart" data-action='add' data-product=${pvalue.id}>add to cart </button>  
+                <a href='/product/${pvalue.id}' class="btn btn-2 btn-1 active  id="viewel">view</a>
+              
+                </div>
+          </div>
+        </div>`                   
+        
+    });
+
+    // pageelement = $("#try").html() 
+    // console.log("HTMLX",htmlx)
+    // pageelement += htmlx
+    // console.log(pageelement)
+  
+    // vi.texetContent += htmlx ;
+    // $("#try").html(htmlx)
+    // vi.innerHTML += htmlx ;
+    vi.insertAdjacentHTML('beforeend',htmlx);
+    // let opt = document.createElement('section');     
+    // opt.innerHTML =htmlx;
+    // vi.appendChild(opt)
+    // $("#try").html(pageelement)
+//  htmlx
+  // var closeButton = document.createElement ('section');
+  // closeButton.className = 'home';
+  // closeButton.innerHTML = htmlx;
+  },
+  error:function(error){
+    console.log(error)
+  }
+
+})}
+
+  
+  // console.log(searchfor,"SEARCHFOR")
+  // test('DOMSubtreeModified');
+  //       test('DOMNodeInserted');
+  //       test('DOMNodeRemoved');
+  // evchange = 'DOMSubtreeModified' || 'DOMNodeInserted' || 'DOMNodeRemoved'
+  // window.addEventListener('DOMSubtreeModified',()=>{
+  //   console.log("MODIFIED")
+
+  // })  
+</script>
+
+{%endblock javascript}
+<script type="text/javascript" src="{% static 'js/nav.js' %}" ></script>
+{%endblock%}
+
+
+
+
+
+/*
+    ///////hide and show
+    var update = document.getElementsByClassName('card');
+    // const itemc_p = document.querySelectorAll('.menuev ');
+    const itemc_p = document.querySelectorAll('.btn-box  ');
+    const itemc_d = document.querySelectorAll('.c_d ');
+    for(let item = 0 ; item < update.length;item++){
+    update[item].addEventListener('click',function(){    
+      itemc_p[item -1].classList.toggle('open')
+      itemc_d[item ].classList.toggle('open')
+      // itemc_p.classList.toggle('open');
+      // $(".c_d").toggleClass("open");
+      console.log("HIHI")
+    })
+}
+
+var update = document.querySelectorAll('#car_contv');
+    // const itemc_p = document.querySelectorAll('.menuev ');
+    
+    for(let item = 0 ; item < update.length;item++){
+    const itemc_p = document.querySelectorAll('.btn-box  ');
+    const itemc_d = document.querySelectorAll('.c_d ');
+    update[item].addEventListener('click',function(){    
+
+      itemc_p[item ].classList.toggle('open')
+      itemc_d[item + 1 ].classList.toggle('open')
+      // itemc_p.classList.toggle('open');
+      // $(".c_d").toggleClass("open");
+      console.log("HIHI")
+    })
+}
+*/
+/*
+var update = document.querySelectorAll('#car_contv');
+    // const itemc_p = document.querySelectorAll('.menuev ');
+    
+    for(let item = 0 ; item < update.length;item++){
+    const itemc_p = document.querySelectorAll('.btn-box  ');
+    const itemc_d = document.querySelectorAll('#c_dmv');
+    update[item].addEventListener('click',function(){    
+
+      itemc_p[item ].classList.toggle('open')
+      itemc_d[item ].classList.toggle('open')
+      // itemc_p.classList.toggle('open');
+      // $(".c_d").toggleClass("open");
+      console.log("HIHI")
+    })
+}
+
+*/
+
+
+                //<button type="button" value=${pvalue.id}  id="add-cart"  class="btn btn-1 btn-2 rotation update-cart" data-action='add' data-product=${pvalue.id}>add to cart </button>  

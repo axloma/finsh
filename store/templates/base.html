@@ -8,14 +8,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% comment %} <meta http-equiv="content-type" content="text/html; charset=utf-8" /> {% endcomment %}
-    <title>  BODMARLEY  </title>
+    <!-- <title>  B.SMOKER  </title> -->
+    <title>  {{ title }}  </title>
+
     <link rel="icon" type="image/x-icon" href="{% static 'css/ten.png'  %}">
     <link href="{% static 'css/style.css'  %}" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
     <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
+    
 </head>
+{% include 'nav-bar.html' %}
 <body>
-   {% include 'nav-bar.html' %}
+  
 <script >
 var user = '{{request.user}}';
 var quntityof = 1;
@@ -127,9 +131,9 @@ console.log("Cart",cart)
 
   </footer>
  
-  {% comment %} <script src="{% static 'js/nav.js' %}"></script> {% endcomment %}
   <script type="text/javascript" src="{% static 'js/mainjs.js' %}"></script>
-  {% comment %} <script  src="{% static 'js/mainjs.js' %}"></script> {% endcomment %}
+  <script  type="text/javascript" src="{% static 'js/process.js' %}" ></script>
+
  
 </body>
 </html>

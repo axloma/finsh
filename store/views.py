@@ -8,6 +8,7 @@ from django import forms
 from .models import *
 from cart.cart import Cart
 from django.http import JsonResponse,HttpRequest,HttpResponse
+from django.views.generic import View,TemplateView
 from django.db.models import Q
 import json
 from django.contrib.auth.models import User
@@ -18,7 +19,7 @@ from . utils import MV_HOLD,lives
 from .models import Product
 from decimal import Decimal
 from decimal import Context, Decimal, getcontext
-
+import requests
 from django.core.paginator import Paginator
 import re
 import time
@@ -26,50 +27,71 @@ import time
 # @csrf_exempt
 def category(request,foo):
     try:
-        # products_s = ()
+        # products_s = ()       
+        #utils function return dict category
+        con = MV_HOLD(request,"CATEGORY",foo)
+        pg = con['page']
         #for search 
         if request.POST.get('action') == 'post':
-            return lives(request)
-        #     #get data
-        #     product_str = str(request.POST.get('search'))
-        #     products_n = Product.objects.filter(Q(name__icontains=product_str) | Q(description__icontains=product_str))
-        #     products_s =  list( products_n.values())     
-        #     response = JsonResponse({'product_s':products_s})      
-        #     return response
-        #utils function return dict category
-        
-        con = MV_HOLD(request,"CATEGORY",foo)
-        context ={'products':con["products"] , 'category':con["category"], "categorys":con['categorys'] ,'i':con['i'] ,'mx':con["mx"],'page':con['page'],'item':con['item'],'nums':con['nums']}
+            return lives(request,foo,pg)
+              
+        context ={'products':con["products"] , 'category':con["category"],
+                "categorys":con['categorys'] ,'i':con['i'] ,'mx':con["mx"],
+                'page':con['page'],'item':con['item'],'nums':con['nums'],
+                'title':con['title']  }
         return render(request,'category.html',context )
     except:
         messages.error(request,"wrong cat")
         return redirect('home')
 
+class Search(View):
+    searchex = ""
+    # request = ''
+    def __init__(self,*args, **kwargs):
+        super().__init__(**kwargs)
+        # con = MV_HOLD(self.request,"SEARCH",kwargs.get('np'))
+    
 
-def search(request):
-    if request.method == 'POST':
-         searched = request.POST['search']       
-         searched = Product.objects.filter(Q(name__icontains=searched) | Q(description__icontains=searched))
-         mx = serializers.serialize("json", searched,cls=DjangoJSONEncoder)
-         if not searched:
-                messages.error(request,"nothing  try again ")
-         return render(request,'search.html',{'searched':searched,'mx':mx})        
-    return render(request,'search.html',{})     
+    def get(self,*args,**kwargs): 
+        con = MV_HOLD(self.request,"SEARCH",kwargs.get('np'))
+        sfor = self.request.GET.get('sfor')
+        print(sfor,"SFOR")
+        limit = kwargs.get('np')
+        xlimit = limit -6
+        searched = list(Product.objects.values().filter(Q(name__icontains=sfor) | Q(description__icontains=sfor))[xlimit:limit])
+        ssize = list(Product.objects.values().filter(Q(name__icontains=sfor) | Q(description__icontains=sfor)))
+        # val = Product.objects.values().get(id=149)
+        mxlen = True if limit >= len(ssize) else False
+        print(len(ssize),"MX")
+        return JsonResponse({'data':searched,'mxl':mxlen},safe=False)            
+    def post(self,*args,**kwargs):
+        con = MV_HOLD(self.request,"SEARCH",kwargs.get('np'))
+        searched = self.request.POST['search'] 
+        self.searchex = searched      
+        searched = Product.objects.filter(Q(name__icontains=searched) | Q(description__icontains=searched))[:15]
+        mx = serializers.serialize("json", searched,cls=DjangoJSONEncoder)        
+        if not searched:
+                messages.error(self.request,"nothing  try again ")
+        con = MV_HOLD(self.request,"SEARCH",kwargs.get('np'))
+        return render(self.request,'search.html',{'searched':searched,'mx':mx,'serchfor':self.searchex,'i':con['i'],'page':con['page'],'quantities':con['quantities']})  
 
-
+   
 def C_menue(request,foo):
     try:
-        #for search 
-        if request.POST.get('action') == 'post':
-            return lives(request)
-          
-        #utils function return dict category
+        #utils function return dict category      
+        #for search               
         con = MV_HOLD(request,"CATEGORY_M",foo)
-        context ={'products':con["products"] , 'category':con["category"], "categorys":con['categorys'] ,'i':con['i'] ,'mx':con["mx"],'page':con['page'],'item':con['item'],'nums':con['nums']}
+        pg = con['page']
+        if request.POST.get('action') == 'post':
+            return lives(request,foo,pg)            
+        context ={'products':con["products"] , 'category':con["category"], 
+                  "categorys":con['categorys'] ,'i':con['i'] ,'mx':con["mx"],
+                  'page':con['page'],'item':con['item'],'nums':con['nums'],'title':con['title']}
         return render(request,'category.html',context )
     except:
         messages.error(request,"wrong cat")
         return redirect('home')  
+    
 def product(request,pk):
     con = MV_HOLD(request,"PRODUCT",pk)
     p = Product.objects.get(id=pk)
@@ -78,30 +100,28 @@ def product(request,pk):
     # trypre = Product.objects.prefetch_related('p_img_set').all()#TODO get all product of imags 
     hb=Product.objects.all().prefetch_related('p_img_set').get(id=p.id) #TODO get product according prefetch
     trypre = P_IMG.objects.select_related('product').all()#TODO get all product of imags 
+    val = Product.objects.values().get(id=pk)
     print(trypre[0].product,"TSELECTRELATED")
     print(hb.p_img_set.all(),"HHHHB")
+    print("VALUES",val)
+    print("PRODUCT",p)
     # print(d[2])
-    return render(request,'product_view.html', {"product":con["product"] ,"i":con['i'],
-                                                'quantities':con['quantities'],'mx':con["mx"],'page':con['page'],'images':images,'imagesx':imagesx})
+    context = {"product":con["product"] ,"i":con['i'],
+              'quantities':con['quantities'],'mx':con["mx"],
+             'page':con['page'],'images':images,'imagesx':imagesx,'title':con['title']}
+    return render(request,'product_view.html',context )
 # @csrf_exempt
 def home(request):    
-    first = Product.objects.first()
-    print(first.id,"ID")
-    print(first.name,"NAME")
-
     products_s = ()
-    #for search 
-    if request.POST.get('action') == 'post':
-        #get data
-        product_str = str(request.POST.get('search'))
-        products_n = Product.objects.filter(name__icontains=product_str)[:10]
-        products_s =  list( products_n.values())     
-        response = JsonResponse({'product_s':products_s})      
-        return response
     try:   
         con = MV_HOLD(request,"HOME")
+        pg = con['page']
+        if request.POST.get('action') == 'post':
+            return lives(request,pg,pg)
         context = {'products':con["products"],'categorys':con["categorys"],'i':con["i"],
-                'i_dict':con["i_dict"] ,'products_s':products_s,'mx':con["mx"],'quantities':con["quantities"],"page":con["page"],'item':con['item'],'nums':con['nums']}
+                'i_dict':con["i_dict"] ,'products_s':products_s,'mx':con["mx"],
+                'quantities':con["quantities"],"page":con["page"],'item':con['item'],
+                'nums':con['nums'],'title':con['title']}
         return render(request, 'home.html',context)
     except:
            return render(request, 'home.html')
@@ -118,7 +138,7 @@ def about(request):
 
     # u_form_u['username'] = c_u.username
     context = MV_HOLD(request,"ABOUT")
-    return render(request, 'about.html',{'form':u_form_u,'page':context["page"],'mx':context["mx"]})
+    return render(request, 'about.html',{'form':u_form_u,'page':context["page"],'mx':context["mx"],'title':"ABOUT"})
 
 
 # @csrf_exempt
@@ -150,7 +170,7 @@ def reg_U(request):
             # messages.error(request,"error")
             return render(request, 'register.html',{"form":form,'i':i,"mx":mx})
             # return redirect('register')
-    return render(request, 'register.html',{"form":form,'i':i,"mx":mx})
+    return render(request, 'register.html',{"form":form,'i':i,"mx":mx,'title':'REGISTER'})
 
 def update_u_info(request):
     con = MV_HOLD(request,"UPDATE_USER")
@@ -167,7 +187,7 @@ def update_u_info(request):
             login(request,c_u)
             messages.success(request,"UPDATED SUCCESSFULLY")
             return redirect('about')
-        return render(request, 'updateU.html',{'form':u_form,'page':con["page"],'mx':con["mx"],})
+        return render(request, 'updateU.html',{'form':u_form,'page':con["page"],'mx':con["mx"],'title':'UPDATE_INFO'})
     else:
         messages.success(request,"LOGIN FIRST ")
         return redirect('home')
@@ -227,7 +247,7 @@ def login_U(request):
                 messages.error(request,"wrong credential")
                 return redirect('login_U')
         else:
-            return render(request,'login_P.html',{'page':con["page"],"mx":con["mx"],'i':con['i']})
+            return render(request,'login_P.html',{'page':con["page"],"mx":con["mx"],'i':con['i'],'title':'LOGIN'})
 
 # for authenticated user 
 def updateItem(request):
@@ -270,33 +290,56 @@ def add_p(request):
     allp = Product.objects.all()
     print(allp.count(),"NUMP")
     ls =  []
-    ct = "SMOKING"
-    cm = "ACCESSORIES"
+    ct = "VAPE"
+    cm = "coils-cartridges"
     cat = Category.objects.get(name=ct)
-    cmenu = Cmenue.objects.get(name=cm)
-    jsonfile = "media/images_folder/amazonaccess/amazonaccess.json"
-    imgfolder = '/images_folder/amazonaccess/'
+    cmenu = Cmenue.objects.get(name=cm,Category=cat)
+    jsonfile = "media/images_folder/ovsegcoil/ovseg.json"
+               #media/images_folder/amazonaccess/amazonacess.json
+    imgf = 'media/images_folder/ovsegcoil/proi/product_img.json'
+    imgfolder = '/images_folder/ovsegcoil/proi/'
     for i in allp:
         ls.append(i.name)
     # print(ls)
-  
+    listimg = []
     with open(jsonfile,'r') as file:           
             data = json.load(file)
             #print(len(data['name']))
             #name = list(data['name'])
+    with open(imgf,'r') as imgfile:
+            imgdata = json.load(imgfile)
+            for i in imgdata:
+                dicimg = {}
+                dicimg['link'] = i['link']
+                dicimg['images'] = i['images']
+                # time.sleep(5)
+                print("IMGAGES",dicimg['images'])
+                listimg.append(dicimg)
     try:
-        for i in data :
+        for i in data:
             name = str(i['name']).strip()
             disc = str(i['disc']).strip()
-            price = str(i['price']).replace(',','')
+            # price = str(i['price']).replace(',','')
+            price = str(i['price']).replace(',','').replace('EGP','')
+
             dp = Decimal(price)           
             print(dp,"PRIcE")
             ndp = dp + dp * 10 /100 
+            if dp >= 2000 :
+                ndp = dp + dp * 5 /100 
+            # ndp = dp + dp * 10 /100 
             ndp = Decimal(ndp)
             print(ndp,"nPRIcE")
+            proimages = []
             ##########
             link = str(i['link']).strip()
-            im = imgfolder+i['fmg']
+            for l in listimg :
+                if link == l['link']:
+                    proimages = l['images'] 
+                    print(link,"LINK",proimages,"IMGAGES")
+            # im = imgfolder+i['fmg']
+            im = imgfolder+proimages[0]
+            print(im,"im")
             #CHECK IF PRO has smg
             try:
                 simg = imgfolder+i['simg']
@@ -327,14 +370,17 @@ def add_p(request):
 
                             else:
                                 print("IT NOT THE SAME ",i['id'])
-                                time.sleep(10)
-                                # p.objects.create(name=name,price=ndp,image=im,description=disc,Category=cat,outsidelink=link,Category_M=cmenu)
+                                time.sleep(2)
+                                # p.objects.create(name=name,price=dp,image=im,description=disc,Category=cat,outsidelink=link,Category_M=cmenu)
             else:
                 try:
-                    # p.objects.create(name=name,price=ndp,image=im,description=disc,Category=cat,outsidelink=link,Category_M=cmenu)
+                    prod = p.objects.create(name=name,price=ndp,image=im,description=disc,Category=cat,outsidelink=link,Category_M=cmenu)
+                    for img in proimages:
+                        im = imgfolder+ str(img)
+                        P_IMG.objects.create(product=prod,image=im)
 
                     print("created",i['id'])
-                    time.sleep(5)
+                    # time.sleep(1)
                 except Exception as ex:
                     print("ERORO WITH",ex)
                 # print(newp)
@@ -344,7 +390,9 @@ def add_p(request):
     
     return render(request,'add_product.html',{'name':name,'price':price,'im':im})
 def modifyprice():
-     ct = "VAPE"
+     ct = "PRIMUM_liquid"
+     cm = "PSALT_Liquid"
+    #  ct = "VAPE"
      cm = "ACCESSORIES"
      cat = Category.objects.get(name=ct)
      ps = Product.objects.filter(Category=cat)

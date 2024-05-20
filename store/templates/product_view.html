@@ -81,9 +81,6 @@
    </div>
 </div>
 
-
-
-
 </section>
 
 <script>
@@ -97,7 +94,7 @@ var page = "{{page}}";
     var img_src = $("#img_src");
     var img_src_src = img_src.attr('src');
     var img_src_value = img_src.attr('value');
-    
+    var firstclic = true
     console.log(img_src_src + "source");
     var sw = 0 
     var btn = "right"
@@ -134,12 +131,18 @@ var page = "{{page}}";
      if(imgs.length > 0 ){
         try{
         if(btn=='right'){    
-            if (switchTo >= imgs.length ){
+
+            if (switchTo >= imgs.length  ){
                 $('#'+'img_src').attr('src',"{{product.imageURL}}");
+                switchTo = 1 
                 return switchTo;
 
-
             }  
+        if (firstclic ){
+            switchTo +=1 
+            firstclic = false
+        }
+            
         $('#'+'img_src').attr('src','/media/'+imgs[switchTo ].fields.image)
         switchTo++ 
     }
@@ -224,7 +227,6 @@ for (let i = 0 ; i < fty.length ; i ++){
     var urlu = "{% url 'cart_update' %}"
     console.log(urlx)
 </script>
-<script  type="text/javascript" src="{% static 'js/process.js' %}" ></script>
 
 <script type="text/javascript" src="{% static 'js/nav.js' %}" ></script>
   

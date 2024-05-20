@@ -38,7 +38,7 @@ class Customer(models.Model):
 
  
 class Product(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=255)
     price = models.DecimalField(default=0,decimal_places=2,max_digits=8)
     Category = models.ForeignKey(Category,on_delete=models.CASCADE,default=1)
     Category_M = models.ForeignKey(Cmenue,on_delete=models.CASCADE,default=1)

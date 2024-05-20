@@ -16,29 +16,35 @@
      
     <div class="btn-box">
     <select class="btn select" id="select{{product.id}}" >
-          {% for key,value in quantities.items %}
-          {% if key == product.id|slugify %}
-              <option selected >{{value}}</option>
-          {% endif %}{% endfor %}
-            <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          
+
+      {% for key,value in quantities.items %}
+      {% if key == product.id|slugify %}
+          <option selected >{{value}}</option>
+      {% endif %}
+      {% endfor %}
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>       
           </select>
-      <button type="button" value="{{product.id}}"  id="add-cart"  class="btn btn-1 btn-2 rotation update-cart" data-action='add' data-product={{product.id}}>add to cart </button>  
-      <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active">view</a>
+     {%comment%} <button type="button" value="{{product.id}}"  id="add-cart"  class="btn btn-1 btn-2 rotation update-cart" data-action='add' data-product={{product.id}}>add to cart </button>  {%endcomment%}
+      <a href="{% url 'product' product.id %}" class="btn btn-2 btn-1 active" id="viewel">view</a>
     </div>
   </div>
 </div>
 {% endfor %}
-  
+<!-- <form action="" class="" method='GET'> -->
+<!-- <button type="button" id="load"  class="btn btn-1 btn-2"  center>more</button>   -->
+
+<!-- </form> -->
 </section>
+<button type="submit" name="" id="load"  class="btn btn-2 ">LOAD MORE</button>
+
 <script >
 ///////////////////////////////////////////////////////////////
 
-    const d = document.querySelectorAll(".rotation");
+    // var d = document.querySelectorAll(".rotation");
     let carts = document.getElementById('cart_n');
     let in_cart_a = {{ i|safe }};
     //var cart = JSON.parse(getCookie('cart'))
@@ -49,10 +55,110 @@
 
     console.log(urlx)
     var page = "{{page}}";
+    console.log(page,"PAGE")
+    
+
+
+
 </script>
-<script  type="text/javascript" src="{% static 'js/process.js' %}" ></script>
+
+{%block javascript}
+<script>
+  const s_search = document.getElementById('s_search')
+  const form = document.getElementById("sform")
+  let sf = document.getElementById("search")
+  var xv = "{{serchfor}}"
+  let limit = 15
+  let vi = document.getElementById("try")
+  htmlx = ""
+
+
+document.getElementById('load').addEventListener('click',()=>{
+console.log("BTNCLICK")
+console.log("LIMIT",limit+=6)
+loadmore()
+limit+=6
+
+})
+
+  function loadmore(){
+$.ajax({
+  type:'GET',
+  url : `/search/${limit}`,
+  data: {sfor:xv},
+  success:function(response){
+    console.log("SUCESS");
+    // console.log(response['mx'])
+    console.log(response.data);
+    console.log(response.mxl,"END");
+    const res = response.data;
+    if ( response.mxl){
+      $("#load").addClass('active').attr('disabled','disabled').text("END")
+        console.log(limit,"L",response.mxl,"MXL")
+    };
+      // console.log(product,"PROD")
+   
+    // res.forEach((value)=> {
+    $.each(response.data, function(key, pvalue) {
+      // console.log(element.name,"NAME");
+      pid = parseInt(pvalue.id)
+      htmlx +=`<div class="card" id="card" value={{data}}>
+              <div class="car_cont">    
+                <img src='/media/${pvalue.image}' alt="">
+                <h2 class="c_h">$${pvalue.price}EG</h3>
+                <p class="c_d">${pvalue.description}</p>
+                <div class="btn-box">
+                  <select class="btn select" id="select${pvalue.id}" >
+                    <option selected >1</option>  
+                </select>
+                <a href='/product/${pvalue.id}' class="btn btn-2 btn-1 active" id="viewel">view</a>
+              
+                </div>
+          </div>
+        </div>`                   
+        
+    });
+
+    // pageelement = $("#try").html() 
+    // console.log("HTMLX",htmlx)
+    // pageelement += htmlx
+    // console.log(pageelement)
+  
+    // vi.texetContent += htmlx ;
+    // $("#try").html(htmlx)
+    // vi.innerHTML += htmlx ;
+    vi.insertAdjacentHTML('beforeend',htmlx);
+    // let opt = document.createElement('section');     
+    // opt.innerHTML =htmlx;
+    // vi.appendChild(opt)
+    // $("#try").html(pageelement)
+//  htmlx
+  // var closeButton = document.createElement ('section');
+  // closeButton.className = 'home';
+  // closeButton.innerHTML = htmlx;
+  },
+  error:function(error){
+    console.log(error)
+  }
+
+})}
+
+  
+  // console.log(searchfor,"SEARCHFOR")
+  // test('DOMSubtreeModified');
+  //       test('DOMNodeInserted');
+  //       test('DOMNodeRemoved');
+  // evchange = 'DOMSubtreeModified' || 'DOMNodeInserted' || 'DOMNodeRemoved'
+  document.body.addEventListener('DOMSubtreeModified',()=>{
+    console.log("MODIFIED")
+
+  })  
+</script>
+
+{%endblock javascript}
 <script type="text/javascript" src="{% static 'js/nav.js' %}" ></script>
-
-
 {%endblock%}
+
+
+
 

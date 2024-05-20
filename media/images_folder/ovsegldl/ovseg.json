@@ -1,0 +1,597 @@
+[
+    {
+        "name": "SUGAR BEAR FURRY ROASTER 60ML E-LIQUID | شوجر بير ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sugar-bear-furry-roaster-60ml-e-liquid/",
+        "id": 1
+    },
+    {
+        "name": "SUGAR BEAR SODA CAVE 60ML E-LIQUID | شوجر بير ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sugar-bear-soda-cave-60ml-e-liquid/",
+        "id": 2
+    },
+    {
+        "name": "RAMP COLA MANGO E LIQUID | رامب ليكويد",
+        "disc": "3mg",
+        "price": "EGP170.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/ramp-cola-mango-e-liquid/",
+        "id": 3
+    },
+    {
+        "name": "RAMP MANGASTIC E LIQUID | رامب ليكويد",
+        "disc": "3mg",
+        "price": "EGP170.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/ramp-mangastic-e-liquid/",
+        "id": 4
+    },
+    {
+        "name": "RAMP STRAW PUNCH E LIQUID | رامب ليكويد",
+        "disc": "3mg",
+        "price": "EGP170.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/ramp-straw-punch-e-liquid/",
+        "id": 5
+    },
+    {
+        "name": "RAMP PINK BUBBLE E LIQUID | رامب ليكويد",
+        "disc": "3mg",
+        "price": "EGP170.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/ramp-pink-bubble-e-liquid/",
+        "id": 6
+    },
+    {
+        "name": "RAMP MELON BUBBLE E LIQUID | رامب ليكويد",
+        "disc": "3mg",
+        "price": "EGP170.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/ramp-melon-bubble-e-liquid/",
+        "id": 7
+    },
+    {
+        "name": "RAMP STRAW WICH E LIQUID | رامب ليكويد",
+        "disc": "3mg",
+        "price": "EGP170.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/ramp-straw-wich-e-liquid/",
+        "id": 8
+    },
+    {
+        "name": "RAMP ICE GRAPE E LIQUID | رامب ليكويد",
+        "disc": "3mg",
+        "price": "EGP170.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/ramp-ice-grape-e-liquid/",
+        "id": 9
+    },
+    {
+        "name": "RAMP LOTUS E LIQUID | رامب ليكويد",
+        "disc": "3mg",
+        "price": "EGP170.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/ramp-lotus-e-liquid/",
+        "id": 10
+    },
+    {
+        "name": "RAMP COCO MINTO E LIQUID | رامب ليكويد",
+        "disc": "3mg",
+        "price": "EGP170.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/ramp-coco-minto-e-liquid/",
+        "id": 11
+    },
+    {
+        "name": "RAMP SUGAR RUSH E LIQUID | رامب ليكويد",
+        "disc": "3mg",
+        "price": "EGP170.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/ramp-sugar-rush-e-liquid/",
+        "id": 12
+    },
+    {
+        "name": "RAMP GREEN COLA E LIQUID | رامب ليكويد",
+        "disc": "3mg",
+        "price": "EGP170.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/ramp-green-cola-e-liquid/",
+        "id": 13
+    },
+    {
+        "name": "RAMP PINE PEACH E LIQUID | رامب ليكويد",
+        "disc": "3mg",
+        "price": "EGP170.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/ramp-pine-peach-e-liquid/",
+        "id": 14
+    },
+    {
+        "name": "RAMP ICE PEACH TEA E LIQUID | رامب ليكويد",
+        "disc": "3mg",
+        "price": "EGP170.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/ramp-ice-peach-tea-e-liquid/",
+        "id": 15
+    },
+    {
+        "name": "SUCKER PUNCH BUBBLEGUM MASTIC E LIQUID | سكر بنش ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sucker-punch-bubblegum-mastic-e-liquid/",
+        "id": 16
+    },
+    {
+        "name": "SUCKER PUNCH PINK PANTHER POMEGRANATE E LIQUID | سكر بنش ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sucker-punch-pink-panther-pomegranate-e-liquid/",
+        "id": 17
+    },
+    {
+        "name": "SUCKER PUNCH GOLD MANGO E LIQUID | سكر بنش ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sucker-punch-gold-mango-e-liquid/",
+        "id": 18
+    },
+    {
+        "name": "SUCKER PUNCH BLUEBERRY ICE CREAM E LIQUID | سكر بنش ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sucker-punch-blueberry-ice-cream-e-liquid/",
+        "id": 19
+    },
+    {
+        "name": "SUCKER PUNCH BUBBLEGUM WATERMELON E LIQUID | سكر بنش ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sucker-punch-bubblegum-watermelon-e-liquid/",
+        "id": 20
+    },
+    {
+        "name": "SUCKER PUNCH STRAWBERRY MELON E LIQUID | سكر بنش ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sucker-punch-strawberry-melon-e-liquid/",
+        "id": 21
+    },
+    {
+        "name": "SPRINKLES TOBACCO BUTTER 60ML | سبرنكلز ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sprinkles-tobacco-butter-60ml/",
+        "id": 22
+    },
+    {
+        "name": "SPRINKLES ICE MANGO 60ML | سبرنكلز ليكويد",
+        "disc": "3mg",
+        "price": "EGP150.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sprinkles-ice-mango-60ml/",
+        "id": 23
+    },
+    {
+        "name": "SPRINKLES ICE PEACH 60ML | سبرنكلز ليكويد",
+        "disc": "3mg",
+        "price": "EGP150.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sprinkles-ice-peach-60ml/",
+        "id": 24
+    },
+    {
+        "name": "SPRINKLES ICE PINEAPPLE SODA 60ML | سبرنكلز ليكويد",
+        "disc": "3mg",
+        "price": "EGP150.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sprinkles-ice-pineapple-soda-60ml/",
+        "id": 25
+    },
+    {
+        "name": "SPRINKLES ICE PINK PANTHER 60ML | سبرنكلز ليكويد",
+        "disc": "3mg",
+        "price": "EGP150.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sprinkles-ice-pink-panther-60ml/",
+        "id": 26
+    },
+    {
+        "name": "MY CLOUD CREAMY BISCUIT NUTS | ماي كلاود",
+        "disc": "0mg, 3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/my-cloud-creamy-biscuit-nuts-ماي-كلاود/",
+        "id": 27
+    },
+    {
+        "name": "MY CLOUD WATERMELON E-LIQUID | ماي كلاود",
+        "disc": "0mg, 3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/my-cloud-watermelon-e-liquid-ماي-كلاود/",
+        "id": 28
+    },
+    {
+        "name": "MY CLOUD BLUEBERRY CHEESECAKE | ماي كلاود",
+        "disc": "0mg, 3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/my-cloud-blueberry-cheesecake-ماي-كلاود/",
+        "id": 29
+    },
+    {
+        "name": "MY CLOUD ICE MANGO E-LIQUID | ماي كلاود",
+        "disc": "0mg, 3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/my-cloud-ice-mango-e-liquid-ماي-كلاود/",
+        "id": 30
+    },
+    {
+        "name": "MY CLOUD ORANGE MANGO E-LIQUID | ماي كلاود",
+        "disc": "0mg, 3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/my-cloud-orange-mango-e-liquid-ماي-كلاود/",
+        "id": 31
+    },
+    {
+        "name": "MY CLOUD TOBACCO BISCUITS NUTS E-LIQUID | ماي كلاود",
+        "disc": "3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/my-cloud-tobacco-biscuits-nuts-e-liquid-ماي-كلاود/",
+        "id": 32
+    },
+    {
+        "name": "MY CLOUD SECRET MELON E-LIQUID| ماي كلاود",
+        "disc": "0mg, 3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/my-cloud-secret-melon-e-liquid-ماي-كلاود/",
+        "id": 33
+    },
+    {
+        "name": "MY CLOUD ICE LEMON E-LIQUID | ماي كلاود",
+        "disc": "0mg, 3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/my-cloud-ice-lemon-e-liquid-ماي-كلاود/",
+        "id": 34
+    },
+    {
+        "name": "MY CLOUD TOBACCO HAZELNUT VANILLA E-LIQUID | ماي كلاود",
+        "disc": "3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/my-cloud-tobacco-hazelnut-vanilla-e-liquid-ماي-كلاود/",
+        "id": 35
+    },
+    {
+        "name": "MY CLOUD SECRET COCO E-LIQUID | ماي كلاود",
+        "disc": "0mg, 3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/my-cloud-secret-coco-special-edition-e-liquid-ماي-كلاود/",
+        "id": 36
+    },
+    {
+        "name": "EAGLE E-LIQUID DL 3 BOTTLES BUNDLE OFFER | عرض ايجل ليكويد دى ال",
+        "disc": null,
+        "price": "EGP540.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/eagle-e-liquid-dl-3-bottles-bundle-offer-عرض-ايجل-ليكويد-دى-ال/",
+        "id": 37
+    },
+    {
+        "name": "SUGAR BEAR E-LIQUID DL 3 BOTTLES BUNDLE | عرض شوجر بير ليكويد",
+        "disc": null,
+        "price": "EGP540.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sugar-bear-e-liquid-dl-3-bottles-bundle-عرض-شوجر-بير-ليكويد/",
+        "id": 38
+    },
+    {
+        "name": "SUGAR BEAR COOZY ROASTER 60ML E-LIQUID  | شوجر بير ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sugar-bear-coozy-roaster-60ml-e-liquid-شوجر-بير-ليكويد/",
+        "id": 39
+    },
+    {
+        "name": "MAZAJ E-LIQUID DL 3 BOTTLES BUNDLE OFFER | عرض مزاج ليكويد",
+        "disc": null,
+        "price": "EGP450.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mazaj-e-liquid-dl-3-bottles-bundle-offer-عرض-مزاج-ليكويد/",
+        "id": 40
+    },
+    {
+        "name": "MANGOZ E-LIQUID DL 3 BOTTLES BUNDLE OFFER | عرض مانجوز ليكويد دى ال",
+        "disc": null,
+        "price": "EGP540.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mangoz-e-liquid-dl-3-bottles-bundle-offer-عرض-مانجوز-ليكويد-دى-ال/",
+        "id": 41
+    },
+    {
+        "name": "ENZO E-LIQUID DL 3 BOTTLES BUNDLE OFFER | عرض إنزو ليكويد دى ال",
+        "disc": null,
+        "price": "EGP540.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/enzo-e-liquid-dl-3-bottles-bundle-offer-عرض-إنزو-ليكود-دى-ال/",
+        "id": 42
+    },
+    {
+        "name": "Grapes Dollar Blends E-LIQUID | دولار بليند ليكويد",
+        "disc": "6mg",
+        "price": "EGP200.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/grapes-dollar-blends-e-liquid/",
+        "id": 43
+    },
+    {
+        "name": "ENZO STRAIZY E-LIQUID | إنزو ليكويد",
+        "disc": "3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/enzo-straizy-e-liquid-إنزو-ليكود/",
+        "id": 44
+    },
+    {
+        "name": "ENZO MINGO E-LIQUID | إنزو ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/enzo-mingo-e-liquid-إنزو-ليكود/",
+        "id": 45
+    },
+    {
+        "name": "ENZO GUN’S N ROSES E-LIQUID | إنزو ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/enzo-guns-n-roses-e-liquid-إنزو-ليكود/",
+        "id": 46
+    },
+    {
+        "name": "ENZO COK E-LIQUID | إنزو ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/enzo-cok-e-liquid-إنزو-ليكود/",
+        "id": 47
+    },
+    {
+        "name": "MAZAJ E Liquid Nawaem Biscuits 60ML | نواعم",
+        "disc": "3mg",
+        "price": "EGP150.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mazaj-e-liquid-nawaem-biscuits-60ml-نواعم/",
+        "id": 48
+    },
+    {
+        "name": "MAZAJ E Liquid Strawberry 60ML |  قلب الفراوله",
+        "disc": "3mg",
+        "price": "EGP150.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mazaj-e-liquid-strawberry-60ml-قلب-الفراوله/",
+        "id": 49
+    },
+    {
+        "name": "MAZAJ E Liquid Red Power 60ML | ريد بوار",
+        "disc": "3mg",
+        "price": "EGP150.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mazaj-e-liquid-red-power-60ml-ريد-بوار/",
+        "id": 50
+    },
+    {
+        "name": "MAZAJ E Liquid Bubble Gum 60ML | لبان",
+        "disc": "3mg",
+        "price": "EGP150.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mazaj-e-liquid-bubble-gum-60ml-لبان/",
+        "id": 51
+    },
+    {
+        "name": "MAZAJ E Liquid 60ML | فودكا اي دي",
+        "disc": "3mg",
+        "price": "EGP150.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mazaj-e-liquid-60ml-فودكا-اي-دي/",
+        "id": 52
+    },
+    {
+        "name": "MAZAJ E Liquid 60ML | ريد واين",
+        "disc": "3mg",
+        "price": "EGP150.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mazaj-e-liquid-60ml-ريد-واين/",
+        "id": 53
+    },
+    {
+        "name": "MAZAJ E Liquid 60ML | عنبه وفرواليتين",
+        "disc": "3mg",
+        "price": "EGP150.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mazaj-e-liquid-60ml-عنبه-وفرواليتين/",
+        "id": 54
+    },
+    {
+        "name": "YUMMY COCONANA E-LIQUID | يامي ليكويد دى ال",
+        "disc": "0mg, 3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/yummy-coconana-e-liquid/",
+        "id": 55
+    },
+    {
+        "name": "YUMMY ESPRESSO E-LIQUID | يامي ليكويد دى ال",
+        "disc": "0mg, 3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/yummy-espresso-e-liquid/",
+        "id": 56
+    },
+    {
+        "name": "YUMMY CHEESY CARAMEL E-LIQUID | يامي ليكويد دى ال",
+        "disc": "0mg, 3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/yummy-cheesy-caramel-e-liquid/",
+        "id": 57
+    },
+    {
+        "name": "YUMMY AMERICAN CHEESECAKE E-LIQUID | يامي ليكويد دى ال",
+        "disc": "0mg, 3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/yummy-american-cheesecake-e-liquid/",
+        "id": 58
+    },
+    {
+        "name": "YUMMY CUBANA E-LIQUID | يامي ليكويد دى ال",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/yummy-cubana-e-liquid/",
+        "id": 59
+    },
+    {
+        "name": "YUMMY SPLASH E-LIQUID | يامي ليكويد دى ال",
+        "disc": "0mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/yummy-splash-e-liquid/",
+        "id": 60
+    },
+    {
+        "name": "YUMMY PEACH PUNCH E-LIQUID | يامي ليكويد دى ال",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/yummy-peach-punch-e-liquid/",
+        "id": 61
+    },
+    {
+        "name": "YUMMY MILKY E-LIQUID | يامي ليكويد دى ال",
+        "disc": "0mg, 3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/yummy-milky-e-liquid/",
+        "id": 62
+    },
+    {
+        "name": "YUMMY COHIBA E-LIQUID | يامي ليكويد دى ال",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/yummy-cohiba-e-liquid/",
+        "id": 63
+    },
+    {
+        "name": "YUMMY MUMMY’S MILK E-LIQUID | يامي ليكويد دى ال",
+        "disc": "0mg, 3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/yummy-mummys-milk-e-liquid/",
+        "id": 64
+    },
+    {
+        "name": "YUMMY JELLY COLA E-LIQUID | يامي ليكويد دى ال",
+        "disc": "0mg, 3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/yummy-jelly-cola-e-liquid/",
+        "id": 65
+    },
+    {
+        "name": "YUMMY COOKIES E-LIQUID | يامي ليكويد دى ال",
+        "disc": "0mg, 3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/yummy-cookies-e-liquid/",
+        "id": 66
+    },
+    {
+        "name": "YUMMY ICE SPLASH | يامي ليكويد دى ال",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/yummy-ice-splash/",
+        "id": 67
+    },
+    {
+        "name": "YUMMY ICE JELLY COLA E-LIQUID | يامي ليكويد دى ال",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/yummy-ice-jelly-cola-e-liquid/",
+        "id": 68
+    },
+    {
+        "name": "SUGAR BEAR BLUE PAW 60ML E-LIQUID  | شوجر بير ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sugar-bear-blue-paw-60ml-e-liquid/",
+        "id": 69
+    },
+    {
+        "name": "SUGAR BEAR SMOKY COOKIE 60ML E-LIQUID  | شوجر بير ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sugar-bear-smoky-cookie-60ml-e-liquid/",
+        "id": 70
+    },
+    {
+        "name": "SUGAR BEAR WILD BALLOON 60ML E-LIQUID  | شوجر بير ليكويد",
+        "disc": "3mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/sugar-bear-wild-balloon-60ml-e-liquid/",
+        "id": 71
+    },
+    {
+        "name": "MANGOZ PINEAPPLE MANGO E-LIQUID | مانجوز ليكويد دى ال",
+        "disc": "0mg, 3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mangoz-pineapple-mango-e-liquid-60-ml/",
+        "id": 72
+    },
+    {
+        "name": "SPLASH LOTUS E-LIQUID | سبلاش ليكويد دي ال",
+        "disc": "3mg",
+        "price": "EGP160.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/splash-lotus-e-liquid/",
+        "id": 73
+    },
+    {
+        "name": "MANGOZ MANGO WATERMELON E-LIQUID | مانجوز ليكويد دى ال",
+        "disc": "0mg, 3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mangoz-mango-watermelon-e-liquid-60ml/",
+        "id": 74
+    },
+    {
+        "name": "EAGLE CARAMEL TOBACCO E-LIQUID | ايجل ليكويد دي ال",
+        "disc": "3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/eagle-caramel-tobacco-e-liquid-60ml/",
+        "id": 75
+    },
+    {
+        "name": "MANGO COLD BY MANGOZ E-LIQUID | مانجوز ليكويد دى ال",
+        "disc": "0mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mango-cold-by-mangoz-e-liquid-60ml/",
+        "id": 76
+    },
+    {
+        "name": "MANGO PEACH BY MANGOZ E-LIQUID | مانجوز ليكويد دى ال",
+        "disc": "0mg, 3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mango-peach-by-mangoz-e-liquid-60ml/",
+        "id": 77
+    },
+    {
+        "name": "MANGO STRAWBERRY BY MANGOZ E-LIQUID | مانجوز ليكويد دى ال",
+        "disc": "0mg, 3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mango-strawberry-by-mangoz-e-liquid-60ml/",
+        "id": 78
+    },
+    {
+        "name": "MANGO ORANGE BY MANGOZ E-LIQUID | مانجوز ليكويد دى ال",
+        "disc": "0mg, 3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mango-orange-by-mangoz-e-liquid-60ml/",
+        "id": 79
+    },
+    {
+        "name": "MANGO BANANA BY MANGOZ E-LIQUID | مانجوز ليكويد دى ال",
+        "disc": "0mg, 3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mango-banana-by-mangoz-e-liquid-60ml/",
+        "id": 80
+    },
+    {
+        "name": "MANGO ORIGINAL BY MANGOZ E-LIQUID | مانجوز ليكويد دى ال",
+        "disc": "0mg, 3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/mango-original-by-mangoz-e-liquid-60ml/",
+        "id": 81
+    },
+    {
+        "name": "EAGLE ICY MELONS E-LIQUID | ايجل ليكويد دي ال",
+        "disc": "3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/eagle-icy-melons-e-liquid-60ml/",
+        "id": 82
+    },
+    {
+        "name": "EAGLE BISKY NUTS E-LIQUID | ايجل ليكويد دي ال",
+        "disc": "3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/eagle-bisky-nuts-e-liquid-60ml/",
+        "id": 83
+    },
+    {
+        "name": "EAGLE ULTIMATE STRAWBERRY E-LIQUID | ايجل ليكويد دي ال",
+        "disc": "3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/eagle-ultimate-strawberry-e-liquid-60ml/",
+        "id": 84
+    },
+    {
+        "name": "EAGLE MINTY MINT E-LIQUID | ايجل ليكويد دي ال",
+        "disc": "3mg, 6mg",
+        "price": "EGP180.00",
+        "link": "https://ovseg.com/shop/egyptian-e-liquid/egy-e-liquid/eagle-minty-mint-e-liquid-60ml/",
+        "id": 85
+    }
+]

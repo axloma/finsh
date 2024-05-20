@@ -1,15 +1,22 @@
 
-var quntityof = 1;
+// var quntityof = 1;
 var updateBtn = document.getElementsByClassName('update-cart');
 var updateBtnI = document.getElementsByClassName('update-carta');
 console.log("loaded succefully");
 
+evchange = 'DOMSubtreeModified' || "DOMContentLoaded"
 
+// document.addEventListener('DOMContentLoaded'  ,(event) => { 
+    // event.preventDefault()
 for(let item = 0 ; item < updateBtn.length;item++){
     updateBtn[item].addEventListener('click',function(){
         var productId = this.dataset.product 
         var action = this.dataset.action
         var qt = $('#select' + productId + ' option:selected').text()
+        console.log("QTYASOIS",qt)
+        // var qt = $('#select' + productId + ' option:selected').text()
+
+        qt = parseInt(qt)
         if(user == 'AnonymousUser'){
             console.log("USER",user,"action",action)
 
@@ -36,10 +43,10 @@ for(let x = 0 ; x < updateBtnI.length;x++){
             qt =  $('#select' + producId + ' option:selected').text();
   
           }
-        if(user === 'AnonymousUser'){
+        if(user == 'AnonymousUser'){
             console.log('productId:',producId,'act:',act)
             console.log('Userx:',user)
-
+            
             addCookieItem(producId,act,qt)
         }else{
             console.log('user logged in')
@@ -48,7 +55,6 @@ for(let x = 0 ; x < updateBtnI.length;x++){
    
     })
 }
-
 function addCookieItem(productId,action,qt){
     console.log('not logged in ')
     if(action == 'add'){
@@ -69,7 +75,6 @@ function addCookieItem(productId,action,qt){
     }
     if(action == 'remove'){
         console.log("USER",user,"action",action)
-
         // cart[productId]['quantity'] -=1
         cart[productId] = qt - 1 ;
         // cart[productId] -= 1
@@ -95,7 +100,6 @@ function addCookieItem(productId,action,qt){
 }
 
     //send dat to backend with ajax
-
 function updateUserOrder(productId,action,qt){
     console.log('user logged in')
    
@@ -117,4 +121,4 @@ function updateUserOrder(productId,action,qt){
         document.cookie = 'cart='+JSON.stringify(cart)+";domain; path=/";     
     })
 }
-
+// });

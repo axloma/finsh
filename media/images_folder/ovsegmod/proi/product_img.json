@@ -1,0 +1,72 @@
+[
+  {
+    "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/vaporesso-target-100-kit/",
+    "id": 1,
+    "images": [
+      "imgx1VAPORESSO-TARGET-100-KIT.jpg"
+    ]
+  },
+  {
+    "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/geekvape-z200-200w-mod/",
+    "id": 2,
+    "images": [
+      "imgx1GEEK-VAPE-Z200.webp"
+    ]
+  },
+  {
+    "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/voopoo-argus-mt-100w-mod/",
+    "id": 3,
+    "images": [
+      "imgx1VOOPOO-ARGUS-MT-100W-MOD.webp",
+      "imgx2VOOPOO-ARGUS-MT-100W-MOD-COLORS.webp"
+    ]
+  },
+  {
+    "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/voopoo-drag-m100s-mod/",
+    "id": 4,
+    "images": [
+      "imgx1VOOPOO-DRAG-M100S-100W-Mod-7_1024x.webp",
+      "imgx2VOOPOO-DRAG-M100S-100W-Mod-1_1024xjpg.webp"
+    ]
+  },
+  {
+    "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/voopoo-drag-4-177w-box-mod/",
+    "id": 5,
+    "images": [
+      "imgx1VOOPOO-Drag-4-177W-Box-Mod.webp",
+      "imgx2VOOPOO-Drag-4-177W-Box-Mod-colors.webp"
+    ]
+  },
+  {
+    "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/vaporesso-target-100-mod/",
+    "id": 6,
+    "images": [
+      "imgx1Vaporesso-TARGET-100-Mod.webp",
+      "imgx2Vaporesso-TARGET-100-Mod-colors.png"
+    ]
+  },
+  {
+    "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/voopoo-argus-gt-2-200w-mod/",
+    "id": 7,
+    "images": [
+      "imgx1VOOPOO-ARGUS-GT-2-200W-Mod.png",
+      "imgx2VOOPOO-ARGUS-GT-2-200W-Mod-colors.webp"
+    ]
+  },
+  {
+    "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/ambition-mods-converter-tube-mod/",
+    "id": 8,
+    "images": [
+      "imgx1Ambition-Mods-Converter-.jpg",
+      "imgx2Ambition-Mods-Converter-Tube-Mod-1.jpg"
+    ]
+  },
+  {
+    "link": "https://ovseg.com/shop/mods-and-pods/mods-kits/vapor-storm-puma-200w-tc-box-mod/",
+    "id": 9,
+    "images": [
+      "imgx1Vapor-Storm-Puma-200W-TC-Box-MOD.jpg",
+      "imgx2Vapor-Storm-Puma-200W-TC-Box-MOD-1.jpg"
+    ]
+  }
+]

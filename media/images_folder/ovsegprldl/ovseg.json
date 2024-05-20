@@ -1,0 +1,429 @@
+[
+    {
+        "name": "Ripe Vapes Miel San Juan | رايب فيبس ليكويد",
+        "disc": "12mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/ripe-vapes-miel-san-juan/",
+        "id": 1
+    },
+    {
+        "name": "Ripe Vapes Cusco San Juan | رايب فيبس ليكويد",
+        "disc": "12mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/ripe-vapes-cusco-san-juan/",
+        "id": 2
+    },
+    {
+        "name": "Ripe Vapes Kingston San Juan | رايب فيبس ليكويد",
+        "disc": "12mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/ripe-vapes-kingston-san-juan/",
+        "id": 3
+    },
+    {
+        "name": "Ripe Vapes San Juan | رايب فيبس ليكويد",
+        "disc": "12mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/ripe-vapes-san-juan/",
+        "id": 4
+    },
+    {
+        "name": "DON CRISTO BCT E LIQUID 60ML | دون كريستو ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/don-cristo-bct-e-liquid-60ml/",
+        "id": 5
+    },
+    {
+        "name": "DON CRISTO DOUBLE APPLE E LIQUID 60ML| دون كريستو ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/don-cristo-double-apple-e-liquid-60ml/",
+        "id": 6
+    },
+    {
+        "name": "DON CRISTO ICE E LIQUID 60ML | دون كريستو ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/don-cristo-ice-e-liquid-60ml/",
+        "id": 7
+    },
+    {
+        "name": "DON CRISTO MINT E LIQUID 60ML | دون كريستو ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/don-cristo-mint-e-liquid-60ml/",
+        "id": 8
+    },
+    {
+        "name": "DON CRISTO MAPLE E LIQUID 60ML | دون كريستو ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/don-cristo-maple-e-liquid-60ml/",
+        "id": 9
+    },
+    {
+        "name": "DON CRISTO BLACK E LIQUID 60ML | دون كريستو ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/don-cristo-black-e-liquid-60ml/",
+        "id": 10
+    },
+    {
+        "name": "DON CRISTO CUSTARD E LIQUID 60ML | دون كريستو ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/don-cristo-custard-e-liquid-60ml/",
+        "id": 11
+    },
+    {
+        "name": "DON CRISTO SESAME E LIQUID 60ML | دون كريستو ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/don-cristo-sesame-e-liquid-60ml/",
+        "id": 12
+    },
+    {
+        "name": "DON CRISTO COFFEE E LIQUID 60ML  | دون كريستو ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/don-cristo-coffee-e-liquid-60ml/",
+        "id": 13
+    },
+    {
+        "name": "DON CRISTO XO E LIQUID 60ML | دون كريستو ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/don-cristo-xo-e-liquid-60ml/",
+        "id": 14
+    },
+    {
+        "name": "DON CRISTO ORIGINAL E LIQUID 60ML | دون كريستو ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/don-cristo-original-e-liquid-60ml/",
+        "id": 15
+    },
+    {
+        "name": "DON CRISTO PISTACHIO E LIQUID 60ML | دون كريستو ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/don-cristo-pistachio-e-liquid-60ml/",
+        "id": 16
+    },
+    {
+        "name": "DON CRISTO RESERVE E LIQUID 60ML | دون كريستو ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/don-cristo-reserve-e-liquid-60ml/",
+        "id": 17
+    },
+    {
+        "name": "DON CRISTO BLOND E LIQUID 60ML | دون كريستو ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/don-cristo-blond-e-liquid-60ml/",
+        "id": 18
+    },
+    {
+        "name": "Nasty Juice Asap Grape Low Mint E liquid | ناستي ليكويد",
+        "disc": "3mg",
+        "price": "EGP550.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/nasty-juice-asap-grape-low-mint-e-liquid/",
+        "id": 19
+    },
+    {
+        "name": "Dark Tobacco Bazooka | بازوكا توباكو ليكويد",
+        "disc": "6mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/dark-tobacco-bazooka/",
+        "id": 20
+    },
+    {
+        "name": "ECigara LOS ICE E-LIQUID |  اي سيجاره ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/ecigara-los-ice-e-liquid/",
+        "id": 21
+    },
+    {
+        "name": "One Hit Wonder 3 BOTTLES BUNDLE | عرض وان هيت وندر بريميوم ليكويد",
+        "disc": null,
+        "price": "EGP1,875.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/one-hit-wonder-3-bottles-bundle-عرض-وان-هيت-وندر-بريميوم-ليكويد/",
+        "id": 22
+    },
+    {
+        "name": "Peach Lime Ice Sour Straws Bazooka | بازوكا بريميم ليكويد",
+        "disc": "3mg, 6mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/peach-lime-ice-sour-straws-bazooka-بازوكا-بريميم-ليكويد/",
+        "id": 23
+    },
+    {
+        "name": "Grape Sour Straws Bazooka 60ml | بازوكا بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP300.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/grape-sour-straws-bazooka-60ml/",
+        "id": 24
+    },
+    {
+        "name": "Mango Sour Straws Bazooka 60ml | بازوكا بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP300.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/mango-sour-straws-bazooka-60ml/",
+        "id": 25
+    },
+    {
+        "name": "Juice Head E-LIQUID 3 BOTTLES BUNDLE | عرض چوس هيد بريميم ليكويد",
+        "disc": null,
+        "price": "EGP2,100.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/juice-head-e-liquid-3-bottles-bundle-عرض-چوس-هيد-بريميم-ليكويد/",
+        "id": 26
+    },
+    {
+        "name": "Juice Head FREEZE Raspberry Lemonade | چوس هيد بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP700.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/juice-head-freeze-raspberry-lemonade-ztn-100ml/",
+        "id": 27
+    },
+    {
+        "name": "Juice Head FREEZE Pineapple Guava | چوس هيد بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP700.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/juice-head-freeze-pineapple-guava-ztn-100ml/",
+        "id": 28
+    },
+    {
+        "name": "Juice Head FREEZE Orange Mango | چوس هيد بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP700.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/juice-head-freeze-orange-mango-ztn-100ml/",
+        "id": 29
+    },
+    {
+        "name": "Juice Head FREEZE Mango Strawberry | چوس هيد بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP700.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/juice-head-freeze-mango-strawberry-tfn-100ml/",
+        "id": 30
+    },
+    {
+        "name": "Pink Panther Blue Ice By Dr Vapes E-Liquid | بينك بانثر بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP550.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/pink-panther-blue-ice-by-dr-vapes-e-liquid/",
+        "id": 31
+    },
+    {
+        "name": "Pink Panther Pink Frozen Remix By Dr Vapes E-Liquid | بينك بانثر بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP550.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/pink-panther-pink-frozen-remix-by-dr-vapes-e-liquid/",
+        "id": 32
+    },
+    {
+        "name": "Pink Panther Ice By Dr Vapes E-Liquid 60ml | بينك بانثر بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP550.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/pink-panther-ice-by-dr-vapes-e-liquid-60ml/",
+        "id": 33
+    },
+    {
+        "name": "Muffin Man One Hit Wonder 100ml  | وان هيت وندر بريميوم ليكويد",
+        "disc": "3mg",
+        "price": "EGP625.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/muffin-man-one-hit-wonder-100ml/",
+        "id": 34
+    },
+    {
+        "name": "Vapetasia Killer Sweets Rain Bops eLiquid 100ml | فيب تاسيا بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP650.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/vapetasia-killer-sweets-rain-bops-eliquid-100ml/",
+        "id": 35
+    },
+    {
+        "name": "Vapetasia Killer Sweets White Gummy eLiquid 100ml | فيب تاسيا بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP650.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/vapetasia-killer-sweets-white-gummy-eliquid-100ml/",
+        "id": 36
+    },
+    {
+        "name": "VGOD LUSCIOUS eLiquid 60ml | ڤي جود بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/vgod-luscious-eliquid-60ml/",
+        "id": 37
+    },
+    {
+        "name": "Ripe Vapes VCT Caramel | رايب فيبس بريميم ليكويد",
+        "disc": "12mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/ripe-vapes-vct-caramel-60ml/",
+        "id": 38
+    },
+    {
+        "name": "Ripe Vapes Caramel Café | رايب فيبس بريميم ليكويد",
+        "disc": "12mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/ripe-vapes-caramel-cafe-60ml/",
+        "id": 39
+    },
+    {
+        "name": "VCT Ripe Vapes | رايب فيبس بريميم ليكويد",
+        "disc": "12mg, 18mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/vct-ripe-vapes-60ml/",
+        "id": 40
+    },
+    {
+        "name": "VCT CAFE Ripe Vapes | رايب فيبس بريميم ليكويد",
+        "disc": "12mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/vct-ripe-vapes-cafe-60ml/",
+        "id": 41
+    },
+    {
+        "name": "VCT Ripe Vapes BANANA | رايب فيبس بريميم ليكويد",
+        "disc": "12mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/vct-ripe-vapes-banana-60ml/",
+        "id": 42
+    },
+    {
+        "name": "VCT Ripe Vapes Pistachio | رايب فيبس بريميم ليكويد",
+        "disc": "12mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/vct-ripe-vapes-pistacio-60ml/",
+        "id": 43
+    },
+    {
+        "name": "Frozen Fruit Monster Passion Fruit Orange Guava Ice | فروزن فروت مونستر",
+        "disc": "3mg",
+        "price": "EGP850.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/frozen-fruit-monster-passion-fruit-orange-guava-ice-100ml/",
+        "id": 44
+    },
+    {
+        "name": "Juice Head FREEZE Blueberry Lemon | چوس هيد بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP700.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/juice-head-freeze-blueberry-lemon-100ml/",
+        "id": 45
+    },
+    {
+        "name": "Juice Head FREEZE Pineapple Grapefruit | چوس هيد بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP700.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/juice-head-freeze-pineapple-grapefruit-100ml/",
+        "id": 46
+    },
+    {
+        "name": "Juice Head FREEZE Strawberry Kiwi | چوس هيد بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP700.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/juice-head-freeze-strawberry-kiwi-100ml/",
+        "id": 47
+    },
+    {
+        "name": "Strawberry Ice Sour Straws Bazooka 60ml | بازوكا بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP300.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/strawberry-ice-sour-straws-bazooka-60ml/",
+        "id": 48
+    },
+    {
+        "name": "Watermelon Ice Sour Straws Bazooka 60ml | بازوكا بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP300.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/watermelon-ice-sour-straws-bazooka-60ml/",
+        "id": 49
+    },
+    {
+        "name": "Frozen Fruit Monster Strawberry Kiwi Pomegranate Ice | فروزن فروت مونستر",
+        "disc": "3mg",
+        "price": "EGP625.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/frozen-fruit-monster-strawberry-kiwi-pomegranate-ice-100ml/",
+        "id": 50
+    },
+    {
+        "name": "VGOD SourLicious eLiquid 60ml | ڤي جود بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/vgod-sourlicious-eliquid-60ml/",
+        "id": 51
+    },
+    {
+        "name": "VGOD Lush Ice eLiquid 60ml | ڤي جود بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/vgod-lushice-eliquid-60ml/",
+        "id": 52
+    },
+    {
+        "name": "One Hit Wonder Island Man Iced eLiquid 100ml  | وان هيت وندر بريميوم ليكويد",
+        "disc": "3mg",
+        "price": "EGP625.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/one-hit-wonder-island-man-iced-eliquid-100ml/",
+        "id": 53
+    },
+    {
+        "name": "VGOD Cubano Silver e-Liquid 60ml | ڤي جود بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/vgod-cubano-silver-e-liquid-60ml/",
+        "id": 54
+    },
+    {
+        "name": "Pink Panther By Dr Vapes E-Liquid 60ml | بينك بانثر بريميم ليكويد",
+        "disc": "3mg",
+        "price": "EGP550.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/pink-panther-by-dr-vapes-60ml/",
+        "id": 55
+    },
+    {
+        "name": "Blueberry Mint Ripe Vapes | رايب فيبس بريميم ليكويد",
+        "disc": "12mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/blueberry-mint-ripe-vapes-60ml/",
+        "id": 56
+    },
+    {
+        "name": "VCT Sweet Almond Ripe Vapes 60ml | رايب فيبس بريميم ليكويد",
+        "disc": "12mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/vct-sweet-almond-ripe-vapes-60ml/",
+        "id": 57
+    },
+    {
+        "name": "VCT Cinnamon Ripe Vapes | رايب فيبس بريميم ليكويد",
+        "disc": "12mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/vct-cinnamon-ripe-vapes-60ml/",
+        "id": 58
+    },
+    {
+        "name": "One Hit Wonder Mini Muffin Man 100ml  | وان هيت وندر بريميوم ليكويد",
+        "disc": "3mg",
+        "price": "EGP625.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/one-hit-wonder-mini-muffin-man-100ml/",
+        "id": 59
+    },
+    {
+        "name": "VCT Chocolate Ripe Vapes | رايب فيبس بريميم ليكويد",
+        "disc": "12mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/vct-chocolate-ripe-vapes-60ml/",
+        "id": 60
+    },
+    {
+        "name": "VCT Bold Ripe Vapes | رايب فيبس بريميم ليكويد",
+        "disc": "12mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-e-liquid/vct-bold-ripe-vapes-60ml-copy/",
+        "id": 61
+    }
+]

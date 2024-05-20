@@ -1,0 +1,205 @@
+[
+    {
+        "name": "Panther Bar 5500 Puffs Disposable | بانثر بار ديسبوزابل 5500 نفس",
+        "disc": "20mg, 50mg",
+        "price": "EGP550.00",
+        "link": "https://ovseg.com/shop/sale/panther-bar-5500-puffs-disposable-vape-بانثر-بار-ديسبوزابل-5500-نفس/",
+        "id": 1
+    },
+    {
+        "name": "ZooKa Disposable 7000 Puffs By BAZOOKA | زوكا ديسبوزابل ٧٠٠٠ نفس",
+        "disc": "20mg, 50mg",
+        "price": "EGP550.00",
+        "link": "https://ovseg.com/shop/disposable-vapes/zooka-disposable-pod-7000-puffs-by-bazooka/",
+        "id": 2
+    },
+    {
+        "name": "VGOD Disposable 4K Pod 4000 Puffs | ڤي جود ديسبوزابل ٤٠٠٠ نفس",
+        "disc": "20mg, 50mg",
+        "price": "EGP475.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-nicotine-salt/vgod-disposable-4k-pod-4000-puffs/",
+        "id": 3
+    },
+    {
+        "name": "Prime Bar 8000 Disposable | برايم بار ٨٠٠٠ نفس",
+        "disc": "50mg",
+        "price": "EGP650.00",
+        "link": "https://ovseg.com/shop/disposable-vapes/prime-bar-8000-disposable/",
+        "id": 4
+    },
+    {
+        "name": "UWELL DL8000 DISPOSABLE 3 Pods Discount Bundle | عرض يوويل ديسبوزابل",
+        "disc": null,
+        "price": "EGP1,875.00",
+        "link": "https://ovseg.com/shop/sale/uwell-dl8000-disposable-3-pods-discount-bundle/",
+        "id": 5
+    },
+    {
+        "name": "UWELL CALIBURN BAR B6000 DISPOSABLE 3 Pods Discount Bundle | عرض يوويل ديسبوزابل",
+        "disc": null,
+        "price": "EGP1,575.00",
+        "link": "https://ovseg.com/shop/sale/uwell-caliburn-bar-b6000-disposable-3-pods-discount-bundle/",
+        "id": 6
+    },
+    {
+        "name": "Vapetasia Killer Fruits 3500 Puffs Disposable 3 Pods Discount Bundle | عرض فيب تاسيا ديسبوزابل",
+        "disc": null,
+        "price": "EGP1,125.00",
+        "link": "https://ovseg.com/shop/sale/vapetasia-killer-fruits-3500-puffs-disposable-3-pods-discount-bundle/",
+        "id": 7
+    },
+    {
+        "name": "Vapetasia Air Disposable 6000 Puffs 3 Pods Discount Bundle | عرض فيب تاسيا ديسبوزابل",
+        "disc": null,
+        "price": "EGP1,575.00",
+        "link": "https://ovseg.com/shop/sale/vapetasia-air-disposable-6000-puffs-3-pods-discount-bundle/",
+        "id": 8
+    },
+    {
+        "name": "MNKE BARS 6500 DISPOSABLE 3 Pods Discount Bundle | عرض منكي بار ديسبوزابل",
+        "disc": null,
+        "price": "EGP1,576.00",
+        "link": "https://ovseg.com/shop/sale/mnke-bars-6500-disposable-3-pods-discount-bundle/",
+        "id": 9
+    },
+    {
+        "name": "Uwell DL8000 Disposable Vape 8000 Puffs | يوويل ديسبوزابل ٨٠٠٠ نفس",
+        "disc": "50mg",
+        "price": "EGP625.00",
+        "link": "https://ovseg.com/shop/disposable-vapes/uwell-dl8000-disposable-vape-8000-puffs/",
+        "id": 10
+    },
+    {
+        "name": "UWELL CALIBURN BAR B6000 DISPOSABLE | يوويل كاليبرن ديسبوزابل ٦٠٠٠ نفس",
+        "disc": "50mg",
+        "price": "EGP525.00",
+        "link": "https://ovseg.com/shop/disposable-vapes/uwell-caliburn-bar-b6000-disposable/",
+        "id": 11
+    },
+    {
+        "name": "Silvaper DL 3MG Disposable 12000 PUFFS | سيلفيبر نفس شيشه ٣مج ديسبوزابل",
+        "disc": "3mg",
+        "price": "EGP825.00",
+        "link": "https://ovseg.com/shop/disposable-vapes/silvaper-dl-3mg-disposable-12000-puffs/",
+        "id": 12
+    },
+    {
+        "name": "Aspire T14 5000 Puffs Disposable | اسباير تي 14 ديسبوزابل٥٠٠٠ نفس",
+        "disc": "20mg",
+        "price": "EGP550.00",
+        "link": "https://ovseg.com/shop/disposable-vapes/aspire-t14-5000-puffs-disposable-اسباير-تي-14-ديسبوزابل٥٠٠٠-نفس/",
+        "id": 13
+    },
+    {
+        "name": "Vapetasia Killer Fruits 3500 Puffs Disposable | فيب تاسيا ديسبوزابل 3500 نفس",
+        "disc": "50mg",
+        "price": "EGP375.00",
+        "link": "https://ovseg.com/shop/disposable-vapes/vapetasia-killer-fruits-3500-puffs-disposable-فيب-تاسيا-ديسبوزابل-3500-نفس/",
+        "id": 14
+    },
+    {
+        "name": "Vapetasia Air Disposable Vape 6000 Puffs | فيب تاسيا ديسبوزابل 6000 نفس",
+        "disc": "50mg",
+        "price": "EGP525.00",
+        "link": "https://ovseg.com/shop/disposable-vapes/vapetasia-air-disposable-vape-6000-puffs-فيب-تاسيا-ديسبوزابل-6000-نفس/",
+        "id": 15
+    },
+    {
+        "name": "MNKE BARS 6500 DISPOSABLE | منكي بار ديسبوزابل ٦٥٠٠ نفس",
+        "disc": "20mg, 50mg",
+        "price": "EGP525.00",
+        "link": "https://ovseg.com/shop/disposable-vapes/mnke-bars-6500-disposable-منكي-بار-ديسبوزابل-٦٥٠٠-نفس/",
+        "id": 16
+    },
+    {
+        "name": "ENERGY Disposable Pod 8000 Puffs | انيرجي ديسبوزابل ٨٠٠٠ نفس",
+        "disc": "50mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/sale/energy-rechargeable-disposable-pod-8000-puffs/",
+        "id": 17
+    },
+    {
+        "name": "Tugboat Ultra Disposable 6000 Puffs | تاج بوت الترا ٦٠٠٠ نفس",
+        "disc": "50mg",
+        "price": "EGP550.00",
+        "link": "https://ovseg.com/shop/sale/tugboat-ultra-disposable-pod-6000-puffs-50mg/",
+        "id": 18
+    },
+    {
+        "name": "TRIX X-Pro Filter 5000 Puff Disposable | تركس ديسبوزابل ٥٠٠٠ نفس",
+        "disc": "50mg",
+        "price": "EGP450.00",
+        "link": "https://ovseg.com/shop/disposable-vapes/trix-x-pro-filter-recharge-5000-puff-disposable-50mg/",
+        "id": 19
+    },
+    {
+        "name": "Nasty 5k Crystal 5000 Puffs Disposable | ناستي ديسبوزابل ٥٠٠٠ نفس",
+        "disc": "50mg",
+        "price": "EGP550.00",
+        "link": "https://ovseg.com/shop/sale/nasty-5k-crystal-5000-puffs-disposable-pod-50mg/",
+        "id": 20
+    },
+    {
+        "name": "RIPE VAPES PALM 3000 PUFFS DISPOSABLE POD | رايب فيب بالم  3000 نفس",
+        "disc": "50mg",
+        "price": "EGP350.00",
+        "link": "https://ovseg.com/shop/disposable-vapes/ripe-vapes-palm-3000-puffs-50mg-8ml-disposable-pod/",
+        "id": 21
+    },
+    {
+        "name": "NKD 100 Max Disposable Vape 4500 Puffs | نيكد ماكس ديسبوزابل 4500 نفس",
+        "disc": "50mg",
+        "price": "EGP500.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/imp-nicotine-salt/nkd-100-max-disposable-vape-4500-puffs/",
+        "id": 22
+    },
+    {
+        "name": "RandM Tornado 7000 Puff Disposable 50mg | راندم تورنادو 7000 نفس",
+        "disc": "50mg",
+        "price": "EGP575.00",
+        "link": "https://ovseg.com/shop/imported-e-liquid/randm-tornado-rechargeable-7000-puff-r-m-bars-5-nicotine/",
+        "id": 23
+    },
+    {
+        "name": "Tugboat Ultra 6000 Puffs 3 Pods Discount Bundle | عرض تاج بوت الترا ديسبوزابل",
+        "disc": null,
+        "price": "EGP1,650.00",
+        "link": "https://ovseg.com/shop/sale/tugboat-ultra-6000-puffs-3-pods-discount-bundle-عرض-تاج-بوت-الترا-ديسبوزابل/",
+        "id": 24
+    },
+    {
+        "name": "ENERGY RECHARGEABLE Disposable Pod 5000 Puffs",
+        "disc": "50mg",
+        "price": "EGP475.00",
+        "link": "https://ovseg.com/shop/sale/energy-rechargeable-disposable-pod-5000-puffs/",
+        "id": 25
+    },
+    {
+        "name": "Disposable Pods 2 Brands Discount Bundle | عرض ديسبوزابل 3 قطع",
+        "disc": null,
+        "price": "EGP1,400.00",
+        "link": "https://ovseg.com/shop/sale/disposable-pods-2-brands-discount-bundle-عرض-ديسبوزابل-3-قطع/",
+        "id": 26
+    },
+    {
+        "name": "Disposable Pods 3 Brands Discount Bundle 2 | عرض ديسبوزابل 3 انواع مختلفة",
+        "disc": null,
+        "price": "EGP1,575.00",
+        "link": "https://ovseg.com/shop/sale/disposable-pods-3-brands-discount-bundle-2-عرض-ديسبوزابل-3-انواع-مختلفة/",
+        "id": 27
+    },
+    {
+        "name": "Disposable Pods 3 Brands Discount Bundle | عرض ديسبوزابل 3 انواع مختلفة",
+        "disc": null,
+        "price": "EGP1,400.00",
+        "link": "https://ovseg.com/shop/sale/disposable-pods-3-brands-discount-bundle-عرض-ديسبوزابل-3-انواع-مختلفة/",
+        "id": 28
+    },
+    {
+        "name": "TRIX X-Pro 5000 Puff 3 Pods  Discount Bundle | عرض تركس ديسبوزابل",
+        "disc": null,
+        "price": "EGP1,425.00",
+        "link": "https://ovseg.com/shop/sale/trix-x-pro-filter-recharge-5000-puff-disposable-3-pods-discount-bundle-50mg/",
+        "id": 29
+    }
+]
