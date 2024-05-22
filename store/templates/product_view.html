@@ -39,9 +39,9 @@
         </picture>
     </li>
     {% endif %}
+    {% if images != "" %}
     {%endcomment%}
-
-    {% if images != "" %}   
+    {% if images|length > 1  %} 
     {% for img in images %}
     <li> <picture>   
         <img src="{{img}}" id="img_rotation"/>

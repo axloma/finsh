@@ -19,7 +19,6 @@ for(let item = 0 ; item < updateBtn.length;item++){
         qt = parseInt(qt)
         if(user == 'AnonymousUser'){
             console.log("USER",user,"action",action)
-
             addCookieItem(productId,action,qt)
         }else{
             console.log('user logged in')
@@ -35,18 +34,18 @@ for(let x = 0 ; x < updateBtnI.length;x++){
         var producId = this.dataset.index 
         var act = this.dataset.action
         var qt = $('#select' + producId + ' option:selected').text()
-        if(page == "cart_summary"  && window.innerWidth > 700 ){
+        if(page == "cart_summary"  ){
             console.log("window")
             qt = $('#selectx' + producId + ' option:selected').text();
-  
-          }else{
+            $('#select'+producId).val(qt).change();
+             $('#selectx'+producId).val(qt).change();
+          }else if( page =="PRODUCT"){
             qt =  $('#select' + producId + ' option:selected').text();
   
           }
         if(user == 'AnonymousUser'){
-            console.log('productId:',producId,'act:',act)
-            console.log('Userx:',user)
-            
+            console.log('productId:',producId,'act:',act,"QUANT",qt)
+            console.log('Userx:',user)           
             addCookieItem(producId,act,qt)
         }else{
             console.log('user logged in')

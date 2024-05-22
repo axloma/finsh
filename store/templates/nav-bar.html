@@ -3,7 +3,12 @@
   <div class="menue" id="menue" >
     <div  class="menueicon " href="" class=""  id="menuicon"> </div>
     <ul class="menulist btn " id='menulist'>
-      <li class=" "><a href="{% url 'home' %}" class="btn btn-1 " >home</a></li>
+      <!-- <li class=" "><a href="{% url 'home' %}" class="btn btn-1 " >home</a></li> -->
+      <li><a href="/" class="btn btn-1  active">BSMOKER</a></li>
+      <li><a href={% url 'category' "VAPE" %} class="btn btn-1 ">vape</a></li>
+      <li><a href={% url 'category' "liquid" %} class="btn btn-1 ">liquid</a></li>
+      <li><a href={% url 'category' 'SMOKING' %} class="btn btn-1 ">Smoking</a></li>
+      <li><a href={% url 'category' "PRIMUM_liquid" %} class="btn btn-1 ">PRIMUM</a></li>
       <li class=" "><a href="{% url "checkout" %}" class="btn btn-1  " >checkout</a></li>
       <li class=""><a href="{% url 'cart_summary' %}" class="btn btn-1 " >cart</a></li>
     </ul>
@@ -105,8 +110,8 @@ $(document).ready(function() {//code
   m.forEach( item => {
       item.addEventListener("click", (e)=>{
           //e.preventDefault()
-          console.log(item)
-          console.log("item CLi")
+         // console.log(item)
+          //console.log("item CLi")
          // $("#mnlist_I").addClass("active");
          // item.classList.remove("active");
           const xna = item.firstElementChild;

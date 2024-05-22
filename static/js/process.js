@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       var pq = $('#select' + link.value + ' option:selected').text();
       
       // var pq = $('#select' + link.value ).val();
-
       if(!pq || pq == undefined || pq == "None"){
         console.log('pq none yasser',pq);
         pq = "1";
@@ -64,7 +63,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           if  (js.qty == undefined ){
                console.log("SOMETHING WRONG ")
               }
-          console.log(js,"JSON")
+             console.log(js,"JSON")
           //total = json.total
           //$('#total').text('TOTAL PRICE:$'+js.total).change();
     },
@@ -120,7 +119,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
           console.log("window")
           prq = $('#selectx' + productid + ' option:selected').text();
 
-        }else{
+        }
+        else {
           prq =  $('#select' + productid + ' option:selected').text();
 
         }    

@@ -875,3 +875,189 @@ var update = document.querySelectorAll('#car_contv');
 
 
                 //<button type="button" value=${pvalue.id}  id="add-cart"  class="btn btn-1 btn-2 rotation update-cart" data-action='add' data-product=${pvalue.id}>add to cart </button>  
+
+
+
+//add product with single img in same folder 
+/*
+def add_p(request):
+    #insert from scrapy 
+    p = Product 
+    allp = Product.objects.all()
+    print(allp.count(),"NUMP")
+    ls =  []
+    ct = "SMOKING"
+    cm = "melliferous-معسل"
+    cat = Category.objects.get(name=ct)
+    cmenu = Cmenue.objects.get(name=cm,Category=cat)
+    jsonfile = "media/images_folder/mo3ez/mo3ez.json"
+               #media/images_folder/amazonaccess/amazonacess.json
+    # imgf = 'media/images_folder/mo3ez/proi/product_img.json'   
+    # imgfolder = '/images_folder/mo3ez/proi/'
+    # imgf = 'media/images_folder/mo3ez/proi/product_img.json'   
+    imgfolder = '/images_folder/mo3ez/'
+
+    for i in allp:
+        ls.append(i.name)
+    # print(ls)
+    listimg = []
+    with open(jsonfile,'r') as file:           
+            data = json.load(file)
+            #print(len(data['name']))
+            #name = list(data['name'])
+    # with open(imgf,'r') as imgfile:
+    #         imgdata = json.load(imgfile)
+    #         for i in imgdata:
+    #             dicimg = {}
+    #             dicimg['link'] = i['link']
+    #             dicimg['images'] = i['images']
+    #             # time.sleep(5)
+    #             print("IMGAGES",dicimg['images'])
+    #             listimg.append(dicimg)
+    try:
+        for i in data:
+            name = str(i['name']).strip()
+            disc = str(i['disc']).strip()
+            # price = str(i['price']).replace(',','')
+            price = str(i['price']).replace(',','').replace('EGP','').replace('جنيه','')
+            im = imgfolder+i['fmg']
+            dp = Decimal(price)           
+            print(dp,"PRIcE")
+            ndp = dp + dp * 10 /100 
+            if dp >= 2000 :
+                ndp = dp + dp * 5 /100 
+            # ndp = dp + dp * 10 /100 
+            ndp = Decimal(ndp)
+            print(ndp,"nPRIcE")
+            # proimages = []
+            ##########
+            link = str(i['link']).strip()
+            # for l in listimg :
+            #     if link == l['link']:
+            #         proimages = l['images'] 
+            #         print(link,"LINK",proimages,"IMGAGES")
+            # im = imgfolder+i['fmg']
+            # im = imgfolder+proimages[0]
+            print(im,"im")
+            #CHECK IF PRO has smg
+            try:
+                simg = imgfolder+i['simg']
+                print(simg,"SMG")
+            except:
+                simg = ""
+                print(simg,"SMGE")
+
+            #TODO make sure product not already exist
+            if name in ls  :
+                print("NAME ALREADY EXIST",name)
+                ps = Product.objects.filter(name=name,description=disc,outsidelink=link)
+                print(ps.count(),"COUNT")
+                print(ps)
+                if ps:
+                    if(ps.count() > 0):
+                        for s in ps :
+                            print(s.price,"PRODUCT PRICE ")
+                            print(s.description,"PRODUCT DISC ")
+                            print(s.Category_M,"CAT")
+                            print(s.Category,"CATe")
+                            print(len(ps),"PSLEN")
+                            # time.sleep(2)
+                            # if name == s.name and ndp == s.price  and disc == s.description and s.outsidelink == link  :
+                            if name == s.name  and disc.strip() == s.description.strip() and s.outsidelink.strip() == link.strip()  :
+                             
+                                print("PRODUCT ALREADY IN DB IDIOT")
+
+                            else:
+                                print("IT NOT THE SAME ",i['id'])
+                                time.sleep(2)
+                                # p.objects.create(name=name,price=dp,image=im,description=disc,Category=cat,outsidelink=link,Category_M=cmenu)
+            else:
+                try:
+                    prod = p.objects.create(name=name,price=dp,image=im,description=disc,Category=cat,outsidelink=link,Category_M=cmenu)
+                    # for img in proimages:
+                    #     im = imgfolder+ str(img)
+                    #     P_IMG.objects.create(product=prod,image=im)
+
+                    print("created",i['id'])
+                    # time.sleep(1)
+                except Exception as ex:
+                    print("ERORO WITH",ex)
+                # print(newp)
+    except  Exception as error:
+        # print(newprice,"NP")
+        print("ERRROR",error)
+    
+    return render(request,'add_product.html',{'name':name,'price':price,'im':im})
+
+
+
+//add product with single img in same folder 
+/*
+def add_p(request):
+    #insert from scrapy 
+    p = Product 
+    allp = Product.objects.all()
+    print(allp.count(),"NUMP")
+    ls =  []
+    ct = "SMOKING"
+    cm = "melliferous-معسل"
+    cat = Category.objects.get(name=ct)
+    cmenu = Cmenue.objects.get(name=cm,Category=cat)
+    jsonfile = "media/images_folder/mo3ez/mo3ez.json"
+               #media/images_folder/amazonaccess/amazonacess.json
+    # imgf = 'media/images_folder/mo3ez/proi/product_img.json'   
+    # imgfolder = '/images_folder/mo3ez/proi/'
+    # imgf = 'media/images_folder/mo3ez/proi/product_img.json'   
+    imgfolder = '/images_folder/mo3ez/'
+
+    for i in allp:
+        ls.append(i.name)
+    # print(ls)
+    listimg = []
+    with open(jsonfile,'r') as file:           
+            data = json.load(file)
+            #print(len(data['name']))
+            #name = list(data['name'])
+   
+    try:
+        for i in data:
+            name = str(i['name']).strip()
+            disc = str(i['disc']).strip()
+            # price = str(i['price']).replace(',','')
+            price = str(i['price']).replace(',','').replace('EGP','').replace('جنيه','')
+            im = imgfolder+i['fmg']
+            dp = Decimal(price)           
+            print(dp,"PRIcE")
+            ndp = dp + dp * 10 /100 
+            if dp >= 2000 :
+                ndp = dp + dp * 5 /100 
+            # ndp = dp + dp * 10 /100 
+            ndp = Decimal(ndp)
+            print(ndp,"nPRIcE")
+            ##########
+            link = str(i['link']).strip()
+            #TODO make sure product not already exist
+            if name in ls  :
+                ps = Product.objects.filter(name=name,description=disc,outsidelink=link)
+                if ps:
+                    if(ps.count() > 0):
+                        for s in ps :
+                            # time.sleep(2)
+                            # if name == s.name and ndp == s.price  and disc == s.description and s.outsidelink == link  :
+                            if name == s.name  and disc.strip() == s.description.strip() and s.outsidelink.strip() == link.strip()  :         
+                            else:
+                                print("IT NOT THE SAME ",i['id'])
+                                time.sleep(2)
+                                # p.objects.create(name=name,price=dp,image=im,description=disc,Category=cat,outsidelink=link,Category_M=cmenu)
+            else:
+                try:
+                    prod = p.objects.create(name=name,price=dp,image=im,description=disc,Category=cat,outsidelink=link,Category_M=cmenu)           
+                    print("created",i['id'])
+                except Exception as ex:
+                    print("ERORO WITH",ex)
+                # print(newp)
+    except  Exception as error:
+        # print(newprice,"NP")
+        print("ERRROR",error)
+    
+    return render(request,'add_product.html',{'name':name,'price':price,'im':im})
