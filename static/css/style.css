@@ -183,12 +183,17 @@
     }
     .menuev  {
         /* visibility: hidden; */
-        opacity: 75%;
+        /* opacity: 75%; */
+        opacity: 1%;
+        visibility: hidden;
+        pointer-events: none;
         transition: all 1s ease-in-out;
+
     }
     .menuev.open {
         visibility: visible;
         opacity: 1;
+        pointer-events: visible;
 
      }
 

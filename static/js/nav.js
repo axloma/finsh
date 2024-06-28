@@ -54,6 +54,9 @@
 //           item.classList.remove("active");
 //       });
 //   });
+
+
+//TODO add class active to menue item 
 var m = document.querySelectorAll(".LTEST");
   m.forEach( item => {
     const xna = item.firstElementChild;

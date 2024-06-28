@@ -151,16 +151,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
   // const itemc_p = document.querySelectorAll('.menuev ');
-  
-  for(let item = 0 ; item < update.length;item++){
-  const itemc_p = document.querySelectorAll('.btn-box  ');
+ 
+  //TODO show button box of each card 
+    const itemc_p = document.querySelectorAll('.btn-box  ');
   const itemc_d = document.querySelectorAll('#c_dmv');
-  update[item].addEventListener('click',function(){    
+  for(let item = 0 ; item < update.length ;item++){
 
-    itemc_p[item ].classList.toggle('open')
-    itemc_d[item ].classList.toggle('open')
+  update[item].addEventListener('click',function(e){    
+    console.log(this.nodeName,"NAME")
+    const t = e.target
+    const fchild = this.children[0].children[5];
+    const schild = this.children[0].children[3];
+    console.log(fchild.nodeName,"NODENAMECHILD")
+    fchild.classList.toggle('open')
+    schild.classList.toggle('open')
+    // itemc_p[item ].classList.toggle('open')
+    // itemc_d[item ].classList.toggle('open')
     // itemc_p.classList.toggle('open');
     // $(".c_d").toggleClass("open");
-    console.log("HIHI")
+    console.log("HIHI",fchild.nodeName)
   })
 }
