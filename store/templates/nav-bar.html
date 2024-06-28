@@ -1,5 +1,5 @@
 {%load static%}
-<nav>
+<nav class="nav">
   <div class="menue" id="menue" >
     <div  class="menueicon " href="" class=""  id="menuicon"> </div>
     <ul class="menulist btn " id='menulist'>
@@ -33,7 +33,7 @@
                 <div class="car_cont">    
                   <img src="" alt="" id="img_mv">
                   <h2 class="c_h" id="c_h">EG</h2>
-                  <p class="c_d" id="c_d">p</p>     
+                  <!-- <p class="c_d" id="c_d">p</p>      -->
                 </div>
             </div>
         </div>
@@ -153,13 +153,32 @@ $(document).ready(function() {//code
 </script>
 
 <script>
-   
-window.addEventListener("load", (event) => {
-    if( in_cart_a.length > 0){    
-        $('#cart_n_a').addClass("active");
-    } else if (in_cart_a.length <= 0 ){
-        $("#cart_n").hide();
-    }
+ let events = "load" && "scroll"
+window.addEventListener(events, (event) => {
+   let sec = document.querySelector('#try')
+   let nave = document.querySelector('.nav')
+   let windtop = window.scrollY;
+  //  let offset = sec;
+   let offset = sec.offsetTop - 10
+   let height = sec.offsetHeight
+   let width = sec.offsetWidth
+   console.log(nave.offsetHeight,"height",windtop,"WIND",height,"H","wid",width)
+   console.log(sec.offsetTop,"sec")
+     if(windtop >= offset && windtop < offset + height && in_cart_a.length > 0){
+      $("#cart_n").show();
+      console.log("appear")
+
+    
+    // if( in_cart_a.length > 0){    
+    //     $('#cart_n_a').addClass("active");
+      
+    // }
+    //  else if (in_cart_a.length <= 0 ){
+    //     $("#cart_n").hide();
+    // }
+  }else{
+    $("#cart_n").hide();
+  }
 
 }); 
 var search = $("#search");
