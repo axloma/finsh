@@ -148,7 +148,7 @@
     .c_h{
         grid-column: 1 / 3;
         grid-row: 1 / 2;
-        max-height: 6vh;
+        max-height: 5vh;
         color:#222222;
         -webkit-text-stroke: 1px rgb(211, 247, 8);
         /* border-radius: rem; */
@@ -1246,6 +1246,9 @@ button#load {
             top: 6rem;
             height: 100vh;
         } */
+         .c_h{
+            max-height:3vh;
+         }
          .movie .car_cont{
             max-height: 25vh;
          }

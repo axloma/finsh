@@ -162,9 +162,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const t = e.target
     const fchild = this.children[0].children[5];
     const schild = this.children[0].children[3];
+    const tchild = this.children[0].children[2];
     console.log(fchild.nodeName,"NODENAMECHILD")
     fchild.classList.toggle('open')
     schild.classList.toggle('open')
+    tchild.classList.toggle('open')
     // itemc_p[item ].classList.toggle('open')
     // itemc_d[item ].classList.toggle('open')
     // itemc_p.classList.toggle('open');
