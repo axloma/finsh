@@ -80,6 +80,7 @@
 
 <script  >
 $(document).ready(function() {//code 
+  $("#cart_n").hide();
   if(page == "CATEGORY" || page ==  "CATEGORY_M"){
     var page_url = window.location.href;
     var page_id = page_url.substring(page_url.lastIndexOf('/') + 1); //GET SECTION NAME
@@ -157,16 +158,19 @@ $(document).ready(function() {//code
 
 <script>
  let events = "load" && "scroll"
-window.addEventListener(events, (event) => {
+window.addEventListener("scroll", (event) => {
+  event.preventDefault()
+  $("#cart_n").hide();
+    console.log("LOADED")
    let sec = document.querySelector('#try')
    let nave = document.querySelector('.nav')
    let windtop = window.scrollY;
   //  let offset = sec;
-   let offset = sec.offsetTop - 10
+   let offset = sec.offsetTop -200
    let height = sec.offsetHeight
    let width = sec.offsetWidth
-   console.log(nave.offsetHeight,"height",windtop,"WIND",height,"H","wid",width)
-   console.log(sec.offsetTop,"sec")
+  //  console.log(nave.offsetHeight,"height",windtop,"WIND",height,"H","wid",width)
+  //  console.log(sec.offsetTop,"sec")
      if(windtop >= offset && windtop < offset + height && in_cart_a.length > 0){
       $("#cart_n").show();
       console.log("appear")
